@@ -143,6 +143,7 @@ export class CharacterCreatorModal {
         </div>
 
         <footer class="creator-footer">
+          <button type="button" class="creator-cancel-btn" id="creator-cancel">Cancel</button>
           <button type="button" class="creator-save-btn" id="creator-save">Save Look ✨</button>
         </footer>
       </div>
@@ -150,7 +151,8 @@ export class CharacterCreatorModal {
   }
 
   private bindEvents(): void {
-    this.container.querySelector('#creator-close')?.addEventListener('click', () => this.close())
+    this.container.querySelector('#creator-close')?.addEventListener('click', () => this.close(true))
+    this.container.querySelector('#creator-cancel')?.addEventListener('click', () => this.close(true))
 
     this.container.querySelectorAll<HTMLButtonElement>('[data-style]').forEach((btn) => {
       btn.addEventListener('click', () => {

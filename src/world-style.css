@@ -226,10 +226,12 @@
 .world-settings label { display: flex; align-items: center; gap: 10px; min-height: 46px; }
 .world-settings p { font-size: 13px; line-height: 1.4; color: #8d7481; }
 .shop-panel.world-collapsed, .market-panel.world-collapsed { display: none !important; }
-.shop-panel, .market-panel { top: 70px; width: min(350px,46%); }
-.market-panel { width: min(390px,50%); }
+.shop-panel, .market-panel { top: 70px; bottom: 12px; width: min(360px, 46%); }
+.market-panel { width: min(400px, 50%); }
 .shop-card b, .product-card b { overflow-wrap: anywhere; line-height: 1.18; }
-.product-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); max-height: 190px; }
+.product-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); max-height: 155px; flex: 0 1 155px; }
+.market-panel.cart-hidden .product-grid,
+.market-panel:has(.cart[hidden]) .product-grid { max-height: none; flex: 1 1 auto; }
 .game-shell { position: relative; }
 .world-today-button { font-size: 10px; gap: 0; }
 .world-today-panel { position: absolute; z-index: 25; top: 86px; right: 20px; width: min(320px,90vw); padding: 18px; border: 3px solid white; border-radius: 23px; color: #70465e; background: #fff8e9; box-shadow: 0 10px 40px #79534c44; }

@@ -17,11 +17,43 @@ import type { AvatarCustomization } from './save/SaveSchema'
 import { registerSW } from 'virtual:pwa-register'
 
 function colorHex(color: number): string { return `#${color.toString(16).padStart(6, '0')}` }
+
+const CLOTHING_ITEM_ICONS: Record<string, string> = {
+  top_strawberry: '🍓',
+  top_sunshine: '☀️',
+  top_mint: '🌿',
+  top_cloud_blue: '☁️',
+  top_rose_stripe: '🌹',
+  bottom_mint: '🩳',
+  bottom_denim: '👖',
+  bottom_lavender: '💜',
+  bottom_cocoa: '🤎',
+  dress_peach: '🍑',
+  dress_star: '⭐',
+  dress_meadow: '🌼',
+  dress_detective_cape: '🧥',
+  hat_beret: '👒',
+  hat_sun: '☀️',
+  hat_cat: '🐱',
+  hat_cloud: '☁️',
+  hat_flower_pearl: '🌸',
+  hat_detective_cap: '🕵️',
+  hat_star_tiara: '👑',
+  hat_pirate_bandana: '🏴‍☠️',
+  shoes_mint: '👟',
+  shoes_strawberry: '🍓',
+  shoes_star: '⭐',
+  glasses_heart: '💖',
+  accessory_star_pin: '⭐',
+}
+
 function clothingIcon(item: ClothingDefinition): string {
   if (item.icon) {
     return `<img src="${item.icon}" alt="${item.name}" />`
   }
-  if (item.id === 'hat_flower_pearl') return '🌸'
+  if (CLOTHING_ITEM_ICONS[item.id]) {
+    return CLOTHING_ITEM_ICONS[item.id]
+  }
   return item.layer === 'hat' ? '🎩' : item.layer === 'dress' ? '👗' : item.layer === 'bottom' ? '🩳' : item.layer === 'shoes' ? '👟' : item.layer === 'accessory' ? '👓' : '👕'
 }
 
@@ -152,6 +184,11 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
           <button class="wardrobe-tab" type="button" data-wardrobe-filter="accessory">👓 Accessories</button>
         </div>
         <div class="clothing-grid">${wardrobeButtons}</div>
+        <div class="wardrobe-empty-state" id="wardrobe-empty" hidden>
+          <span class="wardrobe-empty-icon">👗</span>
+          <p>No outfits in this category yet!</p>
+          <small>Visit the Cloudberry Boutique in Town to shop new looks ✨</small>
+        </div>
       </section>
       <section class="shop-panel boutique-only" id="shop-panel" aria-label="Boutique catalogue">
         <header><div><small>BOUTIQUE</small><h2>Try a new look</h2></div><span id="shop-owned-label">Tap to preview</span></header>
@@ -161,7 +198,20 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
       <section class="market-panel supermarket-only" id="market-panel" aria-label="Supermarket products and basket">
         <header><div><small>MARKET</small><h2>Fresh picks</h2></div><button type="button" id="cart-toggle" aria-expanded="true">🧺 Basket</button></header>
         <div class="product-grid">${productButtons}</div>
-        <aside class="cart" id="cart"><div id="cart-lines" class="cart-lines"><p>Your basket is empty.</p></div><div class="cart-total"><strong>Total</strong><b id="cart-total">⭐ 0</b></div><button type="button" id="checkout-button">Checkout</button></aside>
+        <aside class="cart" id="cart">
+          <div id="cart-lines" class="cart-lines">
+            <div class="cart-empty-message">
+              <span class="cart-empty-icon">🧺</span>
+              <p>Your basket is empty!</p>
+              <small>⭐ Tap products to add them.</small>
+            </div>
+          </div>
+          <div class="cart-total"><strong>Total</strong><b id="cart-total">⭐ 0</b></div>
+          <div class="cart-actions">
+            <button type="button" id="cart-clear-button" class="cart-clear-button" disabled>🗑 Clear</button>
+            <button type="button" id="checkout-button" disabled>Checkout</button>
+          </div>
+        </aside>
       </section>
       ${debugMarkup}<div class="rotate-hint"><span>↻</span><strong>Turn sideways to play</strong></div>
     </section>
@@ -277,17 +327,31 @@ let activeWardrobeFilter = 'all'
 
 function refreshWardrobeFilter(): void {
   const owned = playerState.data.ownedClothing
+  let visibleCount = 0
   document.querySelectorAll<HTMLButtonElement>('[data-clothing]').forEach((button) => {
     const id = button.dataset.clothing ?? ''
     const layer = button.dataset.layer ?? ''
     const isOwned = owned.includes(id)
     const matches = activeWardrobeFilter === 'all' || layer === activeWardrobeFilter
-    button.hidden = !(isOwned && matches)
+    const show = isOwned && matches
+    button.hidden = !show
+    if (show) visibleCount++
   })
+  const emptyNotice = document.querySelector<HTMLElement>('#wardrobe-empty')
+  if (emptyNotice) emptyNotice.hidden = visibleCount > 0
 }
 
+;['#wardrobe-panel', '#shop-panel', '#market-panel'].forEach((sel) => {
+  const el = document.querySelector<HTMLElement>(sel)
+  if (!el) return
+  ;['pointerdown', 'mousedown', 'touchstart', 'click'].forEach((evt) => {
+    el.addEventListener(evt, (e) => e.stopPropagation())
+  })
+})
+
 document.querySelectorAll<HTMLButtonElement>('[data-wardrobe-filter]').forEach((tab) => {
-  tab.addEventListener('click', () => {
+  tab.addEventListener('click', (event) => {
+    event.stopPropagation()
     document.querySelectorAll('[data-wardrobe-filter]').forEach((t) => t.classList.remove('active'))
     tab.classList.add('active')
     activeWardrobeFilter = tab.dataset.wardrobeFilter ?? 'all'
@@ -345,7 +409,20 @@ document.querySelectorAll<HTMLButtonElement>('[data-location]').forEach((button)
   })
 })
 document.querySelector<HTMLButtonElement>('#checkout-button')!.addEventListener('click', () => game.events.emit('market:checkout'))
-document.querySelector<HTMLButtonElement>('#cart-toggle')!.addEventListener('click', (event) => { const cart = document.querySelector<HTMLElement>('#cart')!; cart.hidden = !cart.hidden; (event.currentTarget as HTMLButtonElement).setAttribute('aria-expanded', String(!cart.hidden)) })
+document.querySelector<HTMLButtonElement>('#cart-clear-button')?.addEventListener('click', () => game.events.emit('market:clear'))
+document.querySelector<HTMLButtonElement>('#cart-toggle')!.addEventListener('click', (event) => {
+  const cart = document.querySelector<HTMLElement>('#cart')!
+  const panel = document.querySelector<HTMLElement>('#market-panel')
+  cart.hidden = !cart.hidden
+  panel?.classList.toggle('cart-hidden', cart.hidden)
+  ;(event.currentTarget as HTMLButtonElement).setAttribute('aria-expanded', String(!cart.hidden))
+})
+
+const openWardrobe = (): void => {
+  refreshWardrobeFilter()
+  wardrobePanel.hidden = false
+  audioManager.play('wardrobe')
+}
 
 game.events.on('ui:context', (context: 'town' | 'home' | 'boutique' | 'supermarket' | 'venue') => {
   shell.dataset.context = context
@@ -354,9 +431,20 @@ game.events.on('ui:context', (context: 'town' | 'home' | 'boutique' | 'supermark
     requestAnimationFrame(syncTownOverlay)
   }
 })
-game.events.on('ui:wardrobe-open', () => {
-  refreshWardrobeFilter()
-  wardrobePanel.hidden = false
+game.events.on('ui:wardrobe-open', openWardrobe)
+game.events.on('ui:wardrobe', openWardrobe)
+game.events.on('ui:equip', (itemId: string) => {
+  if (!playerState.ownsClothing(itemId)) return
+  game.scene.getScenes(true).forEach((scene) => {
+    scene.children.list.forEach((child) => {
+      if (child instanceof Character) child.equip(itemId)
+    })
+  })
+  const def = ClothingRegistry.get(itemId)
+  if (def) {
+    playerState.data.character.equipped[def.layer] = itemId
+    playerState.save(true)
+  }
 })
 game.events.on('ui:edit-state', (active: boolean) => { editButton.querySelector('b')!.textContent = active ? 'Done' : 'Edit'; editButton.querySelector('span')!.textContent = active ? '✓' : '✏️'; editActions.hidden = !active })
 game.events.on('ui:room-state', (room: number) => document.querySelectorAll<HTMLButtonElement>('[data-room]').forEach((button) => button.classList.toggle('active', Number(button.dataset.room) === room)))
@@ -373,10 +461,23 @@ game.events.on('shop:state', (state: { selectedId?: string; owned: string[]; sta
 game.events.on('market:cart', (state: { lines: Array<{ itemId: string; quantity: number; total: number }>; total: number; starCoins: number }) => {
   updateCoins(state.starCoins)
   const lines = document.querySelector<HTMLElement>('#cart-lines')!
-  lines.innerHTML = state.lines.length ? state.lines.map((line) => { const item = marketProducts.find((entry) => entry.id === line.itemId)!; return `<div><span>${item.icon} ${item.name} ×${line.quantity}</span><b>⭐ ${line.total}</b><button type="button" data-remove-product="${line.itemId}" aria-label="Remove one ${item.name}">−</button></div>` }).join('') : '<p>Your basket is empty.</p>'
+  lines.innerHTML = state.lines.length
+    ? state.lines.map((line) => {
+        const item = marketProducts.find((entry) => entry.id === line.itemId)!
+        return `<div class="cart-line-item"><span>${item.icon} ${item.name} ×${line.quantity}</span><b>⭐ ${line.total}</b><button type="button" data-remove-product="${line.itemId}" aria-label="Remove one ${item.name}">−</button></div>`
+      }).join('')
+    : '<div class="cart-empty-message"><span class="cart-empty-icon">🧺</span><p>Your basket is empty!</p><small>⭐ Tap products to add them.</small></div>'
   lines.querySelectorAll<HTMLButtonElement>('[data-remove-product]').forEach((button) => button.addEventListener('click', () => game.events.emit('market:remove', button.dataset.removeProduct)))
   document.querySelector<HTMLElement>('#cart-total')!.textContent = `⭐ ${state.total}`
-  document.querySelector<HTMLButtonElement>('#checkout-button')!.disabled = state.lines.length === 0
+  const checkoutBtn = document.querySelector<HTMLButtonElement>('#checkout-button')
+  if (checkoutBtn) checkoutBtn.disabled = state.lines.length === 0
+  const clearBtn = document.querySelector<HTMLButtonElement>('#cart-clear-button')
+  if (clearBtn) clearBtn.disabled = state.lines.length === 0
+  const cartToggle = document.querySelector<HTMLButtonElement>('#cart-toggle')
+  if (cartToggle) {
+    const itemCount = state.lines.reduce((sum, l) => sum + l.quantity, 0)
+    cartToggle.textContent = itemCount > 0 ? `🧺 Basket (${itemCount})` : '🧺 Basket'
+  }
 })
 game.events.on('market:insufficient', () => document.querySelector<HTMLElement>('.cart-total')?.animate([{ transform: 'translateX(-7px)' }, { transform: 'translateX(7px)' }, { transform: 'translateX(0)' }], { duration: 300 }))
 window.addEventListener('player-state-changed', (event) => updateCoins((event as CustomEvent<{ starCoins: number }>).detail.starCoins))
