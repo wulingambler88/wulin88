@@ -1,0 +1,229 @@
+{
+  "generatedAt": "2026-09-06T00:35:29.908Z",
+  "viewport": {
+    "width": 1280,
+    "height": 720
+  },
+  "count": 21,
+  "screenshots": [
+    {
+      "name": "01_town",
+      "file": "01_town.png",
+      "scene": "TownScene",
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "errors": []
+    },
+    {
+      "name": "02_bedroom",
+      "file": "02_bedroom.png",
+      "scene": "HomeScene",
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "errors": []
+    },
+    {
+      "name": "03_living_room",
+      "file": "03_living_room.png",
+      "scene": "HomeScene",
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "errors": []
+    },
+    {
+      "name": "04_kitchen",
+      "file": "04_kitchen.png",
+      "scene": "HomeScene",
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "errors": []
+    },
+    {
+      "name": "05_boutique",
+      "file": "05_boutique.png",
+      "scene": "ClothingShopScene",
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "errors": []
+    },
+    {
+      "name": "06_market",
+      "file": "06_market.png",
+      "scene": "SupermarketScene",
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "errors": []
+    },
+    {
+      "name": "07_pet_shop",
+      "file": "07_pet_shop.png",
+      "scene": "PetShopScene",
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "errors": []
+    },
+    {
+      "name": "08_park",
+      "file": "08_park.png",
+      "scene": "ParkScene",
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "errors": []
+    },
+    {
+      "name": "09_cafe",
+      "file": "09_cafe.png",
+      "scene": "CafeScene",
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "errors": []
+    },
+    {
+      "name": "10_salon",
+      "file": "10_salon.png",
+      "scene": "SalonScene",
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "errors": []
+    },
+    {
+      "name": "11_toy_shop",
+      "file": "11_toy_shop.png",
+      "scene": "ToyShopScene",
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "errors": []
+    },
+    {
+      "name": "12_school",
+      "file": "12_school.png",
+      "scene": "SchoolScene",
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "errors": []
+    },
+    {
+      "name": "13_brain_games",
+      "file": "13_brain_games.png",
+      "scene": "TownScene",
+      "panel": "#brain-button",
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "errors": []
+    },
+    {
+      "name": "14_avatar_creator",
+      "file": "14_avatar_creator.png",
+      "scene": "TownScene",
+      "panel": "#creator-button",
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "errors": []
+    },
+    {
+      "name": "15_daily_activities",
+      "file": "15_daily_activities.png",
+      "scene": "TownScene",
+      "panel": "#world-today",
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "errors": []
+    },
+    {
+      "name": "16_boutique_catalogue_open",
+      "file": "16_boutique_catalogue_open.png",
+      "scene": "ClothingShopScene",
+      "state": ".world-catalogue-toggle.boutique-only",
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "errors": []
+    },
+    {
+      "name": "17_market_basket_open",
+      "file": "17_market_basket_open.png",
+      "scene": "SupermarketScene",
+      "state": ".world-catalogue-toggle.supermarket-only",
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "errors": []
+    },
+    {
+      "name": "18_home_wardrobe_open",
+      "file": "18_home_wardrobe_open.png",
+      "scene": "HomeScene",
+      "state": "#wardrobe-button",
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "errors": []
+    },
+    {
+      "name": "19_home_settings_open",
+      "file": "19_home_settings_open.png",
+      "scene": "HomeScene",
+      "state": "#world-settings-button",
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "errors": []
+    },
+    {
+      "name": "20_town_sunset",
+      "file": "20_town_sunset.png",
+      "scene": "TownScene",
+      "state": "sunset",
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "errors": []
+    },
+    {
+      "name": "21_town_night",
+      "file": "21_town_night.png",
+      "scene": "TownScene",
+      "state": "night",
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "errors": []
+    }
+  ]
+}

@@ -1,0 +1,240 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" width="1200" height="800">
+  <defs>
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#FFFDF7"/>
+      <stop offset="100%" stop-color="#F7EFF8"/>
+    </linearGradient>
+    <filter id="softShadow" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="5" stdDeviation="6" flood-color="#663D63" flood-opacity="0.12"/>
+    </filter>
+    <filter id="cardShadow" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="4" stdDeviation="4" flood-color="#663D63" flood-opacity="0.10"/>
+    </filter>
+    <linearGradient id="candyPink" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#FFA8D3"/>
+      <stop offset="100%" stop-color="#FF7AB8"/>
+    </linearGradient>
+    <linearGradient id="candyYellow" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#FFE785"/>
+      <stop offset="100%" stop-color="#FFCE52"/>
+    </linearGradient>
+    <linearGradient id="candyMint" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#BEF2E3"/>
+      <stop offset="100%" stop-color="#8FE0CA"/>
+    </linearGradient>
+    <linearGradient id="candyBlue" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#D4F3FA"/>
+      <stop offset="100%" stop-color="#9DE0F0"/>
+    </linearGradient>
+    <linearGradient id="candyLavender" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#DDCFF7"/>
+      <stop offset="100%" stop-color="#B79FE6"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="800" fill="url(#bgGrad)"/>
+
+  <!-- Header -->
+  <rect x="40" y="30" width="1120" height="70" rx="20" fill="#FFFFFF" filter="url(#cardShadow)"/>
+  <circle cx="80" cy="65" r="22" fill="url(#candyPink)"/>
+  <text x="80" y="72" font-family="'Nunito', 'Segoe UI', sans-serif" font-size="20" font-weight="900" fill="#FFFFFF" text-anchor="middle">★</text>
+  <text x="120" y="73" font-family="'Nunito', 'Segoe UI', sans-serif" font-size="26" font-weight="900" fill="#663D63">01 · ART DIRECTION BOARD : "SOFT CANDY TOWN"</text>
+  <text x="1000" y="72" font-family="'Nunito', 'Segoe UI', sans-serif" font-size="14" font-weight="700" fill="#B38CAE">VISUAL IDENTITY TARGET</text>
+
+  <!-- 1. COLOR PALETTE SECTION -->
+  <rect x="40" y="120" width="540" height="310" rx="24" fill="#FFFFFF" filter="url(#cardShadow)"/>
+  <text x="70" y="155" font-family="'Nunito', 'Segoe UI', sans-serif" font-size="18" font-weight="800" fill="#663D63">1. COLOR PALETTE SYSTEM</text>
+  
+  <!-- Swatches Primary -->
+  <g transform="translate(70, 175)">
+    <!-- Strawberry Pink -->
+    <rect x="0" y="0" width="60" height="60" rx="16" fill="#FF8FC4" stroke="#663D63" stroke-width="2" filter="url(#softShadow)"/>
+    <text x="30" y="76" font-family="'Nunito', 'Segoe UI', sans-serif" font-size="11" font-weight="700" fill="#663D63" text-anchor="middle">Strawberry</text>
+    <text x="30" y="90" font-family="'Nunito', 'Segoe UI', sans-serif" font-size="10" fill="#9C7896" text-anchor="middle">#FF8FC4</text>
+
+    <!-- Sun Yellow -->
+    <rect x="75" y="0" width="60" height="60" rx="16" fill="#FFD96F" stroke="#663D63" stroke-width="2" filter="url(#softShadow)"/>
+    <text x="105" y="76" font-family="'Nunito', 'Segoe UI', sans-serif" font-size="11" font-weight="700" fill="#663D63" text-anchor="middle">Sun Gold</text>
+    <text x="105" y="90" font-family="'Nunito', 'Segoe UI', sans-serif" font-size="10" fill="#9C7896" text-anchor="middle">#FFD96F</text>
+
+    <!-- Mint Aqua -->
+    <rect x="150" y="0" width="60" height="60" rx="16" fill="#A8EAD7" stroke="#663D63" stroke-width="2" filter="url(#softShadow)"/>
+    <text x="180" y="76" font-family="'Nunito', 'Segoe UI', sans-serif" font-size="11" font-weight="700" fill="#663D63" text-anchor="middle">Fresh Mint</text>
+    <text x="180" y="90" font-family="'Nunito', 'Segoe UI', sans-serif" font-size="10" fill="#9C7896" text-anchor="middle">#A8EAD7</text>
+
+    <!-- Sky Blue -->
+    <rect x="225" y="0" width="60" height="60" rx="16" fill="#BDEAF5" stroke="#663D63" stroke-width="2" filter="url(#softShadow)"/>
+    <text x="255" y="76" font-family="'Nunito', 'Segoe UI', sans-serif" font-size="11" font-weight="700" fill="#663D63" text-anchor="middle">Sky Blue</text>
+    <text x="255" y="90" font-family="'Nunito', 'Segoe UI', sans-serif" font-size="10" fill="#9C7896" text-anchor="middle">#BDEAF5</text>
+
+    <!-- Lavender -->
+    <rect x="300" y="0" width="60" height="60" rx="16" fill="#CAB8F1" stroke="#663D63" stroke-width="2" filter="url(#softShadow)"/>
+    <text x="330" y="76" font-family="'Nunito', 'Segoe UI', sans-serif" font-size="11" font-weight="700" fill="#663D63" text-anchor="middle">Lavender</text>
+    <text x="330" y="90" font-family="'Nunito', 'Segoe UI', sans-serif" font-size="10" fill="#9C7896" text-anchor="middle">#CAB8F1</text>
+
+    <!-- Peach -->
+    <rect x="375" y="0" width="60" height="60" rx="16" fill="#FFC4A8" stroke="#663D63" stroke-width="2" filter="url(#softShadow)"/>
+    <text x="405" y="76" font-family="'Nunito', 'Segoe UI', sans-serif" font-size="11" font-weight="700" fill="#663D63" text-anchor="middle">Warm Peach</text>
+    <text x="405" y="90" font-family="'Nunito', 'Segoe UI', sans-serif" font-size="10" fill="#9C7896" text-anchor="middle">#FFC4A8</text>
+  </g>
+
+  <!-- Foundation neutrals & outlines -->
+  <g transform="translate(70, 290)">
+    <!-- Cream White -->
+    <rect x="0" y="0" width="95" height="42" rx="12" fill="#FFFDF7" stroke="#663D63" stroke-width="2"/>
+    <text x="47" y="24" font-family="'Nunito', 'Segoe UI', sans-serif" font-size="11" font-weight="700" fill="#663D63" text-anchor="middle">Cream Base</text>
+    <text x="47" y="36" font-family="'Nunito', 'Segoe UI', sans-serif" font-size="9" fill="#9C7896" text-anchor="middle">#FFFDF7</text>
+
+    <!-- Outline Plum -->
+    <rect x="110" y="0" width="95" height="42" rx="12" fill="#663D63" stroke="#FFFFFF" stroke-width="2"/>
+    <text x="157" y="24" font-family="'Nunito', 'Segoe UI', sans-serif" font-size="11" font-weight="700" fill="#FFFFFF" text-anchor="middle">Soft Plum Ink</text>
+    <text x="157" y="36" font-family="'Nunito', 'Segoe UI', sans-serif" font-size="9" fill="#E8D1E5" text-anchor="middle">#663D63</text>
+
+    <!-- Warm Plum Mid -->
+    <rect x="220" y="0" width="95" height="42" rx="12" fill="#754C72"/>
+    <text x="267" y="24" font-family="'Nunito', 'Segoe UI', sans-serif" font-size="11" font-weight="700" fill="#FFFFFF" text-anchor="middle">Medium Plum</text>
+    <text x="267" y="36" font-family="'Nunito', 'Segoe UI', sans-serif" font-size="9" fill="#E8D1E5" text-anchor="middle">#754C72</text>
+
+    <!-- Contact Shadow -->
+    <rect x="330" y="0" width="105" height="42" rx="12" fill="#663D63" opacity="0.18"/>
+    <text x="382" y="24" font-family="'Nunito', 'Segoe UI', sans-serif" font-size="11" font-weight="700" fill="#663D63" text-anchor="middle">Contact Shadow</text>
+    <text x="382" y="36" font-family="'Nunito', 'Segoe UI', sans-serif" font-size="9" fill="#663D63" text-anchor="middle">rgba(102,61,99,.18)</text>
+  </g>
+
+  <!-- Rule note -->
+  <rect x="70" y="355" width="480" height="52" rx="12" fill="#FDF3FA"/>
+  <text x="85" y="376" font-family="'Nunito', 'Segoe UI', sans-serif" font-size="11" font-weight="800" fill="#FF7AB8">RULE:</text>
+  <text x="135" y="376" font-family="'Nunito', 'Segoe UI', sans-serif" font-size="11" fill="#663D63">No harsh #000000 black outlines. All line art uses soft plum #663D63.</text>
+  <text x="85" y="394" font-family="'Nunito', 'Segoe UI', sans-serif" font-size="11" fill="#663D63">Surfaces use creamy paper tone #FFFDF7 with balanced pastel accents.</text>
+
+  <!-- 2. SHAPE & FORM SYSTEM -->
+  <rect x="620" y="120" width="540" height="310" rx="24" fill="#FFFFFF" filter="url(#cardShadow)"/>
+  <text x="650" y="155" font-family="'Nunito', 'Segoe UI', sans-serif" font-size="18" font-weight="800" fill="#663D63">2. SHAPE &amp; FORM LANGUAGE</text>
+
+  <g transform="translate(650, 180)">
+    <!-- Candy Button -->
+    <g transform="translate(0, 0)">
+      <rect x="0" y="4" width="130" height="46" rx="23" fill="#663D63" opacity="0.2"/>
+      <rect x="0" y="0" width="130" height="46" rx="23" fill="url(#candyPink)" stroke="#FFFFFF" stroke-width="2"/>
+      <path d="M 12 12 Q 65 6 118 12 Q 65 18 12 12" fill="#FFFFFF" opacity="0.45"/>
+      <text x="65" y="28" font-family="'Nunito', 'Segoe UI', sans-serif" font-size="13" font-weight="800" fill="#FFFFFF" text-anchor="middle">Candy Pill Button</text>
+    </g>
+
+    <!-- Card Shape -->
+    <g transform="translate(150, 0)">
+      <rect x="0" y="0" width="130" height="90" rx="20" fill="#FFFDF7" stroke="#663D63" stroke-width="2" filter="url(#cardShadow)"/>
+      <rect x="10" y="10" width="110" height="45" rx="14" fill="#BDEAF5" stroke="#FFFFFF" stroke-width="1.5"/>
+      <text x="65" y="75" font-family="'Nunito', 'Segoe UI', sans-serif" font-size="11" font-weight="700" fill="#663D63" text-anchor="middle">Toy Frame Card</text>
+    </g>
+
+    <!-- Speech Bubble -->
+    <g transform="translate(300, 0)">
+      <path d="M 15 0 L 125 0 Q 140 0 140 15 L 140 50 Q 140 65 125 65 L 45 65 L 25 82 L 30 65 L 15 65 Q 0 65 0 50 L 0 15 Q 0 0 15 0 Z" fill="#FFFDF7" stroke="#663D63" stroke-width="2" filter="url(#cardShadow)"/>
+      <text x="70" y="32" font-family="'Nunito', 'Segoe UI', sans-serif" font-size="12" font-weight="800" fill="#663D63" text-anchor="middle">Speech Bubble</text>
+      <text x="70" y="48" font-family="'Nunito', 'Segoe UI', sans-serif" font-size="10" fill="#9C7896" text-anchor="middle">Curved tail pointer</text>
+    </g>
+
+    <!-- Miniature Building / Prop -->
+    <g transform="translate(0, 110)">
+      <path d="M 15 35 L 75 5 L 135 35 L 135 100 L 15 100 Z" fill="#FFC4A8" stroke="#663D63" stroke-width="2"/>
+      <rect x="35" y="50" width="30" height="30" rx="8" fill="#FFFDF7" stroke="#663D63" stroke-width="2"/>
+      <rect x="85" y="60" width="30" height="40" rx="6" fill="#A8EAD7" stroke="#663D63" stroke-width="2"/>
+      <text x="75" y="118" font-family="'Nunito', 'Segoe UI', sans-serif" font-size="11" font-weight="700" fill="#663D63" text-anchor="middle">Diorama Architecture</text>
+    </g>
+
+    <!-- Rounded Furniture -->
+    <g transform="translate(170, 110)">
+      <!-- Soft chair -->
+      <rect x="10" y="20" width="80" height="50" rx="18" fill="#CAB8F1" stroke="#663D63" stroke-width="2"/>
+      <rect x="0" y="45" width="100" height="28" rx="14" fill="#B79FE6" stroke="#663D63" stroke-width="2"/>
+      <rect x="15" y="73" width="12" height="22" rx="6" fill="#754C72"/>
+      <rect x="73" y="73" width="12" height="22" rx="6" fill="#754C72"/>
+      <ellipse cx="50" cy="98" rx="42" ry="7" fill="#663D63" opacity="0.18"/>
+      <text x="50" y="118" font-family="'Nunito', 'Segoe UI', sans-serif" font-size="11" font-weight="700" fill="#663D63" text-anchor="middle">Chubby Furniture</text>
+    </g>
+
+    <!-- Motifs -->
+    <g transform="translate(320, 120)">
+      <path d="M 25 0 L 32 17 L 50 17 L 36 28 L 41 45 L 25 34 L 9 45 L 14 28 L 0 17 L 18 17 Z" fill="#FFD96F" stroke="#663D63" stroke-width="1.5"/>
+      <circle cx="80" cy="20" r="14" fill="#FF8FC4" stroke="#663D63" stroke-width="1.5"/>
+      <circle cx="72" cy="14" r="3.5" fill="#FFFFFF"/>
+      <path d="M 120 25 C 110 10 135 5 140 18 C 145 5 170 10 160 25 C 148 40 140 46 140 46 C 140 46 132 40 120 25 Z" fill="#FFA8D3" stroke="#663D63" stroke-width="1.5"/>
+      <text x="85" y="75" font-family="'Nunito', 'Segoe UI', sans-serif" font-size="11" font-weight="700" fill="#663D63" text-anchor="middle">Stars · Cloud Pearls · Hearts</text>
+    </g>
+  </g>
+
+  <!-- 3. LINE WEIGHT & DEPTH RULES -->
+  <rect x="40" y="460" width="540" height="300" rx="24" fill="#FFFFFF" filter="url(#cardShadow)"/>
+  <text x="70" y="495" font-family="'Nunito', 'Segoe UI', sans-serif" font-size="18" font-weight="800" fill="#663D63">3. LINE WEIGHT &amp; LIGHTING RULES</text>
+
+  <g transform="translate(70, 520)">
+    <!-- Line weight scale -->
+    <line x1="0" y1="15" x2="160" y2="15" stroke="#663D63" stroke-width="3" stroke-linecap="round"/>
+    <text x="180" y="20" font-family="'Nunito', 'Segoe UI', sans-serif" font-size="12" font-weight="700" fill="#663D63">3.0 px · Outer Character &amp; UI Shell</text>
+
+    <line x1="0" y1="45" x2="160" y2="45" stroke="#663D63" stroke-width="2" stroke-linecap="round"/>
+    <text x="180" y="50" font-family="'Nunito', 'Segoe UI', sans-serif" font-size="12" font-weight="700" fill="#663D63">2.0 px · Furniture &amp; Interactive Props</text>
+
+    <line x1="0" y1="75" x2="160" y2="75" stroke="#663D63" stroke-width="1.5" stroke-linecap="round"/>
+    <text x="180" y="80" font-family="'Nunito', 'Segoe UI', sans-serif" font-size="12" font-weight="700" fill="#663D63">1.5 px · Facial Features &amp; Inner Seams</text>
+
+    <line x1="0" y1="105" x2="160" y2="105" stroke="#FFFFFF" stroke-width="2.5" stroke-linecap="round"/>
+    <text x="180" y="110" font-family="'Nunito', 'Segoe UI', sans-serif" font-size="12" font-weight="700" fill="#663D63">2.5 px · Crisp White Separation Border</text>
+  </g>
+
+  <!-- Lighting breakdown demonstration -->
+  <g transform="translate(70, 660)">
+    <g transform="translate(30, 0)">
+      <ellipse cx="60" cy="55" rx="55" ry="12" fill="#663D63" opacity="0.18"/>
+      <rect x="10" y="5" width="100" height="50" rx="16" fill="url(#candyPink)" stroke="#663D63" stroke-width="2"/>
+      <path d="M 22 14 Q 60 9 98 14 Q 60 19 22 14" fill="#FFFFFF" opacity="0.6"/>
+      <circle cx="28" cy="22" r="3" fill="#FFFFFF" opacity="0.8"/>
+      <text x="60" y="80" font-family="'Nunito', 'Segoe UI', sans-serif" font-size="11" font-weight="700" fill="#663D63" text-anchor="middle">Base + Inner Gloss + Contact Shadow</text>
+    </g>
+    <g transform="translate(260, 0)">
+      <rect x="0" y="0" width="210" height="70" rx="14" fill="#F7EFF8"/>
+      <text x="15" y="24" font-family="'Nunito', 'Segoe UI', sans-serif" font-size="11" font-weight="800" fill="#754C72">LIGHTING SPECIFICATION:</text>
+      <text x="15" y="42" font-family="'Nunito', 'Segoe UI', sans-serif" font-size="10" fill="#663D63">No realistic harsh spotlights.</text>
+      <text x="15" y="56" font-family="'Nunito', 'Segoe UI', sans-serif" font-size="10" fill="#663D63">Soft top-down gloss with gentle grounded oval contact shadows.</text>
+    </g>
+  </g>
+
+  <!-- 4. VISUAL KEYWORDS & BRAND VALUES -->
+  <rect x="620" y="460" width="540" height="300" rx="24" fill="#FFFFFF" filter="url(#cardShadow)"/>
+  <text x="650" y="495" font-family="'Nunito', 'Segoe UI', sans-serif" font-size="18" font-weight="800" fill="#663D63">4. BRAND AESTHETIC KEYWORDS</text>
+
+  <g transform="translate(650, 525)">
+    <!-- Keyword chips -->
+    <rect x="0" y="0" width="110" height="38" rx="19" fill="#FDF1F7" stroke="#FF8FC4" stroke-width="1.5"/>
+    <text x="55" y="24" font-family="'Nunito', 'Segoe UI', sans-serif" font-size="13" font-weight="800" fill="#FF7AB8" text-anchor="middle">Cute · Kawaii</text>
+
+    <rect x="125" y="0" width="100" height="38" rx="19" fill="#FFF8E8" stroke="#FFD96F" stroke-width="1.5"/>
+    <text x="175" y="24" font-family="'Nunito', 'Segoe UI', sans-serif" font-size="13" font-weight="800" fill="#DE9F1D" text-anchor="middle">Warm &amp; Cozy</text>
+
+    <rect x="240" y="0" width="110" height="38" rx="19" fill="#EDFAF6" stroke="#A8EAD7" stroke-width="1.5"/>
+    <text x="295" y="24" font-family="'Nunito', 'Segoe UI', sans-serif" font-size="13" font-weight="800" fill="#3AA888" text-anchor="middle">Playful Toy</text>
+
+    <rect x="365" y="0" width="105" height="38" rx="19" fill="#F2EEFB" stroke="#CAB8F1" stroke-width="1.5"/>
+    <text x="417" y="24" font-family="'Nunito', 'Segoe UI', sans-serif" font-size="13" font-weight="800" fill="#8E6FD1" text-anchor="middle">Soft Pastel</text>
+
+    <rect x="0" y="55" width="125" height="38" rx="19" fill="#EFF9FC" stroke="#BDEAF5" stroke-width="1.5"/>
+    <text x="62" y="79" font-family="'Nunito', 'Segoe UI', sans-serif" font-size="13" font-weight="800" fill="#3D9CB5" text-anchor="middle">Digital Dollhouse</text>
+
+    <rect x="140" y="55" width="120" height="38" rx="19" fill="#FFF6F1" stroke="#FFC4A8" stroke-width="1.5"/>
+    <text x="200" y="79" font-family="'Nunito', 'Segoe UI', sans-serif" font-size="13" font-weight="800" fill="#DB7E54" text-anchor="middle">Candy Bevels</text>
+
+    <rect x="275" y="55" width="115" height="38" rx="19" fill="#FDF1F7" stroke="#FF8FC4" stroke-width="1.5"/>
+    <text x="332" y="79" font-family="'Nunito', 'Segoe UI', sans-serif" font-size="13" font-weight="800" fill="#FF7AB8" text-anchor="middle">High Contrast</text>
+
+    <rect x="405" y="55" width="85" height="38" rx="19" fill="#FFFDF7" stroke="#663D63" stroke-width="1.5"/>
+    <text x="447" y="79" font-family="'Nunito', 'Segoe UI', sans-serif" font-size="13" font-weight="800" fill="#663D63" text-anchor="middle">Touch-First</text>
+
+    <!-- Big statement box -->
+    <rect x="0" y="115" width="490" height="95" rx="18" fill="#F7EFF8" stroke="#663D63" stroke-width="1.5"/>
+    <text x="245" y="145" font-family="'Nunito', 'Segoe UI', sans-serif" font-size="14" font-weight="900" fill="#663D63" text-anchor="middle">"A PREMIUM DIGITAL DOLLHOUSE TOY"</text>
+    <text x="245" y="170" font-family="'Nunito', 'Segoe UI', sans-serif" font-size="12" fill="#754C72" text-anchor="middle">No admin dashboards. No enterprise UI. No raw system emojis.</text>
+    <text x="245" y="190" font-family="'Nunito', 'Segoe UI', sans-serif" font-size="12" font-weight="700" fill="#DE4A90" text-anchor="middle">Every element is tactile, bouncy, and intuitively understandable for ages 6–12.</text>
+  </g>
+
+</svg>

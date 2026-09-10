@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">Qian Hui Avatar City</string>
+    <string name="title_activity_main">Qian Hui Avatar City</string>
+    <string name="package_name">com.qianhui.avatarcity</string>
+    <string name="custom_url_scheme">com.qianhui.avatarcity</string>
+</resources>

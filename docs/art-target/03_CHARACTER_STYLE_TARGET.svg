@@ -1,0 +1,320 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" width="1200" height="800">
+  <defs>
+    <linearGradient id="bgGrad3" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#FFFDF7"/>
+      <stop offset="100%" stop-color="#F5F0FA"/>
+    </linearGradient>
+    <filter id="charShadow" x="-15%" y="-15%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="4" stdDeviation="5" flood-color="#663D63" flood-opacity="0.12"/>
+    </filter>
+    <linearGradient id="blondHair" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#FFE8A3"/>
+      <stop offset="100%" stop-color="#E2B35B"/>
+    </linearGradient>
+    <linearGradient id="pinaforeBlue" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#BEE8F5"/>
+      <stop offset="100%" stop-color="#89CDE3"/>
+    </linearGradient>
+    <linearGradient id="candyPink3" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#FFA8D3"/>
+      <stop offset="100%" stop-color="#FF7AB8"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="800" fill="url(#bgGrad3)"/>
+
+  <!-- Header Banner -->
+  <rect x="40" y="25" width="1120" height="65" rx="20" fill="#FFFFFF" filter="url(#charShadow)"/>
+  <circle cx="75" cy="57" r="20" fill="url(#candyPink3)"/>
+  <text x="75" y="64" font-family="'Nunito', 'Segoe UI', sans-serif" font-size="18" font-weight="900" fill="#FFFFFF" text-anchor="middle">★</text>
+  <text x="110" y="64" font-family="'Nunito', 'Segoe UI', sans-serif" font-size="24" font-weight="900" fill="#663D63">03 · CHARACTER STYLE TARGET : 2.5D CHIBI ANATOMY &amp; POSES</text>
+  <text x="1000" y="63" font-family="'Nunito', 'Segoe UI', sans-serif" font-size="13" font-weight="700" fill="#B38CAE">PROPORTION: 48% HEAD</text>
+
+  <!-- 1. MAIN CHARACTER HERO ANATOMY (LEFT) -->
+  <g transform="translate(40, 110)">
+    <rect x="0" y="0" width="450" height="650" rx="24" fill="#FFFFFF" stroke="#663D63" stroke-width="2.5" filter="url(#charShadow)"/>
+    <text x="35" y="42" font-family="'Nunito', sans-serif" font-size="18" font-weight="800" fill="#663D63">HERO CHIBI PROPORTIONS</text>
+    <text x="35" y="62" font-family="'Nunito', sans-serif" font-size="12" font-weight="700" fill="#B38CAE">Total height: 320px | Head: 155px (48%) | Body: 100px (31%) | Legs: 65px (21%)</text>
+
+    <!-- Height Proportion Ruler -->
+    <g transform="translate(45, 90)">
+      <line x1="0" y1="0" x2="0" y2="340" stroke="#CAB8F1" stroke-width="2" stroke-dasharray="4,4"/>
+      <!-- Head bracket -->
+      <line x1="-8" y1="0" x2="8" y2="0" stroke="#754C72" stroke-width="2"/>
+      <line x1="-8" y1="160" x2="8" y2="160" stroke="#754C72" stroke-width="2"/>
+      <text x="-14" y="85" font-family="'Nunito', sans-serif" font-size="12" font-weight="800" fill="#FF7AB8" text-anchor="end">HEAD 48%</text>
+
+      <!-- Body bracket -->
+      <line x1="-8" y1="265" x2="8" y2="265" stroke="#754C72" stroke-width="2"/>
+      <text x="-14" y="215" font-family="'Nunito', sans-serif" font-size="12" font-weight="800" fill="#89CDE3" text-anchor="end">BODY 31%</text>
+
+      <!-- Legs bracket -->
+      <line x1="-8" y1="330" x2="8" y2="330" stroke="#754C72" stroke-width="2"/>
+      <text x="-14" y="300" font-family="'Nunito', sans-serif" font-size="12" font-weight="800" fill="#DE9F1D" text-anchor="end">LEGS 21%</text>
+    </g>
+
+    <!-- Detailed 2.5D Chibi Girl Model -->
+    <g transform="translate(245, 90)">
+      <!-- Contact Shadow -->
+      <ellipse cx="0" cy="335" rx="75" ry="16" fill="#663D63" opacity="0.18"/>
+
+      <!-- Back Hair Layer -->
+      <path d="M -70 50 Q -85 110 -65 170 Q -45 195 -30 185 Q -10 180 0 185 Q 20 185 35 185 Q 55 195 70 165 Q 85 110 70 50 Z" fill="url(#blondHair)" stroke="#663D63" stroke-width="2.5"/>
+
+      <!-- Legs & Shoes -->
+      <!-- Left leg & shoe -->
+      <rect x="-32" y="260" width="22" height="50" rx="10" fill="#FFE5D6" stroke="#663D63" stroke-width="2"/>
+      <rect x="-35" y="295" width="28" height="35" rx="14" fill="#FFA8D3" stroke="#663D63" stroke-width="2.5"/>
+      <rect x="-35" y="290" width="28" height="10" rx="5" fill="#FFFFFF" stroke="#663D63" stroke-width="1.5"/>
+      <circle cx="-21" cy="295" r="4" fill="#FF7AB8"/>
+
+      <!-- Right leg & shoe -->
+      <rect x="10" y="260" width="22" height="50" rx="10" fill="#FFE5D6" stroke="#663D63" stroke-width="2"/>
+      <rect x="7" y="295" width="28" height="35" rx="14" fill="#FFA8D3" stroke="#663D63" stroke-width="2.5"/>
+      <rect x="7" y="290" width="28" height="10" rx="5" fill="#FFFFFF" stroke="#663D63" stroke-width="1.5"/>
+      <circle cx="21" cy="295" r="4" fill="#FF7AB8"/>
+
+      <!-- Body / Bunny Pinafore Dress -->
+      <!-- White blouse underlay -->
+      <rect x="-42" y="160" width="84" height="60" rx="20" fill="#FFFFFF" stroke="#663D63" stroke-width="2.5"/>
+      <!-- Blue pinafore skirt & bib -->
+      <path d="M -38 185 L -48 265 Q 0 275 48 265 L 38 185 Z" fill="url(#pinaforeBlue)" stroke="#663D63" stroke-width="2.5"/>
+      <rect x="-24" y="180" width="48" height="50" rx="12" fill="url(#pinaforeBlue)" stroke="#663D63" stroke-width="2"/>
+      <!-- Pinafore straps -->
+      <rect x="-30" y="162" width="12" height="35" rx="6" fill="#89CDE3" stroke="#663D63" stroke-width="1.5"/>
+      <rect x="18" y="162" width="12" height="35" rx="6" fill="#89CDE3" stroke="#663D63" stroke-width="1.5"/>
+      <!-- Cute Bunny Pocket on Bib -->
+      <rect x="-16" y="200" width="32" height="32" rx="10" fill="#FFFFFF" stroke="#663D63" stroke-width="1.5"/>
+      <!-- Bunny ears on pocket -->
+      <ellipse cx="-7" cy="195" rx="4" ry="9" fill="#FFFFFF" stroke="#663D63" stroke-width="1.2"/>
+      <ellipse cx="7" cy="195" rx="4" ry="9" fill="#FFFFFF" stroke="#663D63" stroke-width="1.2"/>
+      <ellipse cx="-7" cy="196" rx="2" ry="6" fill="#FFA8D3"/>
+      <ellipse cx="7" cy="196" rx="2" ry="6" fill="#FFA8D3"/>
+      <circle cx="-4" cy="212" r="1.5" fill="#663D63"/>
+      <circle cx="4" cy="212" r="1.5" fill="#663D63"/>
+      <ellipse cx="0" cy="216" rx="2" ry="1.2" fill="#FFA8D3"/>
+
+      <!-- Arms / Hands -->
+      <rect x="-56" y="170" width="18" height="55" rx="9" fill="#FFE5D6" stroke="#663D63" stroke-width="2"/>
+      <rect x="38" y="170" width="18" height="55" rx="9" fill="#FFE5D6" stroke="#663D63" stroke-width="2"/>
+      <circle cx="-47" cy="225" r="9" fill="#FFE5D6" stroke="#663D63" stroke-width="2"/>
+      <circle cx="47" cy="225" r="9" fill="#FFE5D6" stroke="#663D63" stroke-width="2"/>
+
+      <!-- Head & Neck -->
+      <rect x="-14" y="145" width="28" height="24" rx="8" fill="#FFE5D6"/>
+      <!-- Large Rounded Face -->
+      <circle cx="0" cy="85" r="75" fill="#FFE5D6" stroke="#663D63" stroke-width="2.5"/>
+
+      <!-- Volumetric Hair Waves (Front) -->
+      <!-- Side bangs -->
+      <path d="M -70 50 Q -80 110 -65 155 Q -55 160 -50 145 Q -65 95 -55 60 Z" fill="url(#blondHair)" stroke="#663D63" stroke-width="2"/>
+      <path d="M 70 50 Q 80 110 65 155 Q 55 160 50 145 Q 65 95 55 60 Z" fill="url(#blondHair)" stroke="#663D63" stroke-width="2"/>
+      <!-- Soft forehead bangs -->
+      <path d="M -60 50 Q -30 20 0 45 Q 30 20 60 50 Q 40 75 20 60 Q 0 85 -20 60 Q -40 75 -60 50 Z" fill="url(#blondHair)" stroke="#663D63" stroke-width="2.5"/>
+
+      <!-- Pearl Flower Headband -->
+      <path d="M -65 52 Q 0 10 65 52" fill="none" stroke="#FFFFFF" stroke-width="6" stroke-linecap="round"/>
+      <path d="M -65 52 Q 0 10 65 52" fill="none" stroke="#663D63" stroke-width="1.5"/>
+      <!-- Pearls and Flower -->
+      <circle cx="-45" cy="35" r="5" fill="#FFFFFF" stroke="#663D63" stroke-width="1"/>
+      <circle cx="-25" cy="25" r="5" fill="#FFFFFF" stroke="#663D63" stroke-width="1"/>
+      <circle cx="25" cy="25" r="5" fill="#FFFFFF" stroke="#663D63" stroke-width="1"/>
+      <circle cx="45" cy="35" r="5" fill="#FFFFFF" stroke="#663D63" stroke-width="1"/>
+      <!-- Center Flower -->
+      <circle cx="0" cy="20" r="10" fill="#FFA8D3" stroke="#663D63" stroke-width="1.5"/>
+      <circle cx="0" cy="20" r="4.5" fill="#FFD96F"/>
+
+      <!-- Big Kawaii Eyes with Double Sparkles -->
+      <!-- Left Eye -->
+      <ellipse cx="-28" cy="95" rx="12" ry="18" fill="#663D63"/>
+      <circle cx="-32" cy="88" r="5.5" fill="#FFFFFF"/>
+      <circle cx="-24" cy="102" r="3" fill="#FFFFFF"/>
+      <!-- Eye lashes -->
+      <path d="M -40 85 Q -30 78 -16 85" fill="none" stroke="#663D63" stroke-width="2.5" stroke-linecap="round"/>
+
+      <!-- Right Eye -->
+      <ellipse cx="28" cy="95" rx="12" ry="18" fill="#663D63"/>
+      <circle cx="24" cy="88" r="5.5" fill="#FFFFFF"/>
+      <circle cx="32" cy="102" r="3" fill="#FFFFFF"/>
+      <!-- Eye lashes -->
+      <path d="M 16 85 Q 30 78 40 85" fill="none" stroke="#663D63" stroke-width="2.5" stroke-linecap="round"/>
+
+      <!-- Blushing Cheeks -->
+      <ellipse cx="-44" cy="118" rx="14" ry="7" fill="#FF8FC4" opacity="0.65"/>
+      <ellipse cx="44" cy="118" rx="14" ry="7" fill="#FF8FC4" opacity="0.65"/>
+
+      <!-- Tiny Nose & Cute Smiling Mouth -->
+      <circle cx="0" cy="108" r="1.5" fill="#C79483"/>
+      <path d="M -8 120 Q 0 130 8 120" fill="none" stroke="#B3496C" stroke-width="2.5" stroke-linecap="round"/>
+    </g>
+
+    <!-- Key Anatomy Rules -->
+    <rect x="25" y="475" width="400" height="150" rx="16" fill="#FDF3FA" stroke="#663D63" stroke-width="1.5"/>
+    <text x="40" y="502" font-family="'Nunito', sans-serif" font-size="13" font-weight="800" fill="#754C72">CRITICAL CHIBI ANATOMY RULES:</text>
+    <text x="40" y="525" font-family="'Nunito', sans-serif" font-size="12" fill="#663D63">1. Face is large, rounded, and clean — minimum micro-detail.</text>
+    <text x="40" y="545" font-family="'Nunito', sans-serif" font-size="12" fill="#663D63">2. Eyes have distinct double sparkle highlights (top-left &amp; lower-right).</text>
+    <text x="40" y="565" font-family="'Nunito', sans-serif" font-size="12" fill="#663D63">3. Blush cheeks are soft diffused ovals placed under outer eyes.</text>
+    <text x="40" y="585" font-family="'Nunito', sans-serif" font-size="12" fill="#663D63">4. Always grounded by a soft contact shadow (ellipse #663D63 18%).</text>
+    <text x="40" y="605" font-family="'Nunito', sans-serif" font-size="12" fill="#DE4A90" font-weight="700">5. Handheld props snap cleanly into hands at (±47px, 225px).</text>
+  </g>
+
+  <!-- 2. EXPRESSIONS & POSES (RIGHT) -->
+  <g transform="translate(520, 110)">
+    <rect x="0" y="0" width="640" height="650" rx="24" fill="#FFFFFF" stroke="#663D63" stroke-width="2.5" filter="url(#charShadow)"/>
+    
+    <!-- EXPRESSIONS SECTION -->
+    <text x="35" y="42" font-family="'Nunito', sans-serif" font-size="18" font-weight="800" fill="#663D63">EMOTIONAL EXPRESSIONS</text>
+
+    <!-- 6 Expression Avatars in a Row -->
+    <g transform="translate(35, 65)">
+      <!-- Neutral -->
+      <g transform="translate(40, 40)">
+        <circle cx="0" cy="0" r="36" fill="#FFE5D6" stroke="#663D63" stroke-width="2"/>
+        <ellipse cx="-13" cy="3" rx="5" ry="8" fill="#663D63"/><ellipse cx="13" cy="3" rx="5" ry="8" fill="#663D63"/>
+        <circle cx="-15" cy="0" r="2" fill="#FFFFFF"/><circle cx="11" cy="0" r="2" fill="#FFFFFF"/>
+        <ellipse cx="-20" cy="14" rx="7" ry="3.5" fill="#FF8FC4" opacity="0.6"/><ellipse cx="20" cy="14" rx="7" ry="3.5" fill="#FF8FC4" opacity="0.6"/>
+        <path d="M -4 16 Q 0 21 4 16" fill="none" stroke="#663D63" stroke-width="2" stroke-linecap="round"/>
+        <text x="0" y="54" font-family="'Nunito', sans-serif" font-size="11" font-weight="800" fill="#663D63" text-anchor="middle">Neutral</text>
+      </g>
+
+      <!-- Happy / Smiling -->
+      <g transform="translate(135, 40)">
+        <circle cx="0" cy="0" r="36" fill="#FFE5D6" stroke="#663D63" stroke-width="2"/>
+        <path d="M -18 3 Q -13 -4 -8 3" fill="none" stroke="#663D63" stroke-width="2.5" stroke-linecap="round"/>
+        <path d="M 8 3 Q 13 -4 18 3" fill="none" stroke="#663D63" stroke-width="2.5" stroke-linecap="round"/>
+        <ellipse cx="-20" cy="14" rx="7" ry="3.5" fill="#FF8FC4" opacity="0.7"/><ellipse cx="20" cy="14" rx="7" ry="3.5" fill="#FF8FC4" opacity="0.7"/>
+        <path d="M -6 14 Q 0 24 6 14 Z" fill="#FF7AB8" stroke="#663D63" stroke-width="1.5"/>
+        <text x="0" y="54" font-family="'Nunito', sans-serif" font-size="11" font-weight="800" fill="#663D63" text-anchor="middle">Happy</text>
+      </g>
+
+      <!-- Excited (Stars) -->
+      <g transform="translate(230, 40)">
+        <circle cx="0" cy="0" r="36" fill="#FFE5D6" stroke="#663D63" stroke-width="2"/>
+        <text x="-13" y="10" font-family="'Nunito', sans-serif" font-size="18" font-weight="900" fill="#FFD96F" text-anchor="middle">★</text>
+        <text x="13" y="10" font-family="'Nunito', sans-serif" font-size="18" font-weight="900" fill="#FFD96F" text-anchor="middle">★</text>
+        <ellipse cx="-20" cy="14" rx="7" ry="3.5" fill="#FF8FC4" opacity="0.8"/><ellipse cx="20" cy="14" rx="7" ry="3.5" fill="#FF8FC4" opacity="0.8"/>
+        <ellipse cx="0" cy="18" rx="6" ry="8" fill="#B3496C"/>
+        <text x="0" y="54" font-family="'Nunito', sans-serif" font-size="11" font-weight="800" fill="#663D63" text-anchor="middle">Excited</text>
+      </g>
+
+      <!-- Surprised -->
+      <g transform="translate(325, 40)">
+        <circle cx="0" cy="0" r="36" fill="#FFE5D6" stroke="#663D63" stroke-width="2"/>
+        <ellipse cx="-13" cy="2" rx="7" ry="10" fill="#663D63"/><ellipse cx="13" cy="2" rx="7" ry="10" fill="#663D63"/>
+        <circle cx="-15" cy="-2" r="3" fill="#FFFFFF"/><circle cx="11" cy="-2" r="3" fill="#FFFFFF"/>
+        <circle cx="0" cy="18" r="6" fill="#B3496C"/>
+        <text x="0" y="54" font-family="'Nunito', sans-serif" font-size="11" font-weight="800" fill="#663D63" text-anchor="middle">Surprised</text>
+      </g>
+
+      <!-- Sleepy -->
+      <g transform="translate(420, 40)">
+        <circle cx="0" cy="0" r="36" fill="#FFE5D6" stroke="#663D63" stroke-width="2"/>
+        <path d="M -18 3 Q -13 9 -8 3" fill="none" stroke="#663D63" stroke-width="2.5" stroke-linecap="round"/>
+        <path d="M 8 3 Q 13 9 18 3" fill="none" stroke="#663D63" stroke-width="2.5" stroke-linecap="round"/>
+        <path d="M -4 16 Q 0 19 4 16" fill="none" stroke="#663D63" stroke-width="1.5" stroke-linecap="round"/>
+        <text x="24" y="-8" font-family="'Nunito', sans-serif" font-size="14" font-weight="900" fill="#CAB8F1">zZ</text>
+        <text x="0" y="54" font-family="'Nunito', sans-serif" font-size="11" font-weight="800" fill="#663D63" text-anchor="middle">Sleepy</text>
+      </g>
+
+      <!-- Eating -->
+      <g transform="translate(515, 40)">
+        <circle cx="0" cy="0" r="36" fill="#FFE5D6" stroke="#663D63" stroke-width="2"/>
+        <path d="M -18 3 Q -13 -3 -8 3" fill="none" stroke="#663D63" stroke-width="2.5" stroke-linecap="round"/>
+        <path d="M 8 3 Q 13 -3 18 3" fill="none" stroke="#663D63" stroke-width="2.5" stroke-linecap="round"/>
+        <!-- Full cheeks -->
+        <ellipse cx="-20" cy="14" rx="9" ry="5" fill="#FF8FC4" opacity="0.8"/><ellipse cx="20" cy="14" rx="9" ry="5" fill="#FF8FC4" opacity="0.8"/>
+        <ellipse cx="0" cy="17" rx="6" ry="5" fill="#B3496C"/>
+        <!-- Crumb & heart -->
+        <circle cx="10" cy="22" r="1.5" fill="#FFD96F"/>
+        <text x="18" y="-4" font-family="'Nunito', sans-serif" font-size="12" fill="#FF7AB8">♥</text>
+        <text x="0" y="54" font-family="'Nunito', sans-serif" font-size="11" font-weight="800" fill="#663D63" text-anchor="middle">Eating</text>
+      </g>
+    </g>
+
+    <!-- POSES SECTION -->
+    <text x="35" y="215" font-family="'Nunito', sans-serif" font-size="18" font-weight="800" fill="#663D63">INTERACTION POSES</text>
+
+    <g transform="translate(35, 240)">
+      <!-- 1. Standing Idle -->
+      <g transform="translate(45, 0)">
+        <ellipse cx="0" cy="165" rx="35" ry="9" fill="#663D63" opacity="0.18"/>
+        <!-- Mini chibi body -->
+        <circle cx="0" cy="40" r="32" fill="#FFE5D6" stroke="#663D63" stroke-width="2"/>
+        <rect x="-18" y="70" width="36" height="50" rx="12" fill="url(#pinaforeBlue)" stroke="#663D63" stroke-width="2"/>
+        <rect x="-14" y="120" width="12" height="40" rx="6" fill="#FFA8D3" stroke="#663D63" stroke-width="1.5"/>
+        <rect x="2" y="120" width="12" height="40" rx="6" fill="#FFA8D3" stroke="#663D63" stroke-width="1.5"/>
+        <text x="0" y="195" font-family="'Nunito', sans-serif" font-size="12" font-weight="800" fill="#663D63" text-anchor="middle">1. Standing Idle</text>
+        <text x="0" y="210" font-family="'Nunito', sans-serif" font-size="10" fill="#B38CAE" text-anchor="middle">Gentle 2.8s breath</text>
+      </g>
+
+      <!-- 2. Sitting Pose -->
+      <g transform="translate(150, 20)">
+        <!-- Chair prop under character -->
+        <rect x="-35" y="65" width="70" height="75" rx="14" fill="#CAB8F1" stroke="#663D63" stroke-width="2"/>
+        <ellipse cx="0" cy="145" rx="40" ry="9" fill="#663D63" opacity="0.18"/>
+        <circle cx="0" cy="30" r="30" fill="#FFE5D6" stroke="#663D63" stroke-width="2"/>
+        <rect x="-18" y="58" width="36" height="40" rx="10" fill="url(#pinaforeBlue)" stroke="#663D63" stroke-width="2"/>
+        <!-- Legs folded forward horizontally -->
+        <rect x="-16" y="94" width="32" height="16" rx="8" fill="#FFE5D6" stroke="#663D63" stroke-width="1.5"/>
+        <rect x="8" y="90" width="22" height="18" rx="8" fill="#FFA8D3" stroke="#663D63" stroke-width="1.5"/>
+        <text x="0" y="175" font-family="'Nunito', sans-serif" font-size="12" font-weight="800" fill="#663D63" text-anchor="middle">2. Sitting</text>
+        <text x="0" y="190" font-family="'Nunito', sans-serif" font-size="10" fill="#B38CAE" text-anchor="middle">Anchored on chair</text>
+      </g>
+
+      <!-- 3. Sleeping Pose -->
+      <g transform="translate(285, 20)">
+        <!-- Bed mattress pillow -->
+        <rect x="-65" y="80" width="130" height="50" rx="12" fill="#BDEAF5" stroke="#663D63" stroke-width="2"/>
+        <rect x="-60" y="70" width="40" height="30" rx="8" fill="#FFFFFF" stroke="#663D63" stroke-width="1.5"/>
+        <!-- Horizontal character -->
+        <g transform="translate(-10, 80) rotate(15)">
+          <circle cx="-25" cy="0" r="24" fill="#FFE5D6" stroke="#663D63" stroke-width="2"/>
+          <path d="M -30 2 Q -27 6 -24 2" fill="none" stroke="#663D63" stroke-width="2"/>
+          <rect x="-4" y="-12" width="45" height="26" rx="8" fill="url(#pinaforeBlue)" stroke="#663D63" stroke-width="2"/>
+        </g>
+        <text x="35" y="60" font-family="'Nunito', sans-serif" font-size="14" font-weight="900" fill="#FFA8D3">zZ</text>
+        <text x="0" y="175" font-family="'Nunito', sans-serif" font-size="12" font-weight="800" fill="#663D63" text-anchor="middle">3. Sleeping</text>
+        <text x="0" y="190" font-family="'Nunito', sans-serif" font-size="10" fill="#B38CAE" text-anchor="middle">Bed cuddle pose</text>
+      </g>
+
+      <!-- 4. Dragging / Lifted -->
+      <g transform="translate(420, -15)">
+        <!-- Lifted shadow far below -->
+        <ellipse cx="0" cy="200" rx="42" ry="11" fill="#663D63" opacity="0.12"/>
+        <!-- Scaled 1.04x body -->
+        <g transform="scale(1.05)">
+          <circle cx="0" cy="40" r="32" fill="#FFE5D6" stroke="#663D63" stroke-width="2"/>
+          <ellipse cx="-13" cy="40" rx="6" ry="8" fill="#663D63"/><ellipse cx="13" cy="40" rx="6" ry="8" fill="#663D63"/>
+          <rect x="-18" y="70" width="36" height="50" rx="12" fill="url(#pinaforeBlue)" stroke="#663D63" stroke-width="2"/>
+          <!-- Legs dangling playfully -->
+          <rect x="-16" y="118" width="12" height="38" rx="6" fill="#FFA8D3" stroke="#663D63" stroke-width="1.5" transform="rotate(-6)"/>
+          <rect x="4" y="118" width="12" height="38" rx="6" fill="#FFA8D3" stroke="#663D63" stroke-width="1.5" transform="rotate(8)"/>
+        </g>
+        <text x="0" y="210" font-family="'Nunito', sans-serif" font-size="12" font-weight="800" fill="#DE4A90" text-anchor="middle">4. Drag Lift (1.04x)</text>
+        <text x="0" y="225" font-family="'Nunito', sans-serif" font-size="10" fill="#B38CAE" text-anchor="middle">Separated shadow</text>
+      </g>
+
+      <!-- 5. Holding Item -->
+      <g transform="translate(535, 0)">
+        <ellipse cx="0" cy="165" rx="35" ry="9" fill="#663D63" opacity="0.18"/>
+        <circle cx="0" cy="40" r="32" fill="#FFE5D6" stroke="#663D63" stroke-width="2"/>
+        <rect x="-18" y="70" width="36" height="50" rx="12" fill="url(#pinaforeBlue)" stroke="#663D63" stroke-width="2"/>
+        <rect x="-14" y="120" width="12" height="40" rx="6" fill="#FFA8D3" stroke="#663D63" stroke-width="1.5"/>
+        <rect x="2" y="120" width="12" height="40" rx="6" fill="#FFA8D3" stroke="#663D63" stroke-width="1.5"/>
+        <!-- Held prop (teddy / apple) -->
+        <circle cx="18" cy="85" r="14" fill="#FF7AB8" stroke="#663D63" stroke-width="1.5"/>
+        <path d="M 18 71 Q 22 66 26 70" stroke="#52A44E" stroke-width="2" fill="none"/>
+        <text x="0" y="195" font-family="'Nunito', sans-serif" font-size="12" font-weight="800" fill="#663D63" text-anchor="middle">5. Holding Item</text>
+        <text x="0" y="210" font-family="'Nunito', sans-serif" font-size="10" fill="#B38CAE" text-anchor="middle">Prop anchored in hand</text>
+      </g>
+    </g>
+
+    <!-- Technical Note -->
+    <rect x="25" y="525" width="590" height="95" rx="16" fill="#F7EFF8" stroke="#663D63" stroke-width="1.5"/>
+    <text x="40" y="555" font-family="'Nunito', sans-serif" font-size="13" font-weight="800" fill="#754C72">SEAMLESS LAYER COMPATIBILITY GUARANTEE:</text>
+    <text x="40" y="578" font-family="'Nunito', sans-serif" font-size="12" fill="#663D63">All 24 wardrobe clothing pieces, 5 hairstyles, and 5 pets align to the same origin (0, 0).</text>
+    <text x="40" y="598" font-family="'Nunito', sans-serif" font-size="12" fill="#663D63">No outfit changes break bounding anchors or cause misalignment during poses.</text>
+  </g>
+
+</svg>

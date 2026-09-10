@@ -1,0 +1,2974 @@
+[
+  {
+    "id": "01_town",
+    "viewport": {
+      "width": 1280,
+      "height": 720
+    },
+    "scene": "TownScene",
+    "objects": 18,
+    "fps": 51,
+    "horizontalOverflow": false,
+    "controls": [
+      {
+        "label": "Detective Clues Journal",
+        "width": 48,
+        "height": 48
+      },
+      {
+        "label": "Brain training games",
+        "width": 48,
+        "height": 48
+      },
+      {
+        "label": "Cycle time of day",
+        "width": 48,
+        "height": 48
+      },
+      {
+        "label": "Mute sound",
+        "width": 48,
+        "height": 48
+      },
+      {
+        "label": "Home",
+        "width": 153,
+        "height": 167
+      },
+      {
+        "label": "Clothing Boutique",
+        "width": 153,
+        "height": 167
+      },
+      {
+        "label": "Supermarket",
+        "width": 153,
+        "height": 167
+      },
+      {
+        "label": "Pet Shop",
+        "width": 153,
+        "height": 167
+      },
+      {
+        "label": "School",
+        "width": 153,
+        "height": 167
+      },
+      {
+        "label": "Park",
+        "width": 153,
+        "height": 167
+      },
+      {
+        "label": "Café",
+        "width": 153,
+        "height": 167
+      },
+      {
+        "label": "Salon",
+        "width": 153,
+        "height": 167
+      },
+      {
+        "label": "Toy Shop",
+        "width": 153,
+        "height": 167
+      },
+      {
+        "label": "DEV",
+        "width": 44,
+        "height": 30
+      },
+      {
+        "label": "🗺️Town",
+        "width": 100,
+        "height": 48
+      },
+      {
+        "label": "🏠Home",
+        "width": 104,
+        "height": 48
+      },
+      {
+        "label": "📜Clues",
+        "width": 102,
+        "height": 48
+      },
+      {
+        "label": "🧠Games",
+        "width": 111,
+        "height": 48
+      },
+      {
+        "label": "↺Reset",
+        "width": 91,
+        "height": 48
+      }
+    ],
+    "errors": []
+  },
+  {
+    "id": "02_bedroom",
+    "viewport": {
+      "width": 1280,
+      "height": 720
+    },
+    "scene": "HomeScene",
+    "objects": 47,
+    "fps": 40,
+    "horizontalOverflow": false,
+    "controls": [
+      {
+        "label": "Detective Clues Journal",
+        "width": 48,
+        "height": 48
+      },
+      {
+        "label": "Brain training games",
+        "width": 48,
+        "height": 48
+      },
+      {
+        "label": "Cycle time of day",
+        "width": 48,
+        "height": 48
+      },
+      {
+        "label": "Mute sound",
+        "width": 48,
+        "height": 48
+      },
+      {
+        "label": "DEV",
+        "width": 44,
+        "height": 30
+      },
+      {
+        "label": "🗺️Town",
+        "width": 88,
+        "height": 48
+      },
+      {
+        "label": "📜Clues",
+        "width": 89,
+        "height": 48
+      },
+      {
+        "label": "🧠Games",
+        "width": 96,
+        "height": 48
+      },
+      {
+        "label": "Bedroom",
+        "width": 44,
+        "height": 44
+      },
+      {
+        "label": "Living room",
+        "width": 44,
+        "height": 44
+      },
+      {
+        "label": "Kitchen",
+        "width": 44,
+        "height": 44
+      },
+      {
+        "label": "🎒Bag",
+        "width": 77,
+        "height": 48
+      },
+      {
+        "label": "👗Dress",
+        "width": 89,
+        "height": 48
+      },
+      {
+        "label": "✨Avatar",
+        "width": 96,
+        "height": 48
+      },
+      {
+        "label": "🐾Pet",
+        "width": 76,
+        "height": 48
+      },
+      {
+        "label": "✏️Edit",
+        "width": 80,
+        "height": 48
+      }
+    ],
+    "errors": []
+  },
+  {
+    "id": "03_living",
+    "viewport": {
+      "width": 1280,
+      "height": 720
+    },
+    "scene": "HomeScene",
+    "objects": 47,
+    "fps": 32,
+    "horizontalOverflow": false,
+    "controls": [
+      {
+        "label": "Detective Clues Journal",
+        "width": 48,
+        "height": 48
+      },
+      {
+        "label": "Brain training games",
+        "width": 48,
+        "height": 48
+      },
+      {
+        "label": "Cycle time of day",
+        "width": 48,
+        "height": 48
+      },
+      {
+        "label": "Mute sound",
+        "width": 48,
+        "height": 48
+      },
+      {
+        "label": "DEV",
+        "width": 44,
+        "height": 30
+      },
+      {
+        "label": "🗺️Town",
+        "width": 86,
+        "height": 48
+      },
+      {
+        "label": "📜Clues",
+        "width": 87,
+        "height": 48
+      },
+      {
+        "label": "🧠Games",
+        "width": 95,
+        "height": 48
+      },
+      {
+        "label": "Bedroom",
+        "width": 44,
+        "height": 44
+      },
+      {
+        "label": "Living room",
+        "width": 44,
+        "height": 44
+      },
+      {
+        "label": "Kitchen",
+        "width": 44,
+        "height": 44
+      },
+      {
+        "label": "🎒Bag",
+        "width": 76,
+        "height": 48
+      },
+      {
+        "label": "👗Dress",
+        "width": 87,
+        "height": 48
+      },
+      {
+        "label": "✨Avatar",
+        "width": 94,
+        "height": 48
+      },
+      {
+        "label": "🐾Pet",
+        "width": 75,
+        "height": 48
+      },
+      {
+        "label": "✏️Edit",
+        "width": 79,
+        "height": 48
+      }
+    ],
+    "errors": []
+  },
+  {
+    "id": "04_kitchen",
+    "viewport": {
+      "width": 1280,
+      "height": 720
+    },
+    "scene": "HomeScene",
+    "objects": 47,
+    "fps": 33,
+    "horizontalOverflow": false,
+    "controls": [
+      {
+        "label": "Detective Clues Journal",
+        "width": 48,
+        "height": 48
+      },
+      {
+        "label": "Brain training games",
+        "width": 48,
+        "height": 48
+      },
+      {
+        "label": "Cycle time of day",
+        "width": 48,
+        "height": 48
+      },
+      {
+        "label": "Mute sound",
+        "width": 48,
+        "height": 48
+      },
+      {
+        "label": "DEV",
+        "width": 44,
+        "height": 30
+      },
+      {
+        "label": "🗺️Town",
+        "width": 88,
+        "height": 48
+      },
+      {
+        "label": "📜Clues",
+        "width": 89,
+        "height": 48
+      },
+      {
+        "label": "🧠Games",
+        "width": 97,
+        "height": 48
+      },
+      {
+        "label": "Bedroom",
+        "width": 44,
+        "height": 44
+      },
+      {
+        "label": "Living room",
+        "width": 44,
+        "height": 44
+      },
+      {
+        "label": "Kitchen",
+        "width": 44,
+        "height": 44
+      },
+      {
+        "label": "🎒Bag",
+        "width": 78,
+        "height": 48
+      },
+      {
+        "label": "👗Dress",
+        "width": 90,
+        "height": 48
+      },
+      {
+        "label": "✨Avatar",
+        "width": 97,
+        "height": 48
+      },
+      {
+        "label": "🐾Pet",
+        "width": 76,
+        "height": 48
+      },
+      {
+        "label": "✏️Edit",
+        "width": 81,
+        "height": 48
+      }
+    ],
+    "errors": []
+  },
+  {
+    "id": "05_boutique",
+    "viewport": {
+      "width": 1280,
+      "height": 720
+    },
+    "scene": "ClothingShopScene",
+    "objects": 13,
+    "fps": 51,
+    "horizontalOverflow": false,
+    "controls": [
+      {
+        "label": "Detective Clues Journal",
+        "width": 48,
+        "height": 48
+      },
+      {
+        "label": "Brain training games",
+        "width": 48,
+        "height": 48
+      },
+      {
+        "label": "Cycle time of day",
+        "width": 48,
+        "height": 48
+      },
+      {
+        "label": "Mute sound",
+        "width": 48,
+        "height": 48
+      },
+      {
+        "label": "👕Strawberry Top⭐ 28",
+        "width": 152,
+        "height": 67
+      },
+      {
+        "label": "👕Sunshine Top⭐ 30",
+        "width": 152,
+        "height": 67
+      },
+      {
+        "label": "👕Mint Top⭐ 32",
+        "width": 152,
+        "height": 67
+      },
+      {
+        "label": "👕Cloud Shirt⭐ 36",
+        "width": 152,
+        "height": 67
+      },
+      {
+        "label": "👕Rose Stripe Top⭐ 42",
+        "width": 152,
+        "height": 67
+      },
+      {
+        "label": "🩳Mint Shorts⭐ 25",
+        "width": 152,
+        "height": 67
+      },
+      {
+        "label": "🩳Sky Jeans⭐ 34",
+        "width": 152,
+        "height": 67
+      },
+      {
+        "label": "🩳Lavender Skirt⭐ 38",
+        "width": 152,
+        "height": 67
+      },
+      {
+        "label": "🩳Cocoa Trousers⭐ 40",
+        "width": 152,
+        "height": 67
+      },
+      {
+        "label": "👗Peach Dress⭐ 55",
+        "width": 152,
+        "height": 67
+      },
+      {
+        "label": "👗Star Dress⭐ 72",
+        "width": 152,
+        "height": 67
+      },
+      {
+        "label": "👗Meadow Dress⭐ 64",
+        "width": 152,
+        "height": 67
+      },
+      {
+        "label": "🎩Berry Beret⭐ 35",
+        "width": 152,
+        "height": 67
+      },
+      {
+        "label": "🎩Sunny Hat⭐ 40",
+        "width": 152,
+        "height": 67
+      },
+      {
+        "label": "🎩Cat Ear Headband⭐ 48",
+        "width": 152,
+        "height": 67
+      },
+      {
+        "label": "🎩Cloud Cap⭐ 44",
+        "width": 152,
+        "height": 67
+      },
+      {
+        "label": "👟Mint Sneakers⭐ 30",
+        "width": 152,
+        "height": 67
+      },
+      {
+        "label": "👟Berry Shoes⭐ 34",
+        "width": 152,
+        "height": 67
+      },
+      {
+        "label": "👟Star Boots⭐ 52",
+        "width": 152,
+        "height": 67
+      },
+      {
+        "label": "👗Bunny Pinafore Dress⭐ 65",
+        "width": 152,
+        "height": 67
+      },
+      {
+        "label": "🎩Flower Pearl Wreath⭐ 42",
+        "width": 152,
+        "height": 67
+      },
+      {
+        "label": "👟Pastel Ribbon Shoes⭐ 32",
+        "width": 152,
+        "height": 67
+      },
+      {
+        "label": "👓Heart Glasses⭐ 45",
+        "width": 152,
+        "height": 67
+      },
+      {
+        "label": "👓Star Pin⭐ 24",
+        "width": 152,
+        "height": 67
+      },
+      {
+        "label": "🎩Detective Deerstalker⭐ 0",
+        "width": 152,
+        "height": 67
+      },
+      {
+        "label": "👗Detective Trench & Cape⭐ 0",
+        "width": 152,
+        "height": 67
+      },
+      {
+        "label": "🎩Royal Starlight Tiara⭐ 0",
+        "width": 152,
+        "height": 67
+      },
+      {
+        "label": "🎩Captain Pirate Bandana⭐ 0",
+        "width": 152,
+        "height": 67
+      },
+      {
+        "label": "DEV",
+        "width": 44,
+        "height": 30
+      },
+      {
+        "label": "🗺️Town",
+        "width": 100,
+        "height": 48
+      },
+      {
+        "label": "🏠Home",
+        "width": 104,
+        "height": 48
+      },
+      {
+        "label": "📜Clues",
+        "width": 102,
+        "height": 48
+      },
+      {
+        "label": "🧠Games",
+        "width": 111,
+        "height": 48
+      }
+    ],
+    "errors": []
+  },
+  {
+    "id": "06_market",
+    "viewport": {
+      "width": 1280,
+      "height": 720
+    },
+    "scene": "SupermarketScene",
+    "objects": 23,
+    "fps": 51,
+    "horizontalOverflow": false,
+    "controls": [
+      {
+        "label": "Detective Clues Journal",
+        "width": 48,
+        "height": 48
+      },
+      {
+        "label": "Brain training games",
+        "width": 48,
+        "height": 48
+      },
+      {
+        "label": "Cycle time of day",
+        "width": 48,
+        "height": 48
+      },
+      {
+        "label": "Mute sound",
+        "width": 48,
+        "height": 48
+      },
+      {
+        "label": "🧺 Basket",
+        "width": 100,
+        "height": 46
+      },
+      {
+        "label": "🍎Apple⭐ 5",
+        "width": 112,
+        "height": 56
+      },
+      {
+        "label": "🍌Banana⭐ 4",
+        "width": 112,
+        "height": 56
+      },
+      {
+        "label": "🥛Milk⭐ 12",
+        "width": 112,
+        "height": 56
+      },
+      {
+        "label": "🧃Juice⭐ 10",
+        "width": 112,
+        "height": 56
+      },
+      {
+        "label": "🍰Cake⭐ 25",
+        "width": 112,
+        "height": 56
+      },
+      {
+        "label": "🍊Orange⭐ 6",
+        "width": 112,
+        "height": 56
+      },
+      {
+        "label": "🍓Strawberry⭐ 7",
+        "width": 112,
+        "height": 56
+      },
+      {
+        "label": "🍞Bread⭐ 14",
+        "width": 112,
+        "height": 56
+      },
+      {
+        "label": "💧Water⭐ 8",
+        "width": 112,
+        "height": 56
+      },
+      {
+        "label": "🍪Cookies⭐ 12",
+        "width": 112,
+        "height": 56
+      },
+      {
+        "label": "🥪Sandwich⭐ 20",
+        "width": 112,
+        "height": 56
+      },
+      {
+        "label": "🧀Cheese⭐ 15",
+        "width": 112,
+        "height": 56
+      },
+      {
+        "label": "🥣Yogurt⭐ 13",
+        "width": 112,
+        "height": 56
+      },
+      {
+        "label": "🍨Ice Cream⭐ 18",
+        "width": 112,
+        "height": 56
+      },
+      {
+        "label": "🧁Cupcake⭐ 17",
+        "width": 112,
+        "height": 56
+      },
+      {
+        "label": "Checkout",
+        "width": 336,
+        "height": 46
+      },
+      {
+        "label": "DEV",
+        "width": 44,
+        "height": 30
+      },
+      {
+        "label": "🗺️Town",
+        "width": 100,
+        "height": 48
+      },
+      {
+        "label": "🏠Home",
+        "width": 104,
+        "height": 48
+      },
+      {
+        "label": "📜Clues",
+        "width": 102,
+        "height": 48
+      },
+      {
+        "label": "🧠Games",
+        "width": 111,
+        "height": 48
+      }
+    ],
+    "errors": []
+  },
+  {
+    "id": "07_pet_shop",
+    "viewport": {
+      "width": 1280,
+      "height": 720
+    },
+    "scene": "PetShopScene",
+    "objects": 10,
+    "fps": 51,
+    "horizontalOverflow": false,
+    "controls": [
+      {
+        "label": "Detective Clues Journal",
+        "width": 48,
+        "height": 48
+      },
+      {
+        "label": "Brain training games",
+        "width": 48,
+        "height": 48
+      },
+      {
+        "label": "Cycle time of day",
+        "width": 48,
+        "height": 48
+      },
+      {
+        "label": "Mute sound",
+        "width": 48,
+        "height": 48
+      },
+      {
+        "label": "DEV",
+        "width": 44,
+        "height": 30
+      },
+      {
+        "label": "🗺️Town",
+        "width": 100,
+        "height": 48
+      },
+      {
+        "label": "🏠Home",
+        "width": 104,
+        "height": 48
+      },
+      {
+        "label": "📜Clues",
+        "width": 102,
+        "height": 48
+      },
+      {
+        "label": "🧠Games",
+        "width": 111,
+        "height": 48
+      }
+    ],
+    "errors": []
+  },
+  {
+    "id": "08_park",
+    "viewport": {
+      "width": 1280,
+      "height": 720
+    },
+    "scene": "ParkScene",
+    "objects": 12,
+    "fps": 51,
+    "horizontalOverflow": false,
+    "controls": [
+      {
+        "label": "Detective Clues Journal",
+        "width": 48,
+        "height": 48
+      },
+      {
+        "label": "Brain training games",
+        "width": 48,
+        "height": 48
+      },
+      {
+        "label": "Cycle time of day",
+        "width": 48,
+        "height": 48
+      },
+      {
+        "label": "Mute sound",
+        "width": 48,
+        "height": 48
+      },
+      {
+        "label": "DEV",
+        "width": 44,
+        "height": 30
+      },
+      {
+        "label": "🗺️Town",
+        "width": 100,
+        "height": 48
+      },
+      {
+        "label": "🏠Home",
+        "width": 104,
+        "height": 48
+      },
+      {
+        "label": "📜Clues",
+        "width": 102,
+        "height": 48
+      },
+      {
+        "label": "🧠Games",
+        "width": 111,
+        "height": 48
+      }
+    ],
+    "errors": []
+  },
+  {
+    "id": "09_cafe",
+    "viewport": {
+      "width": 1280,
+      "height": 720
+    },
+    "scene": "CafeScene",
+    "objects": 18,
+    "fps": 51,
+    "horizontalOverflow": false,
+    "controls": [
+      {
+        "label": "Detective Clues Journal",
+        "width": 48,
+        "height": 48
+      },
+      {
+        "label": "Brain training games",
+        "width": 48,
+        "height": 48
+      },
+      {
+        "label": "Cycle time of day",
+        "width": 48,
+        "height": 48
+      },
+      {
+        "label": "Mute sound",
+        "width": 48,
+        "height": 48
+      },
+      {
+        "label": "DEV",
+        "width": 44,
+        "height": 30
+      },
+      {
+        "label": "🗺️Town",
+        "width": 100,
+        "height": 48
+      },
+      {
+        "label": "🏠Home",
+        "width": 104,
+        "height": 48
+      },
+      {
+        "label": "📜Clues",
+        "width": 102,
+        "height": 48
+      },
+      {
+        "label": "🧠Games",
+        "width": 111,
+        "height": 48
+      }
+    ],
+    "errors": []
+  },
+  {
+    "id": "10_salon",
+    "viewport": {
+      "width": 1280,
+      "height": 720
+    },
+    "scene": "SalonScene",
+    "objects": 9,
+    "fps": 51,
+    "horizontalOverflow": false,
+    "controls": [
+      {
+        "label": "Detective Clues Journal",
+        "width": 48,
+        "height": 48
+      },
+      {
+        "label": "Brain training games",
+        "width": 48,
+        "height": 48
+      },
+      {
+        "label": "Cycle time of day",
+        "width": 48,
+        "height": 48
+      },
+      {
+        "label": "Mute sound",
+        "width": 48,
+        "height": 48
+      },
+      {
+        "label": "DEV",
+        "width": 44,
+        "height": 30
+      },
+      {
+        "label": "🗺️Town",
+        "width": 100,
+        "height": 48
+      },
+      {
+        "label": "🏠Home",
+        "width": 104,
+        "height": 48
+      },
+      {
+        "label": "📜Clues",
+        "width": 102,
+        "height": 48
+      },
+      {
+        "label": "🧠Games",
+        "width": 111,
+        "height": 48
+      }
+    ],
+    "errors": []
+  },
+  {
+    "id": "11_toy_shop",
+    "viewport": {
+      "width": 1280,
+      "height": 720
+    },
+    "scene": "ToyShopScene",
+    "objects": 13,
+    "fps": 51,
+    "horizontalOverflow": false,
+    "controls": [
+      {
+        "label": "Detective Clues Journal",
+        "width": 48,
+        "height": 48
+      },
+      {
+        "label": "Brain training games",
+        "width": 48,
+        "height": 48
+      },
+      {
+        "label": "Cycle time of day",
+        "width": 48,
+        "height": 48
+      },
+      {
+        "label": "Mute sound",
+        "width": 48,
+        "height": 48
+      },
+      {
+        "label": "DEV",
+        "width": 44,
+        "height": 30
+      },
+      {
+        "label": "🗺️Town",
+        "width": 100,
+        "height": 48
+      },
+      {
+        "label": "🏠Home",
+        "width": 104,
+        "height": 48
+      },
+      {
+        "label": "📜Clues",
+        "width": 102,
+        "height": 48
+      },
+      {
+        "label": "🧠Games",
+        "width": 111,
+        "height": 48
+      }
+    ],
+    "errors": []
+  },
+  {
+    "id": "12_school",
+    "viewport": {
+      "width": 1280,
+      "height": 720
+    },
+    "scene": "SchoolScene",
+    "objects": 26,
+    "fps": 51,
+    "horizontalOverflow": false,
+    "controls": [
+      {
+        "label": "Detective Clues Journal",
+        "width": 48,
+        "height": 48
+      },
+      {
+        "label": "Brain training games",
+        "width": 48,
+        "height": 48
+      },
+      {
+        "label": "Cycle time of day",
+        "width": 48,
+        "height": 48
+      },
+      {
+        "label": "Mute sound",
+        "width": 48,
+        "height": 48
+      },
+      {
+        "label": "DEV",
+        "width": 44,
+        "height": 30
+      },
+      {
+        "label": "🗺️Town",
+        "width": 100,
+        "height": 48
+      },
+      {
+        "label": "🏠Home",
+        "width": 104,
+        "height": 48
+      },
+      {
+        "label": "📜Clues",
+        "width": 102,
+        "height": 48
+      },
+      {
+        "label": "🧠Games",
+        "width": 111,
+        "height": 48
+      }
+    ],
+    "errors": []
+  },
+  {
+    "id": "13_brain_games",
+    "viewport": {
+      "width": 1280,
+      "height": 720
+    },
+    "scene": "TownScene",
+    "objects": 18,
+    "fps": 33,
+    "horizontalOverflow": false,
+    "controls": [
+      {
+        "label": "Detective Clues Journal",
+        "width": 48,
+        "height": 48
+      },
+      {
+        "label": "Brain training games",
+        "width": 48,
+        "height": 48
+      },
+      {
+        "label": "Cycle time of day",
+        "width": 48,
+        "height": 48
+      },
+      {
+        "label": "Mute sound",
+        "width": 48,
+        "height": 48
+      },
+      {
+        "label": "Home",
+        "width": 153,
+        "height": 167
+      },
+      {
+        "label": "Clothing Boutique",
+        "width": 153,
+        "height": 167
+      },
+      {
+        "label": "Supermarket",
+        "width": 153,
+        "height": 167
+      },
+      {
+        "label": "Pet Shop",
+        "width": 153,
+        "height": 167
+      },
+      {
+        "label": "School",
+        "width": 153,
+        "height": 167
+      },
+      {
+        "label": "Park",
+        "width": 153,
+        "height": 167
+      },
+      {
+        "label": "Café",
+        "width": 153,
+        "height": 167
+      },
+      {
+        "label": "Salon",
+        "width": 153,
+        "height": 167
+      },
+      {
+        "label": "Toy Shop",
+        "width": 153,
+        "height": 167
+      },
+      {
+        "label": "DEV",
+        "width": 44,
+        "height": 30
+      },
+      {
+        "label": "🗺️Town",
+        "width": 100,
+        "height": 48
+      },
+      {
+        "label": "🏠Home",
+        "width": 104,
+        "height": 48
+      },
+      {
+        "label": "📜Clues",
+        "width": 102,
+        "height": 48
+      },
+      {
+        "label": "🧠Games",
+        "width": 111,
+        "height": 48
+      },
+      {
+        "label": "↺Reset",
+        "width": 91,
+        "height": 48
+      },
+      {
+        "label": "Close brain games",
+        "width": 42,
+        "height": 42
+      },
+      {
+        "label": "🧠Memory",
+        "width": 127,
+        "height": 39
+      },
+      {
+        "label": "📝Quiz",
+        "width": 127,
+        "height": 39
+      },
+      {
+        "label": "🧩Puzzle",
+        "width": 127,
+        "height": 39
+      },
+      {
+        "label": "🏆Badges",
+        "width": 127,
+        "height": 39
+      },
+      {
+        "label": "Junior (8)",
+        "width": 84,
+        "height": 29
+      },
+      {
+        "label": "Explorer (12)",
+        "width": 103,
+        "height": 29
+      },
+      {
+        "label": "Champion (16)",
+        "width": 111,
+        "height": 29
+      },
+      {
+        "label": "↺ New Game",
+        "width": 98,
+        "height": 24
+      },
+      {
+        "label": "🌟\n              \n              \n                🐹\n                Hamster",
+        "width": 124,
+        "height": 124
+      },
+      {
+        "label": "🌟\n              \n              \n                🐹\n                Hamster",
+        "width": 124,
+        "height": 124
+      },
+      {
+        "label": "🌟\n              \n              \n                🐰\n                Bunny",
+        "width": 124,
+        "height": 124
+      },
+      {
+        "label": "🌟\n              \n              \n                🐱\n                Kitten",
+        "width": 124,
+        "height": 124
+      },
+      {
+        "label": "🌟\n              \n              \n                🐱\n                Kitten",
+        "width": 124,
+        "height": 124
+      },
+      {
+        "label": "🌟\n              \n              \n                🐶\n                Puppy",
+        "width": 124,
+        "height": 124
+      },
+      {
+        "label": "🌟\n              \n              \n                🐶\n                Puppy",
+        "width": 124,
+        "height": 124
+      },
+      {
+        "label": "🌟\n              \n              \n                🐰\n                Bunny",
+        "width": 124,
+        "height": 124
+      }
+    ],
+    "errors": []
+  },
+  {
+    "id": "14_makeover",
+    "viewport": {
+      "width": 1280,
+      "height": 720
+    },
+    "scene": "HomeScene",
+    "objects": 47,
+    "fps": 27,
+    "horizontalOverflow": false,
+    "controls": [
+      {
+        "label": "Detective Clues Journal",
+        "width": 48,
+        "height": 48
+      },
+      {
+        "label": "Brain training games",
+        "width": 48,
+        "height": 48
+      },
+      {
+        "label": "Cycle time of day",
+        "width": 48,
+        "height": 48
+      },
+      {
+        "label": "Mute sound",
+        "width": 48,
+        "height": 48
+      },
+      {
+        "label": "DEV",
+        "width": 44,
+        "height": 30
+      },
+      {
+        "label": "🗺️Town",
+        "width": 88,
+        "height": 48
+      },
+      {
+        "label": "📜Clues",
+        "width": 89,
+        "height": 48
+      },
+      {
+        "label": "🧠Games",
+        "width": 96,
+        "height": 48
+      },
+      {
+        "label": "Bedroom",
+        "width": 44,
+        "height": 44
+      },
+      {
+        "label": "Living room",
+        "width": 44,
+        "height": 44
+      },
+      {
+        "label": "Kitchen",
+        "width": 44,
+        "height": 44
+      },
+      {
+        "label": "🎒Bag",
+        "width": 77,
+        "height": 48
+      },
+      {
+        "label": "👗Dress",
+        "width": 89,
+        "height": 48
+      },
+      {
+        "label": "✨Avatar",
+        "width": 96,
+        "height": 48
+      },
+      {
+        "label": "🐾Pet",
+        "width": 76,
+        "height": 48
+      },
+      {
+        "label": "✏️Edit",
+        "width": 80,
+        "height": 48
+      },
+      {
+        "label": "×",
+        "width": 38,
+        "height": 38
+      },
+      {
+        "label": "🌸Long Waves with Bangs (Chibi Hero)",
+        "width": 212,
+        "height": 52
+      },
+      {
+        "label": "🎀Twin Space Buns",
+        "width": 212,
+        "height": 52
+      },
+      {
+        "label": "👱‍♀️High Ponytail",
+        "width": 212,
+        "height": 38
+      },
+      {
+        "label": "💇‍♀️Classic Bob",
+        "width": 212,
+        "height": 38
+      },
+      {
+        "label": "✨Cute Pixie Cut",
+        "width": 212,
+        "height": 38
+      },
+      {
+        "label": "",
+        "width": 44,
+        "height": 44
+      },
+      {
+        "label": "",
+        "width": 44,
+        "height": 44
+      },
+      {
+        "label": "",
+        "width": 44,
+        "height": 44
+      },
+      {
+        "label": "",
+        "width": 44,
+        "height": 44
+      },
+      {
+        "label": "",
+        "width": 44,
+        "height": 44
+      },
+      {
+        "label": "",
+        "width": 44,
+        "height": 44
+      },
+      {
+        "label": "",
+        "width": 44,
+        "height": 44
+      },
+      {
+        "label": "",
+        "width": 44,
+        "height": 44
+      },
+      {
+        "label": "",
+        "width": 44,
+        "height": 44
+      },
+      {
+        "label": "",
+        "width": 44,
+        "height": 44
+      },
+      {
+        "label": "",
+        "width": 44,
+        "height": 44
+      },
+      {
+        "label": "",
+        "width": 44,
+        "height": 44
+      },
+      {
+        "label": "",
+        "width": 44,
+        "height": 44
+      },
+      {
+        "label": "",
+        "width": 44,
+        "height": 44
+      },
+      {
+        "label": "",
+        "width": 44,
+        "height": 44
+      },
+      {
+        "label": "Save Look ✨",
+        "width": 155,
+        "height": 42
+      }
+    ],
+    "errors": []
+  },
+  {
+    "id": "01_town",
+    "viewport": {
+      "width": 844,
+      "height": 390
+    },
+    "scene": "TownScene",
+    "objects": 18,
+    "fps": 51,
+    "horizontalOverflow": false,
+    "controls": [
+      {
+        "label": "Detective Clues Journal",
+        "width": 48,
+        "height": 48
+      },
+      {
+        "label": "Brain training games",
+        "width": 48,
+        "height": 48
+      },
+      {
+        "label": "Cycle time of day",
+        "width": 48,
+        "height": 48
+      },
+      {
+        "label": "Mute sound",
+        "width": 48,
+        "height": 48
+      },
+      {
+        "label": "Home",
+        "width": 59,
+        "height": 64
+      },
+      {
+        "label": "Clothing Boutique",
+        "width": 59,
+        "height": 64
+      },
+      {
+        "label": "Supermarket",
+        "width": 59,
+        "height": 64
+      },
+      {
+        "label": "Pet Shop",
+        "width": 59,
+        "height": 64
+      },
+      {
+        "label": "School",
+        "width": 59,
+        "height": 64
+      },
+      {
+        "label": "Park",
+        "width": 59,
+        "height": 64
+      },
+      {
+        "label": "Café",
+        "width": 59,
+        "height": 64
+      },
+      {
+        "label": "Salon",
+        "width": 59,
+        "height": 64
+      },
+      {
+        "label": "Toy Shop",
+        "width": 59,
+        "height": 64
+      },
+      {
+        "label": "DEV",
+        "width": 44,
+        "height": 30
+      },
+      {
+        "label": "🗺️Town",
+        "width": 55,
+        "height": 48
+      },
+      {
+        "label": "🏠Home",
+        "width": 55,
+        "height": 48
+      },
+      {
+        "label": "📜Clues",
+        "width": 55,
+        "height": 48
+      },
+      {
+        "label": "🧠Games",
+        "width": 55,
+        "height": 48
+      },
+      {
+        "label": "↺Reset",
+        "width": 48,
+        "height": 48
+      }
+    ],
+    "errors": []
+  },
+  {
+    "id": "02_bedroom",
+    "viewport": {
+      "width": 844,
+      "height": 390
+    },
+    "scene": "HomeScene",
+    "objects": 47,
+    "fps": 33,
+    "horizontalOverflow": false,
+    "controls": [
+      {
+        "label": "Detective Clues Journal",
+        "width": 48,
+        "height": 48
+      },
+      {
+        "label": "Brain training games",
+        "width": 48,
+        "height": 48
+      },
+      {
+        "label": "Cycle time of day",
+        "width": 48,
+        "height": 48
+      },
+      {
+        "label": "Mute sound",
+        "width": 48,
+        "height": 48
+      },
+      {
+        "label": "DEV",
+        "width": 44,
+        "height": 30
+      },
+      {
+        "label": "🗺️Town",
+        "width": 55,
+        "height": 48
+      },
+      {
+        "label": "📜Clues",
+        "width": 55,
+        "height": 48
+      },
+      {
+        "label": "🧠Games",
+        "width": 55,
+        "height": 48
+      },
+      {
+        "label": "Bedroom",
+        "width": 44,
+        "height": 44
+      },
+      {
+        "label": "Living room",
+        "width": 44,
+        "height": 44
+      },
+      {
+        "label": "Kitchen",
+        "width": 44,
+        "height": 44
+      },
+      {
+        "label": "🎒Bag",
+        "width": 55,
+        "height": 48
+      },
+      {
+        "label": "👗Dress",
+        "width": 55,
+        "height": 48
+      },
+      {
+        "label": "✨Avatar",
+        "width": 55,
+        "height": 48
+      },
+      {
+        "label": "🐾Pet",
+        "width": 55,
+        "height": 48
+      },
+      {
+        "label": "✏️Edit",
+        "width": 55,
+        "height": 48
+      }
+    ],
+    "errors": []
+  },
+  {
+    "id": "03_living",
+    "viewport": {
+      "width": 844,
+      "height": 390
+    },
+    "scene": "HomeScene",
+    "objects": 47,
+    "fps": 33,
+    "horizontalOverflow": false,
+    "controls": [
+      {
+        "label": "Detective Clues Journal",
+        "width": 48,
+        "height": 48
+      },
+      {
+        "label": "Brain training games",
+        "width": 48,
+        "height": 48
+      },
+      {
+        "label": "Cycle time of day",
+        "width": 48,
+        "height": 48
+      },
+      {
+        "label": "Mute sound",
+        "width": 48,
+        "height": 48
+      },
+      {
+        "label": "DEV",
+        "width": 44,
+        "height": 30
+      },
+      {
+        "label": "🗺️Town",
+        "width": 55,
+        "height": 48
+      },
+      {
+        "label": "📜Clues",
+        "width": 55,
+        "height": 48
+      },
+      {
+        "label": "🧠Games",
+        "width": 55,
+        "height": 48
+      },
+      {
+        "label": "Bedroom",
+        "width": 44,
+        "height": 44
+      },
+      {
+        "label": "Living room",
+        "width": 44,
+        "height": 44
+      },
+      {
+        "label": "Kitchen",
+        "width": 44,
+        "height": 44
+      },
+      {
+        "label": "🎒Bag",
+        "width": 55,
+        "height": 48
+      },
+      {
+        "label": "👗Dress",
+        "width": 55,
+        "height": 48
+      },
+      {
+        "label": "✨Avatar",
+        "width": 55,
+        "height": 48
+      },
+      {
+        "label": "🐾Pet",
+        "width": 55,
+        "height": 48
+      },
+      {
+        "label": "✏️Edit",
+        "width": 55,
+        "height": 48
+      }
+    ],
+    "errors": []
+  },
+  {
+    "id": "04_kitchen",
+    "viewport": {
+      "width": 844,
+      "height": 390
+    },
+    "scene": "HomeScene",
+    "objects": 47,
+    "fps": 33,
+    "horizontalOverflow": false,
+    "controls": [
+      {
+        "label": "Detective Clues Journal",
+        "width": 48,
+        "height": 48
+      },
+      {
+        "label": "Brain training games",
+        "width": 48,
+        "height": 48
+      },
+      {
+        "label": "Cycle time of day",
+        "width": 48,
+        "height": 48
+      },
+      {
+        "label": "Mute sound",
+        "width": 48,
+        "height": 48
+      },
+      {
+        "label": "DEV",
+        "width": 44,
+        "height": 30
+      },
+      {
+        "label": "🗺️Town",
+        "width": 55,
+        "height": 48
+      },
+      {
+        "label": "📜Clues",
+        "width": 55,
+        "height": 48
+      },
+      {
+        "label": "🧠Games",
+        "width": 55,
+        "height": 48
+      },
+      {
+        "label": "Bedroom",
+        "width": 44,
+        "height": 44
+      },
+      {
+        "label": "Living room",
+        "width": 44,
+        "height": 44
+      },
+      {
+        "label": "Kitchen",
+        "width": 44,
+        "height": 44
+      },
+      {
+        "label": "🎒Bag",
+        "width": 55,
+        "height": 48
+      },
+      {
+        "label": "👗Dress",
+        "width": 55,
+        "height": 48
+      },
+      {
+        "label": "✨Avatar",
+        "width": 55,
+        "height": 48
+      },
+      {
+        "label": "🐾Pet",
+        "width": 55,
+        "height": 48
+      },
+      {
+        "label": "✏️Edit",
+        "width": 55,
+        "height": 48
+      }
+    ],
+    "errors": []
+  },
+  {
+    "id": "05_boutique",
+    "viewport": {
+      "width": 844,
+      "height": 390
+    },
+    "scene": "ClothingShopScene",
+    "objects": 13,
+    "fps": 51,
+    "horizontalOverflow": false,
+    "controls": [
+      {
+        "label": "Detective Clues Journal",
+        "width": 48,
+        "height": 48
+      },
+      {
+        "label": "Brain training games",
+        "width": 48,
+        "height": 48
+      },
+      {
+        "label": "Cycle time of day",
+        "width": 48,
+        "height": 48
+      },
+      {
+        "label": "Mute sound",
+        "width": 48,
+        "height": 48
+      },
+      {
+        "label": "👕Strawberry Top⭐ 28",
+        "width": 152,
+        "height": 67
+      },
+      {
+        "label": "👕Sunshine Top⭐ 30",
+        "width": 152,
+        "height": 67
+      },
+      {
+        "label": "👕Mint Top⭐ 32",
+        "width": 152,
+        "height": 67
+      },
+      {
+        "label": "👕Cloud Shirt⭐ 36",
+        "width": 152,
+        "height": 67
+      },
+      {
+        "label": "👕Rose Stripe Top⭐ 42",
+        "width": 152,
+        "height": 67
+      },
+      {
+        "label": "🩳Mint Shorts⭐ 25",
+        "width": 152,
+        "height": 67
+      },
+      {
+        "label": "🩳Sky Jeans⭐ 34",
+        "width": 152,
+        "height": 67
+      },
+      {
+        "label": "🩳Lavender Skirt⭐ 38",
+        "width": 152,
+        "height": 67
+      },
+      {
+        "label": "🩳Cocoa Trousers⭐ 40",
+        "width": 152,
+        "height": 67
+      },
+      {
+        "label": "👗Peach Dress⭐ 55",
+        "width": 152,
+        "height": 67
+      },
+      {
+        "label": "👗Star Dress⭐ 72",
+        "width": 152,
+        "height": 67
+      },
+      {
+        "label": "👗Meadow Dress⭐ 64",
+        "width": 152,
+        "height": 67
+      },
+      {
+        "label": "🎩Berry Beret⭐ 35",
+        "width": 152,
+        "height": 67
+      },
+      {
+        "label": "🎩Sunny Hat⭐ 40",
+        "width": 152,
+        "height": 67
+      },
+      {
+        "label": "🎩Cat Ear Headband⭐ 48",
+        "width": 152,
+        "height": 67
+      },
+      {
+        "label": "🎩Cloud Cap⭐ 44",
+        "width": 152,
+        "height": 67
+      },
+      {
+        "label": "👟Mint Sneakers⭐ 30",
+        "width": 152,
+        "height": 67
+      },
+      {
+        "label": "👟Berry Shoes⭐ 34",
+        "width": 152,
+        "height": 67
+      },
+      {
+        "label": "👟Star Boots⭐ 52",
+        "width": 152,
+        "height": 67
+      },
+      {
+        "label": "👗Bunny Pinafore Dress⭐ 65",
+        "width": 152,
+        "height": 67
+      },
+      {
+        "label": "🎩Flower Pearl Wreath⭐ 42",
+        "width": 152,
+        "height": 67
+      },
+      {
+        "label": "👟Pastel Ribbon Shoes⭐ 32",
+        "width": 152,
+        "height": 67
+      },
+      {
+        "label": "👓Heart Glasses⭐ 45",
+        "width": 152,
+        "height": 67
+      },
+      {
+        "label": "👓Star Pin⭐ 24",
+        "width": 152,
+        "height": 67
+      },
+      {
+        "label": "🎩Detective Deerstalker⭐ 0",
+        "width": 152,
+        "height": 67
+      },
+      {
+        "label": "👗Detective Trench & Cape⭐ 0",
+        "width": 152,
+        "height": 67
+      },
+      {
+        "label": "🎩Royal Starlight Tiara⭐ 0",
+        "width": 152,
+        "height": 67
+      },
+      {
+        "label": "🎩Captain Pirate Bandana⭐ 0",
+        "width": 152,
+        "height": 67
+      },
+      {
+        "label": "DEV",
+        "width": 44,
+        "height": 30
+      },
+      {
+        "label": "🗺️Town",
+        "width": 55,
+        "height": 48
+      },
+      {
+        "label": "🏠Home",
+        "width": 55,
+        "height": 48
+      },
+      {
+        "label": "📜Clues",
+        "width": 55,
+        "height": 48
+      },
+      {
+        "label": "🧠Games",
+        "width": 55,
+        "height": 48
+      }
+    ],
+    "errors": []
+  },
+  {
+    "id": "06_market",
+    "viewport": {
+      "width": 844,
+      "height": 390
+    },
+    "scene": "SupermarketScene",
+    "objects": 23,
+    "fps": 51,
+    "horizontalOverflow": false,
+    "controls": [
+      {
+        "label": "Detective Clues Journal",
+        "width": 48,
+        "height": 48
+      },
+      {
+        "label": "Brain training games",
+        "width": 48,
+        "height": 48
+      },
+      {
+        "label": "Cycle time of day",
+        "width": 48,
+        "height": 48
+      },
+      {
+        "label": "Mute sound",
+        "width": 48,
+        "height": 48
+      },
+      {
+        "label": "🧺 Basket",
+        "width": 100,
+        "height": 46
+      },
+      {
+        "label": "🍎Apple⭐ 5",
+        "width": 112,
+        "height": 56
+      },
+      {
+        "label": "🍌Banana⭐ 4",
+        "width": 112,
+        "height": 56
+      },
+      {
+        "label": "🥛Milk⭐ 12",
+        "width": 112,
+        "height": 56
+      },
+      {
+        "label": "🧃Juice⭐ 10",
+        "width": 112,
+        "height": 56
+      },
+      {
+        "label": "🍰Cake⭐ 25",
+        "width": 112,
+        "height": 56
+      },
+      {
+        "label": "🍊Orange⭐ 6",
+        "width": 112,
+        "height": 56
+      },
+      {
+        "label": "🍓Strawberry⭐ 7",
+        "width": 112,
+        "height": 56
+      },
+      {
+        "label": "🍞Bread⭐ 14",
+        "width": 112,
+        "height": 56
+      },
+      {
+        "label": "💧Water⭐ 8",
+        "width": 112,
+        "height": 56
+      },
+      {
+        "label": "🍪Cookies⭐ 12",
+        "width": 112,
+        "height": 56
+      },
+      {
+        "label": "🥪Sandwich⭐ 20",
+        "width": 112,
+        "height": 56
+      },
+      {
+        "label": "🧀Cheese⭐ 15",
+        "width": 112,
+        "height": 56
+      },
+      {
+        "label": "🥣Yogurt⭐ 13",
+        "width": 112,
+        "height": 56
+      },
+      {
+        "label": "🍨Ice Cream⭐ 18",
+        "width": 112,
+        "height": 56
+      },
+      {
+        "label": "🧁Cupcake⭐ 17",
+        "width": 112,
+        "height": 56
+      },
+      {
+        "label": "Checkout",
+        "width": 336,
+        "height": 46
+      },
+      {
+        "label": "DEV",
+        "width": 44,
+        "height": 30
+      },
+      {
+        "label": "🗺️Town",
+        "width": 55,
+        "height": 48
+      },
+      {
+        "label": "🏠Home",
+        "width": 55,
+        "height": 48
+      },
+      {
+        "label": "📜Clues",
+        "width": 55,
+        "height": 48
+      },
+      {
+        "label": "🧠Games",
+        "width": 55,
+        "height": 48
+      }
+    ],
+    "errors": []
+  },
+  {
+    "id": "07_pet_shop",
+    "viewport": {
+      "width": 844,
+      "height": 390
+    },
+    "scene": "PetShopScene",
+    "objects": 10,
+    "fps": 51,
+    "horizontalOverflow": false,
+    "controls": [
+      {
+        "label": "Detective Clues Journal",
+        "width": 48,
+        "height": 48
+      },
+      {
+        "label": "Brain training games",
+        "width": 48,
+        "height": 48
+      },
+      {
+        "label": "Cycle time of day",
+        "width": 48,
+        "height": 48
+      },
+      {
+        "label": "Mute sound",
+        "width": 48,
+        "height": 48
+      },
+      {
+        "label": "DEV",
+        "width": 44,
+        "height": 30
+      },
+      {
+        "label": "🗺️Town",
+        "width": 55,
+        "height": 48
+      },
+      {
+        "label": "🏠Home",
+        "width": 55,
+        "height": 48
+      },
+      {
+        "label": "📜Clues",
+        "width": 55,
+        "height": 48
+      },
+      {
+        "label": "🧠Games",
+        "width": 55,
+        "height": 48
+      }
+    ],
+    "errors": []
+  },
+  {
+    "id": "08_park",
+    "viewport": {
+      "width": 844,
+      "height": 390
+    },
+    "scene": "ParkScene",
+    "objects": 12,
+    "fps": 51,
+    "horizontalOverflow": false,
+    "controls": [
+      {
+        "label": "Detective Clues Journal",
+        "width": 48,
+        "height": 48
+      },
+      {
+        "label": "Brain training games",
+        "width": 48,
+        "height": 48
+      },
+      {
+        "label": "Cycle time of day",
+        "width": 48,
+        "height": 48
+      },
+      {
+        "label": "Mute sound",
+        "width": 48,
+        "height": 48
+      },
+      {
+        "label": "DEV",
+        "width": 44,
+        "height": 30
+      },
+      {
+        "label": "🗺️Town",
+        "width": 55,
+        "height": 48
+      },
+      {
+        "label": "🏠Home",
+        "width": 55,
+        "height": 48
+      },
+      {
+        "label": "📜Clues",
+        "width": 55,
+        "height": 48
+      },
+      {
+        "label": "🧠Games",
+        "width": 55,
+        "height": 48
+      }
+    ],
+    "errors": []
+  },
+  {
+    "id": "09_cafe",
+    "viewport": {
+      "width": 844,
+      "height": 390
+    },
+    "scene": "CafeScene",
+    "objects": 18,
+    "fps": 51,
+    "horizontalOverflow": false,
+    "controls": [
+      {
+        "label": "Detective Clues Journal",
+        "width": 48,
+        "height": 48
+      },
+      {
+        "label": "Brain training games",
+        "width": 48,
+        "height": 48
+      },
+      {
+        "label": "Cycle time of day",
+        "width": 48,
+        "height": 48
+      },
+      {
+        "label": "Mute sound",
+        "width": 48,
+        "height": 48
+      },
+      {
+        "label": "DEV",
+        "width": 44,
+        "height": 30
+      },
+      {
+        "label": "🗺️Town",
+        "width": 55,
+        "height": 48
+      },
+      {
+        "label": "🏠Home",
+        "width": 55,
+        "height": 48
+      },
+      {
+        "label": "📜Clues",
+        "width": 55,
+        "height": 48
+      },
+      {
+        "label": "🧠Games",
+        "width": 55,
+        "height": 48
+      }
+    ],
+    "errors": []
+  },
+  {
+    "id": "10_salon",
+    "viewport": {
+      "width": 844,
+      "height": 390
+    },
+    "scene": "SalonScene",
+    "objects": 9,
+    "fps": 51,
+    "horizontalOverflow": false,
+    "controls": [
+      {
+        "label": "Detective Clues Journal",
+        "width": 48,
+        "height": 48
+      },
+      {
+        "label": "Brain training games",
+        "width": 48,
+        "height": 48
+      },
+      {
+        "label": "Cycle time of day",
+        "width": 48,
+        "height": 48
+      },
+      {
+        "label": "Mute sound",
+        "width": 48,
+        "height": 48
+      },
+      {
+        "label": "DEV",
+        "width": 44,
+        "height": 30
+      },
+      {
+        "label": "🗺️Town",
+        "width": 55,
+        "height": 48
+      },
+      {
+        "label": "🏠Home",
+        "width": 55,
+        "height": 48
+      },
+      {
+        "label": "📜Clues",
+        "width": 55,
+        "height": 48
+      },
+      {
+        "label": "🧠Games",
+        "width": 55,
+        "height": 48
+      }
+    ],
+    "errors": []
+  },
+  {
+    "id": "11_toy_shop",
+    "viewport": {
+      "width": 844,
+      "height": 390
+    },
+    "scene": "ToyShopScene",
+    "objects": 13,
+    "fps": 51,
+    "horizontalOverflow": false,
+    "controls": [
+      {
+        "label": "Detective Clues Journal",
+        "width": 48,
+        "height": 48
+      },
+      {
+        "label": "Brain training games",
+        "width": 48,
+        "height": 48
+      },
+      {
+        "label": "Cycle time of day",
+        "width": 48,
+        "height": 48
+      },
+      {
+        "label": "Mute sound",
+        "width": 48,
+        "height": 48
+      },
+      {
+        "label": "DEV",
+        "width": 44,
+        "height": 30
+      },
+      {
+        "label": "🗺️Town",
+        "width": 55,
+        "height": 48
+      },
+      {
+        "label": "🏠Home",
+        "width": 55,
+        "height": 48
+      },
+      {
+        "label": "📜Clues",
+        "width": 55,
+        "height": 48
+      },
+      {
+        "label": "🧠Games",
+        "width": 55,
+        "height": 48
+      }
+    ],
+    "errors": []
+  },
+  {
+    "id": "12_school",
+    "viewport": {
+      "width": 844,
+      "height": 390
+    },
+    "scene": "SchoolScene",
+    "objects": 26,
+    "fps": 52,
+    "horizontalOverflow": false,
+    "controls": [
+      {
+        "label": "Detective Clues Journal",
+        "width": 48,
+        "height": 48
+      },
+      {
+        "label": "Brain training games",
+        "width": 48,
+        "height": 48
+      },
+      {
+        "label": "Cycle time of day",
+        "width": 48,
+        "height": 48
+      },
+      {
+        "label": "Mute sound",
+        "width": 48,
+        "height": 48
+      },
+      {
+        "label": "DEV",
+        "width": 44,
+        "height": 30
+      },
+      {
+        "label": "🗺️Town",
+        "width": 55,
+        "height": 48
+      },
+      {
+        "label": "🏠Home",
+        "width": 55,
+        "height": 48
+      },
+      {
+        "label": "📜Clues",
+        "width": 55,
+        "height": 48
+      },
+      {
+        "label": "🧠Games",
+        "width": 55,
+        "height": 48
+      }
+    ],
+    "errors": []
+  },
+  {
+    "id": "13_brain_games",
+    "viewport": {
+      "width": 844,
+      "height": 390
+    },
+    "scene": "TownScene",
+    "objects": 18,
+    "fps": 33,
+    "horizontalOverflow": false,
+    "controls": [
+      {
+        "label": "Detective Clues Journal",
+        "width": 48,
+        "height": 48
+      },
+      {
+        "label": "Brain training games",
+        "width": 48,
+        "height": 48
+      },
+      {
+        "label": "Cycle time of day",
+        "width": 48,
+        "height": 48
+      },
+      {
+        "label": "Mute sound",
+        "width": 48,
+        "height": 48
+      },
+      {
+        "label": "Home",
+        "width": 59,
+        "height": 64
+      },
+      {
+        "label": "Clothing Boutique",
+        "width": 59,
+        "height": 64
+      },
+      {
+        "label": "Supermarket",
+        "width": 59,
+        "height": 64
+      },
+      {
+        "label": "Pet Shop",
+        "width": 59,
+        "height": 64
+      },
+      {
+        "label": "School",
+        "width": 59,
+        "height": 64
+      },
+      {
+        "label": "Park",
+        "width": 59,
+        "height": 64
+      },
+      {
+        "label": "Café",
+        "width": 59,
+        "height": 64
+      },
+      {
+        "label": "Salon",
+        "width": 59,
+        "height": 64
+      },
+      {
+        "label": "Toy Shop",
+        "width": 59,
+        "height": 64
+      },
+      {
+        "label": "DEV",
+        "width": 44,
+        "height": 30
+      },
+      {
+        "label": "🗺️Town",
+        "width": 55,
+        "height": 48
+      },
+      {
+        "label": "🏠Home",
+        "width": 55,
+        "height": 48
+      },
+      {
+        "label": "📜Clues",
+        "width": 55,
+        "height": 48
+      },
+      {
+        "label": "🧠Games",
+        "width": 55,
+        "height": 48
+      },
+      {
+        "label": "↺Reset",
+        "width": 48,
+        "height": 48
+      },
+      {
+        "label": "Close brain games",
+        "width": 42,
+        "height": 42
+      },
+      {
+        "label": "🧠Memory",
+        "width": 127,
+        "height": 39
+      },
+      {
+        "label": "📝Quiz",
+        "width": 127,
+        "height": 39
+      },
+      {
+        "label": "🧩Puzzle",
+        "width": 127,
+        "height": 39
+      },
+      {
+        "label": "🏆Badges",
+        "width": 127,
+        "height": 39
+      },
+      {
+        "label": "Junior (8)",
+        "width": 84,
+        "height": 29
+      },
+      {
+        "label": "Explorer (12)",
+        "width": 103,
+        "height": 29
+      },
+      {
+        "label": "Champion (16)",
+        "width": 111,
+        "height": 29
+      },
+      {
+        "label": "↺ New Game",
+        "width": 98,
+        "height": 24
+      },
+      {
+        "label": "🌟\n              \n              \n                🐰\n                Bunny",
+        "width": 124,
+        "height": 124
+      },
+      {
+        "label": "🌟\n              \n              \n                🐶\n                Puppy",
+        "width": 124,
+        "height": 124
+      },
+      {
+        "label": "🌟\n              \n              \n                🐹\n                Hamster",
+        "width": 124,
+        "height": 124
+      },
+      {
+        "label": "🌟\n              \n              \n                🐶\n                Puppy",
+        "width": 124,
+        "height": 124
+      },
+      {
+        "label": "🌟\n              \n              \n                🐰\n                Bunny",
+        "width": 124,
+        "height": 124
+      },
+      {
+        "label": "🌟\n              \n              \n                🐹\n                Hamster",
+        "width": 124,
+        "height": 124
+      },
+      {
+        "label": "🌟\n              \n              \n                🐱\n                Kitten",
+        "width": 124,
+        "height": 124
+      },
+      {
+        "label": "🌟\n              \n              \n                🐱\n                Kitten",
+        "width": 124,
+        "height": 124
+      }
+    ],
+    "errors": []
+  },
+  {
+    "id": "14_makeover",
+    "viewport": {
+      "width": 844,
+      "height": 390
+    },
+    "scene": "HomeScene",
+    "objects": 47,
+    "fps": 26,
+    "horizontalOverflow": false,
+    "controls": [
+      {
+        "label": "Detective Clues Journal",
+        "width": 48,
+        "height": 48
+      },
+      {
+        "label": "Brain training games",
+        "width": 48,
+        "height": 48
+      },
+      {
+        "label": "Cycle time of day",
+        "width": 48,
+        "height": 48
+      },
+      {
+        "label": "Mute sound",
+        "width": 48,
+        "height": 48
+      },
+      {
+        "label": "DEV",
+        "width": 44,
+        "height": 30
+      },
+      {
+        "label": "🗺️Town",
+        "width": 55,
+        "height": 48
+      },
+      {
+        "label": "📜Clues",
+        "width": 55,
+        "height": 48
+      },
+      {
+        "label": "🧠Games",
+        "width": 55,
+        "height": 48
+      },
+      {
+        "label": "Bedroom",
+        "width": 44,
+        "height": 44
+      },
+      {
+        "label": "Living room",
+        "width": 44,
+        "height": 44
+      },
+      {
+        "label": "Kitchen",
+        "width": 44,
+        "height": 44
+      },
+      {
+        "label": "🎒Bag",
+        "width": 55,
+        "height": 48
+      },
+      {
+        "label": "👗Dress",
+        "width": 55,
+        "height": 48
+      },
+      {
+        "label": "✨Avatar",
+        "width": 55,
+        "height": 48
+      },
+      {
+        "label": "🐾Pet",
+        "width": 55,
+        "height": 48
+      },
+      {
+        "label": "✏️Edit",
+        "width": 55,
+        "height": 48
+      },
+      {
+        "label": "×",
+        "width": 38,
+        "height": 38
+      },
+      {
+        "label": "🌸Long Waves with Bangs (Chibi Hero)",
+        "width": 212,
+        "height": 52
+      },
+      {
+        "label": "🎀Twin Space Buns",
+        "width": 212,
+        "height": 52
+      },
+      {
+        "label": "👱‍♀️High Ponytail",
+        "width": 212,
+        "height": 38
+      },
+      {
+        "label": "💇‍♀️Classic Bob",
+        "width": 212,
+        "height": 38
+      },
+      {
+        "label": "✨Cute Pixie Cut",
+        "width": 212,
+        "height": 38
+      },
+      {
+        "label": "",
+        "width": 44,
+        "height": 44
+      },
+      {
+        "label": "",
+        "width": 44,
+        "height": 44
+      },
+      {
+        "label": "",
+        "width": 44,
+        "height": 44
+      },
+      {
+        "label": "",
+        "width": 44,
+        "height": 44
+      },
+      {
+        "label": "",
+        "width": 44,
+        "height": 44
+      },
+      {
+        "label": "",
+        "width": 44,
+        "height": 44
+      },
+      {
+        "label": "",
+        "width": 44,
+        "height": 44
+      },
+      {
+        "label": "",
+        "width": 44,
+        "height": 44
+      },
+      {
+        "label": "",
+        "width": 44,
+        "height": 44
+      },
+      {
+        "label": "",
+        "width": 44,
+        "height": 44
+      },
+      {
+        "label": "",
+        "width": 44,
+        "height": 44
+      },
+      {
+        "label": "",
+        "width": 44,
+        "height": 44
+      },
+      {
+        "label": "",
+        "width": 44,
+        "height": 44
+      },
+      {
+        "label": "",
+        "width": 44,
+        "height": 44
+      },
+      {
+        "label": "",
+        "width": 44,
+        "height": 44
+      },
+      {
+        "label": "Save Look ✨",
+        "width": 155,
+        "height": 42
+      }
+    ],
+    "errors": []
+  }
+]

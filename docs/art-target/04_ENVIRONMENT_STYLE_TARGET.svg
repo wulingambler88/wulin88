@@ -1,0 +1,261 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" width="1200" height="800">
+  <defs>
+    <linearGradient id="bgGrad4" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#FFFDF7"/>
+      <stop offset="100%" stop-color="#F2EEFB"/>
+    </linearGradient>
+    <filter id="envShadow" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="4" stdDeviation="5" flood-color="#663D63" flood-opacity="0.12"/>
+    </filter>
+    <linearGradient id="wallPastel" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#FFF0F5"/>
+      <stop offset="100%" stop-color="#FCE1EB"/>
+    </linearGradient>
+    <linearGradient id="floorWood" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#FDF3E7"/>
+      <stop offset="100%" stop-color="#EEDBC5"/>
+    </linearGradient>
+    <linearGradient id="skyTown" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#DDF5FC"/>
+      <stop offset="100%" stop-color="#BAECF7"/>
+    </linearGradient>
+    <linearGradient id="grassHill" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#B8F3DE"/>
+      <stop offset="100%" stop-color="#80DEBF"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="800" fill="url(#bgGrad4)"/>
+
+  <!-- Header Banner -->
+  <rect x="40" y="25" width="1120" height="65" rx="20" fill="#FFFFFF" filter="url(#envShadow)"/>
+  <circle cx="75" cy="57" r="20" fill="#A8EAD7"/>
+  <text x="75" y="64" font-family="'Nunito', 'Segoe UI', sans-serif" font-size="18" font-weight="900" fill="#2E7E69" text-anchor="middle">★</text>
+  <text x="110" y="64" font-family="'Nunito', 'Segoe UI', sans-serif" font-size="24" font-weight="900" fill="#663D63">04 · ENVIRONMENT STYLE TARGET : 2.5D TOY DIORAMAS</text>
+  <text x="980" y="63" font-family="'Nunito', 'Segoe UI', sans-serif" font-size="13" font-weight="700" fill="#B38CAE">7-LAYER DEPTH ARCHITECTURE</text>
+
+  <!-- 1. INDOOR DIORAMA ROOM BREAKDOWN (LEFT) -->
+  <g transform="translate(40, 110)">
+    <rect x="0" y="0" width="560" height="420" rx="24" fill="#FFFFFF" stroke="#663D63" stroke-width="2.5" filter="url(#envShadow)"/>
+    <text x="30" y="38" font-family="'Nunito', sans-serif" font-size="16" font-weight="800" fill="#663D63">HOME ROOM: 4-LAYER DIORAMA DEPTH</text>
+
+    <!-- Miniature Interactive Room Model -->
+    <g transform="translate(30, 55)">
+      <!-- Clip path for room -->
+      <g>
+        <!-- L1: Background Wall -->
+        <rect x="0" y="0" width="500" height="220" rx="16" fill="url(#wallPastel)"/>
+        <!-- Wall decorative pastel vertical stripes -->
+        <line x1="50" y1="0" x2="50" y2="220" stroke="#FFFFFF" stroke-width="8" opacity="0.4"/>
+        <line x1="120" y1="0" x2="120" y2="220" stroke="#FFFFFF" stroke-width="8" opacity="0.4"/>
+        <line x1="190" y1="0" x2="190" y2="220" stroke="#FFFFFF" stroke-width="8" opacity="0.4"/>
+        <line x1="260" y1="0" x2="260" y2="220" stroke="#FFFFFF" stroke-width="8" opacity="0.4"/>
+        <line x1="330" y1="0" x2="330" y2="220" stroke="#FFFFFF" stroke-width="8" opacity="0.4"/>
+        <line x1="400" y1="0" x2="400" y2="220" stroke="#FFFFFF" stroke-width="8" opacity="0.4"/>
+        <line x1="470" y1="0" x2="470" y2="220" stroke="#FFFFFF" stroke-width="8" opacity="0.4"/>
+
+        <!-- Crown Molding Top Trim -->
+        <rect x="0" y="0" width="500" height="12" fill="#FFFFFF" stroke="#663D63" stroke-width="1.5"/>
+
+        <!-- Window with Soft Light & Curtains -->
+        <g transform="translate(180, 25)">
+          <rect x="0" y="0" width="100" height="120" rx="14" fill="#D4F3FA" stroke="#663D63" stroke-width="2"/>
+          <path d="M 50 0 L 50 120 M 0 60 L 100 60" stroke="#FFFFFF" stroke-width="3"/>
+          <!-- Pastel curtains -->
+          <path d="M -8 0 Q 15 60 -5 120 L 10 120 Q 25 60 5 0 Z" fill="#FFA8D3" stroke="#663D63" stroke-width="1.5"/>
+          <path d="M 108 0 Q 85 60 105 120 L 90 120 Q 75 60 95 0 Z" fill="#FFA8D3" stroke="#663D63" stroke-width="1.5"/>
+          <!-- Soft sun glow cone on floor -->
+          <polygon points="10,120 90,120 140,290 -20,290" fill="#FFF8D6" opacity="0.25"/>
+        </g>
+
+        <!-- L2: Baseboard / Skirting Trim (GROUNDS THE WALL) -->
+        <rect x="0" y="212" width="500" height="16" fill="#FFFFFF" stroke="#663D63" stroke-width="1.8"/>
+        <line x1="0" y1="216" x2="500" y2="216" stroke="#E8D1E5" stroke-width="1.5"/>
+
+        <!-- L3: Floor Plane with Perspective Parquet / Carpet -->
+        <rect x="0" y="228" width="500" height="110" rx="0" fill="url(#floorWood)"/>
+        <!-- Soft Oval Rug -->
+        <ellipse cx="250" cy="285" rx="140" ry="32" fill="#CAB8F1" stroke="#663D63" stroke-width="2"/>
+        <ellipse cx="250" cy="285" rx="125" ry="24" fill="#DDCFF7" stroke="#FFFFFF" stroke-width="2" stroke-dasharray="6,4"/>
+
+        <!-- L4: Furniture with Contact Shadows -->
+        <!-- Cozy Bed (Left) -->
+        <g transform="translate(40, 160)">
+          <!-- Bed Contact Shadow -->
+          <ellipse cx="65" cy="130" rx="75" ry="18" fill="#663D63" opacity="0.2"/>
+          <!-- Headboard -->
+          <rect x="0" y="20" width="130" height="90" rx="18" fill="#FFC4A8" stroke="#663D63" stroke-width="2"/>
+          <!-- Mattress & Blanket -->
+          <rect x="10" y="55" width="125" height="65" rx="16" fill="#BDEAF5" stroke="#663D63" stroke-width="2"/>
+          <rect x="15" y="45" width="45" height="28" rx="10" fill="#FFFFFF" stroke="#663D63" stroke-width="1.5"/>
+          <text x="65" y="90" font-family="'Nunito', sans-serif" font-size="11" font-weight="800" fill="#589BB0" text-anchor="middle">★ Snuggle Bed</text>
+        </g>
+
+        <!-- Vanity Desk (Right) -->
+        <g transform="translate(350, 150)">
+          <!-- Contact Shadow -->
+          <ellipse cx="55" cy="140" rx="60" ry="15" fill="#663D63" opacity="0.2"/>
+          <!-- Mirror -->
+          <ellipse cx="55" cy="40" rx="35" ry="40" fill="#D4F3FA" stroke="#663D63" stroke-width="2"/>
+          <ellipse cx="50" cy="35" rx="28" ry="32" fill="#FFFFFF" opacity="0.4"/>
+          <!-- Desk Tabletop & Legs -->
+          <rect x="5" y="75" width="100" height="24" rx="10" fill="#A8EAD7" stroke="#663D63" stroke-width="2"/>
+          <rect x="15" y="99" width="12" height="40" rx="5" fill="#76D2B8" stroke="#663D63" stroke-width="1.5"/>
+          <rect x="83" y="99" width="12" height="40" rx="5" fill="#76D2B8" stroke="#663D63" stroke-width="1.5"/>
+        </g>
+
+        <!-- L5: Interactive Prop with Shadow -->
+        <g transform="translate(240, 260)">
+          <ellipse cx="12" cy="18" rx="16" ry="6" fill="#663D63" opacity="0.22"/>
+          <!-- Cute Teddy Bear Prop -->
+          <circle cx="12" cy="6" r="12" fill="#D29A67" stroke="#663D63" stroke-width="1.5"/>
+          <circle cx="4" cy="-4" r="5" fill="#D29A67" stroke="#663D63" stroke-width="1.5"/>
+          <circle cx="20" cy="-4" r="5" fill="#D29A67" stroke="#663D63" stroke-width="1.5"/>
+          <circle cx="9" cy="4" r="1.5" fill="#663D63"/><circle cx="15" cy="4" r="1.5" fill="#663D63"/>
+        </g>
+
+        <!-- L6: Foreground Accent -->
+        <g transform="translate(440, 250)">
+          <path d="M 0 60 Q 25 10 50 30 Q 30 70 0 60 Z" fill="#80DEBF" stroke="#663D63" stroke-width="1.5"/>
+        </g>
+      </g>
+    </g>
+
+    <!-- Key Environment Rule Callout -->
+    <text x="30" y="405" font-family="'Nunito', sans-serif" font-size="11" font-weight="700" fill="#FF7AB8">RULE: Every piece of furniture must have a soft grounded oval shadow (opacity 0.18–0.22).</text>
+  </g>
+
+  <!-- 2. TOWN EXTERIOR DIORAMA (RIGHT) -->
+  <g transform="translate(620, 110)">
+    <rect x="0" y="0" width="540" height="420" rx="24" fill="#FFFFFF" stroke="#663D63" stroke-width="2.5" filter="url(#envShadow)"/>
+    <text x="30" y="38" font-family="'Nunito', sans-serif" font-size="16" font-weight="800" fill="#663D63">TOWN MAP: MINIATURE EXTERIOR SYSTEM</text>
+
+    <!-- Miniature Town Exterior Scene -->
+    <g transform="translate(30, 55)">
+      <!-- Sky -->
+      <rect x="0" y="0" width="480" height="150" rx="16" fill="url(#skyTown)"/>
+      <!-- Soft fluffy clouds -->
+      <path d="M 40 40 Q 55 20 75 30 Q 95 15 115 35 Q 125 50 115 60 L 40 60 Z" fill="#FFFFFF" opacity="0.85"/>
+      <path d="M 320 25 Q 335 10 350 20 Q 370 10 385 25 Q 395 38 385 50 L 320 50 Z" fill="#FFFFFF" opacity="0.85"/>
+
+      <!-- Rolling Green Hills Background -->
+      <path d="M 0 160 Q 120 110 240 145 Q 360 110 480 150 L 480 340 L 0 340 Z" fill="url(#grassHill)"/>
+
+      <!-- Pastel Candy Road -->
+      <path d="M 0 260 Q 240 240 480 270 L 480 330 Q 240 310 0 340 Z" fill="#FFF2CE" stroke="#663D63" stroke-width="2"/>
+      <path d="M 30 295 Q 240 275 450 300" stroke="#DE9F1D" stroke-width="3" stroke-dasharray="10,8" fill="none"/>
+
+      <!-- Chunky Building 1: Boutique (Pastel Pink) -->
+      <g transform="translate(60, 120)">
+        <ellipse cx="60" cy="140" rx="65" ry="14" fill="#663D63" opacity="0.2"/>
+        <!-- Building base -->
+        <rect x="10" y="40" width="100" height="95" rx="16" fill="#FFA8D3" stroke="#663D63" stroke-width="2.5"/>
+        <!-- Awning Roof -->
+        <path d="M 0 45 Q 60 10 120 45 L 115 65 Q 60 40 5 65 Z" fill="#FF7AB8" stroke="#663D63" stroke-width="2"/>
+        <!-- Door -->
+        <rect x="40" y="85" width="40" height="50" rx="14" fill="#FFFDF7" stroke="#663D63" stroke-width="2"/>
+        <circle cx="70" cy="110" r="3.5" fill="#FFD96F"/>
+        <!-- Boutique Sign -->
+        <rect x="25" y="5" width="70" height="28" rx="14" fill="#FFFFFF" stroke="#663D63" stroke-width="2" filter="url(#envShadow)"/>
+        <text x="60" y="24" font-family="'Nunito', sans-serif" font-size="11" font-weight="900" fill="#FF7AB8" text-anchor="middle">Boutique</text>
+      </g>
+
+      <!-- Chunky Building 2: Supermarket (Pastel Mint) -->
+      <g transform="translate(230, 100)">
+        <ellipse cx="75" cy="160" rx="80" ry="16" fill="#663D63" opacity="0.2"/>
+        <rect x="15" y="40" width="120" height="115" rx="18" fill="#BEF2E3" stroke="#663D63" stroke-width="2.5"/>
+        <!-- Glass display window -->
+        <rect x="28" y="70" width="45" height="45" rx="10" fill="#E6FAF4" stroke="#663D63" stroke-width="1.8"/>
+        <!-- Door -->
+        <rect x="85" y="85" width="40" height="70" rx="12" fill="#FFFDF7" stroke="#663D63" stroke-width="2"/>
+        <!-- Sign -->
+        <rect x="35" y="10" width="80" height="28" rx="14" fill="#FFFFFF" stroke="#663D63" stroke-width="2" filter="url(#envShadow)"/>
+        <text x="75" y="29" font-family="'Nunito', sans-serif" font-size="11" font-weight="900" fill="#2E7E69" text-anchor="middle">Market</text>
+      </g>
+
+      <!-- Chunky Trees with Volume -->
+      <g transform="translate(390, 150)">
+        <ellipse cx="30" cy="130" rx="25" ry="8" fill="#663D63" opacity="0.18"/>
+        <!-- Trunk -->
+        <rect x="24" y="80" width="12" height="50" rx="6" fill="#A87250" stroke="#663D63" stroke-width="1.5"/>
+        <!-- Fluffy rounded foliage crown -->
+        <circle cx="30" cy="65" r="35" fill="#8FE0CA" stroke="#663D63" stroke-width="2"/>
+        <circle cx="15" cy="55" r="22" fill="#B8F3DE"/>
+        <circle cx="45" cy="60" r="24" fill="#8FE0CA"/>
+        <circle cx="30" cy="40" r="25" fill="#B8F3DE"/>
+        <!-- Little flower accent -->
+        <circle cx="25" cy="55" r="4" fill="#FFA8D3"/><circle cx="25" cy="55" r="1.5" fill="#FFFFFF"/>
+      </g>
+    </g>
+
+    <text x="30" y="405" font-family="'Nunito', sans-serif" font-size="11" font-weight="700" fill="#2E7E69">RULE: Town elements feature chunky rounded candy shapes with clear walkable paths.</text>
+  </g>
+
+  <!-- 3. PROP SCALE & HARMONY GUIDE (BOTTOM) -->
+  <g transform="translate(40, 550)">
+    <rect x="0" y="0" width="1120" height="220" rx="24" fill="#FFFFFF" stroke="#663D63" stroke-width="2.5" filter="url(#envShadow)"/>
+    <text x="30" y="36" font-family="'Nunito', sans-serif" font-size="16" font-weight="800" fill="#663D63">PROP SCALE RATIOS &amp; CHARACTER HARMONY</text>
+
+    <!-- Side-by-side scale comparison -->
+    <g transform="translate(50, 60)">
+      <!-- 1. Character Reference Height (100%) -->
+      <g transform="translate(40, 0)">
+        <ellipse cx="0" cy="115" rx="30" ry="8" fill="#663D63" opacity="0.18"/>
+        <!-- Simplified 100% silhouette -->
+        <circle cx="0" cy="20" r="22" fill="#FFE5D6" stroke="#663D63" stroke-width="2"/>
+        <rect x="-14" y="42" width="28" height="38" rx="8" fill="#89CDE3" stroke="#663D63" stroke-width="2"/>
+        <rect x="-10" y="80" width="8" height="32" rx="4" fill="#FFA8D3" stroke="#663D63" stroke-width="1.5"/>
+        <rect x="2" y="80" width="8" height="32" rx="4" fill="#FFA8D3" stroke="#663D63" stroke-width="1.5"/>
+        <text x="0" y="132" font-family="'Nunito', sans-serif" font-size="11" font-weight="900" fill="#663D63" text-anchor="middle">Character</text>
+        <text x="0" y="146" font-family="'Nunito', sans-serif" font-size="10" font-weight="700" fill="#FF7AB8" text-anchor="middle">100% Height (160px)</text>
+      </g>
+
+      <!-- 2. Doorway Scale (140% Character) -->
+      <g transform="translate(180, -25)">
+        <rect x="0" y="0" width="75" height="140" rx="18" fill="#FFFDF7" stroke="#663D63" stroke-width="2.5"/>
+        <circle cx="60" cy="75" r="5" fill="#FFD96F" stroke="#663D63" stroke-width="1.5"/>
+        <text x="37" y="157" font-family="'Nunito', sans-serif" font-size="11" font-weight="900" fill="#663D63" text-anchor="middle">Door Scale</text>
+        <text x="37" y="171" font-family="'Nunito', sans-serif" font-size="10" fill="#B38CAE" text-anchor="middle">140% Character H</text>
+      </g>
+
+      <!-- 3. Bed Scale (160% Character Length) -->
+      <g transform="translate(330, 20)">
+        <rect x="0" y="20" width="150" height="75" rx="18" fill="#CAB8F1" stroke="#663D63" stroke-width="2"/>
+        <rect x="10" y="35" width="135" height="50" rx="12" fill="#FFFFFF"/>
+        <text x="75" y="112" font-family="'Nunito', sans-serif" font-size="11" font-weight="900" fill="#663D63" text-anchor="middle">Bed Length</text>
+        <text x="75" y="126" font-family="'Nunito', sans-serif" font-size="10" fill="#B38CAE" text-anchor="middle">160% Character L</text>
+      </g>
+
+      <!-- 4. Chair Scale (60% Character Height) -->
+      <g transform="translate(540, 35)">
+        <rect x="10" y="0" width="45" height="40" rx="10" fill="#FFC4A8" stroke="#663D63" stroke-width="2"/>
+        <rect x="5" y="35" width="55" height="18" rx="8" fill="#FFA8D3" stroke="#663D63" stroke-width="2"/>
+        <rect x="12" y="53" width="8" height="25" rx="4" fill="#754C72"/>
+        <rect x="45" y="53" width="8" height="25" rx="4" fill="#754C72"/>
+        <text x="32" y="97" font-family="'Nunito', sans-serif" font-size="11" font-weight="900" fill="#663D63" text-anchor="middle">Chair Seat</text>
+        <text x="32" y="111" font-family="'Nunito', sans-serif" font-size="10" fill="#B38CAE" text-anchor="middle">Seat at 45px H</text>
+      </g>
+
+      <!-- 5. Table Scale (75% Character Height) -->
+      <g transform="translate(680, 20)">
+        <rect x="0" y="20" width="90" height="20" rx="10" fill="#A8EAD7" stroke="#663D63" stroke-width="2"/>
+        <rect x="12" y="40" width="10" height="35" rx="5" fill="#76D2B8" stroke="#663D63" stroke-width="1.5"/>
+        <rect x="68" y="40" width="10" height="35" rx="5" fill="#76D2B8" stroke="#663D63" stroke-width="1.5"/>
+        <text x="45" y="112" font-family="'Nunito', sans-serif" font-size="11" font-weight="900" fill="#663D63" text-anchor="middle">Table Height</text>
+        <text x="45" y="126" font-family="'Nunito', sans-serif" font-size="10" fill="#B38CAE" text-anchor="middle">75% Character H</text>
+      </g>
+
+      <!-- 6. Food Prop vs Hand (20% Head Width) -->
+      <g transform="translate(850, 30)">
+        <!-- Hand holding apple -->
+        <circle cx="30" cy="30" r="14" fill="#FF7AB8" stroke="#663D63" stroke-width="1.8"/>
+        <path d="M 30 16 Q 34 10 40 14" stroke="#52A44E" stroke-width="2" fill="none"/>
+        <circle cx="25" cy="25" r="3" fill="#FFFFFF" opacity="0.6"/>
+        <text x="30" y="102" font-family="'Nunito', sans-serif" font-size="11" font-weight="900" fill="#663D63" text-anchor="middle">Food Prop</text>
+        <text x="30" y="116" font-family="'Nunito', sans-serif" font-size="10" fill="#B38CAE" text-anchor="middle">24–32px cute size</text>
+      </g>
+    </g>
+  </g>
+
+</svg>
