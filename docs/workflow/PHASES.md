@@ -14,6 +14,8 @@
 
 P01 開工前先取得 P00 reviewer PASS。每階段只做當前列。遇到路徑外必要變更，先交 planner 調整任務；不得自行擴大範圍。
 
+每階段另允許寫入自己的 screenshots/phases/PXX/、docs/workflow/reviews/PXX-handoff.md，以及僅驗證該階段改動的 tests/ 和 scripts/ 檔案。這項共同允許不授權修改其他階段、通用契約或無關測試。Reviewer 才可寫 PXX-review.md 並更新 PHASES 的階段通過及下一階段授權；Builder 僅在自己的 handoff 記錄 AWAITING_REVIEW。
+
 ## 每階段交付
 
 1. 完成當前階段，跑相應檢查，拍 before/after 真實畫面。
