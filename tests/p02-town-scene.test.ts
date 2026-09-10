@@ -84,7 +84,7 @@ describe('P02: Town Scene Composition & Locations', () => {
       },
     }
 
-    const dnm = new DayNightManager(mockScene as any, 'day')
+    const dnm = new DayNightManager(mockScene as unknown as Phaser.Scene, 'day')
     expect(dnm.getTime()).toBe('day')
 
     expect(dnm.cycle()).toBe('sunset')
