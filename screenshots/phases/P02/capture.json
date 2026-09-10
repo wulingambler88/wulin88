@@ -1,0 +1,226 @@
+﻿{
+    "phase":  "P02",
+    "title":  "Town Scene Composition \u0026 Responsive UI",
+    "timestamp":  "2026-09-10T14:21:03.551Z",
+    "tested_features":  [
+                            "3 desktop viewport sizes: 1280x720, 1536x990, 1920x1080",
+                            "9 distinct location badges: HOME, BOUTIQUE, MARKET, PET SHOP, SCHOOL, PARK, CAFÃ‰, SALON, TOY SHOP",
+                            "Zero badge clipping: BOUTIQUE and MARKET badges elevated above bottom building roofs",
+                            "Day / Sunset / Night time-of-day cycling",
+                            "Navigation to all 9 location destinations",
+                            "Live HUD portrait synchronization and responsive dock"
+                        ],
+    "captures":  [
+                     {
+                         "name":  "Town Scene Day (1280x720)",
+                         "file":  "01_town_day_1280x720.png",
+                         "scene":  "TownScene",
+                         "viewport":  {
+                                          "name":  "1280x720",
+                                          "width":  1280,
+                                          "height":  720
+                                      },
+                         "timestamp":  "2026-09-10T14:20:28.393Z",
+                         "errors":  [
+
+                                    ],
+                         "candidate_sha":  "06818c3b64f0d16c252ff7b1365c7522416da9ec"
+                     },
+                     {
+                         "name":  "Town Scene Day (1536x990)",
+                         "file":  "01_town_day_1536x990.png",
+                         "scene":  "TownScene",
+                         "viewport":  {
+                                          "name":  "1536x990",
+                                          "width":  1536,
+                                          "height":  990
+                                      },
+                         "timestamp":  "2026-09-10T14:20:30.853Z",
+                         "errors":  [
+
+                                    ],
+                         "candidate_sha":  "06818c3b64f0d16c252ff7b1365c7522416da9ec"
+                     },
+                     {
+                         "name":  "Town Scene Day (1920x1080)",
+                         "file":  "01_town_day_1920x1080.png",
+                         "scene":  "TownScene",
+                         "viewport":  {
+                                          "name":  "1920x1080",
+                                          "width":  1920,
+                                          "height":  1080
+                                      },
+                         "timestamp":  "2026-09-10T14:20:33.563Z",
+                         "errors":  [
+
+                                    ],
+                         "candidate_sha":  "06818c3b64f0d16c252ff7b1365c7522416da9ec"
+                     },
+                     {
+                         "name":  "Town Scene Sunset",
+                         "file":  "02_town_sunset_1280x720.png",
+                         "scene":  "TownScene",
+                         "timeOfDay":  "sunset",
+                         "viewport":  {
+                                          "width":  1280,
+                                          "height":  720
+                                      },
+                         "timestamp":  "2026-09-10T14:20:36.606Z",
+                         "errors":  [
+
+                                    ],
+                         "candidate_sha":  "06818c3b64f0d16c252ff7b1365c7522416da9ec"
+                     },
+                     {
+                         "name":  "Town Scene Night (Starry Sky)",
+                         "file":  "03_town_night_1280x720.png",
+                         "scene":  "TownScene",
+                         "timeOfDay":  "night",
+                         "viewport":  {
+                                          "width":  1280,
+                                          "height":  720
+                                      },
+                         "timestamp":  "2026-09-10T14:20:37.730Z",
+                         "errors":  [
+
+                                    ],
+                         "candidate_sha":  "06818c3b64f0d16c252ff7b1365c7522416da9ec"
+                     },
+                     {
+                         "name":  "Navigated to Home (HomeScene)",
+                         "file":  "04_nav_home.png",
+                         "scene":  "HomeScene",
+                         "locationId":  "home",
+                         "viewport":  {
+                                          "width":  1280,
+                                          "height":  720
+                                      },
+                         "timestamp":  "2026-09-10T14:20:40.822Z",
+                         "errors":  [
+
+                                    ],
+                         "candidate_sha":  "06818c3b64f0d16c252ff7b1365c7522416da9ec"
+                     },
+                     {
+                         "name":  "Navigated to Boutique (ClothingShopScene)",
+                         "file":  "05_nav_clothing_boutique.png",
+                         "scene":  "ClothingShopScene",
+                         "locationId":  "clothing_boutique",
+                         "viewport":  {
+                                          "width":  1280,
+                                          "height":  720
+                                      },
+                         "timestamp":  "2026-09-10T14:20:44.351Z",
+                         "errors":  [
+
+                                    ],
+                         "candidate_sha":  "06818c3b64f0d16c252ff7b1365c7522416da9ec"
+                     },
+                     {
+                         "name":  "Navigated to Supermarket (SupermarketScene)",
+                         "file":  "06_nav_supermarket.png",
+                         "scene":  "SupermarketScene",
+                         "locationId":  "supermarket",
+                         "viewport":  {
+                                          "width":  1280,
+                                          "height":  720
+                                      },
+                         "timestamp":  "2026-09-10T14:20:47.057Z",
+                         "errors":  [
+
+                                    ],
+                         "candidate_sha":  "06818c3b64f0d16c252ff7b1365c7522416da9ec"
+                     },
+                     {
+                         "name":  "Navigated to Pet Shop (PetShopScene)",
+                         "file":  "07_nav_pet_shop.png",
+                         "scene":  "PetShopScene",
+                         "locationId":  "pet_shop",
+                         "viewport":  {
+                                          "width":  1280,
+                                          "height":  720
+                                      },
+                         "timestamp":  "2026-09-10T14:20:49.897Z",
+                         "errors":  [
+
+                                    ],
+                         "candidate_sha":  "06818c3b64f0d16c252ff7b1365c7522416da9ec"
+                     },
+                     {
+                         "name":  "Navigated to School (SchoolScene)",
+                         "file":  "08_nav_school.png",
+                         "scene":  "SchoolScene",
+                         "locationId":  "school",
+                         "viewport":  {
+                                          "width":  1280,
+                                          "height":  720
+                                      },
+                         "timestamp":  "2026-09-10T14:20:52.652Z",
+                         "errors":  [
+
+                                    ],
+                         "candidate_sha":  "06818c3b64f0d16c252ff7b1365c7522416da9ec"
+                     },
+                     {
+                         "name":  "Navigated to Park (ParkScene)",
+                         "file":  "09_nav_park.png",
+                         "scene":  "ParkScene",
+                         "locationId":  "park",
+                         "viewport":  {
+                                          "width":  1280,
+                                          "height":  720
+                                      },
+                         "timestamp":  "2026-09-10T14:20:55.353Z",
+                         "errors":  [
+
+                                    ],
+                         "candidate_sha":  "06818c3b64f0d16c252ff7b1365c7522416da9ec"
+                     },
+                     {
+                         "name":  "Navigated to CafÃ© (CafeScene)",
+                         "file":  "10_nav_cafe.png",
+                         "scene":  "CafeScene",
+                         "locationId":  "cafe",
+                         "viewport":  {
+                                          "width":  1280,
+                                          "height":  720
+                                      },
+                         "timestamp":  "2026-09-10T14:20:58.101Z",
+                         "errors":  [
+
+                                    ],
+                         "candidate_sha":  "06818c3b64f0d16c252ff7b1365c7522416da9ec"
+                     },
+                     {
+                         "name":  "Navigated to Salon (SalonScene)",
+                         "file":  "11_nav_salon.png",
+                         "scene":  "SalonScene",
+                         "locationId":  "salon",
+                         "viewport":  {
+                                          "width":  1280,
+                                          "height":  720
+                                      },
+                         "timestamp":  "2026-09-10T14:21:00.885Z",
+                         "errors":  [
+
+                                    ],
+                         "candidate_sha":  "06818c3b64f0d16c252ff7b1365c7522416da9ec"
+                     },
+                     {
+                         "name":  "Navigated to Toy Shop (ToyShopScene)",
+                         "file":  "12_nav_toy_shop.png",
+                         "scene":  "ToyShopScene",
+                         "locationId":  "toy_shop",
+                         "viewport":  {
+                                          "width":  1280,
+                                          "height":  720
+                                      },
+                         "timestamp":  "2026-09-10T14:21:03.535Z",
+                         "errors":  [
+
+                                    ],
+                         "candidate_sha":  "06818c3b64f0d16c252ff7b1365c7522416da9ec"
+                     }
+                 ],
+    "candidate_sha":  "06818c3b64f0d16c252ff7b1365c7522416da9ec"
+}
