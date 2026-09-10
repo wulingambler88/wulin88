@@ -66,133 +66,6 @@ export class AvatarRenderer {
     const OUTLINE_LIGHT = 0x78504b
     const OUTLINE_W = 1.8
 
-    // 0. HIGH-DEFINITION ILLUSTRATED RASTER SPRITE
-    // If the high-res storybook sprites are loaded and the avatar has her signature appearance
-    const hasRasterSprites = this.scene.textures.exists('hero-standing')
-    const isIllustratedQianHui =
-      this.scene.textures.exists('hero-qianhui-v2') && hairStyle === 'twin_buns'
-    const isSignatureHero =
-      hasRasterSprites &&
-      (!outfit.top || outfit.top === 'top_strawberry' || outfit.top === 'tunic_mint') &&
-      (hairStyle === 'long_waves' || isIllustratedQianHui)
-
-    if (isSignatureHero) {
-      // Ground contact shadow
-      g.fillStyle(OUTLINE_LIGHT, 0.22).fillEllipse(0, sitting ? 66 : 78, sitting ? 76 : 64, 15)
-
-      let spriteKey = isIllustratedQianHui ? 'hero-qianhui-v2' : 'hero-standing'
-      if (sitting && !isIllustratedQianHui) {
-        spriteKey = 'hero-sitting'
-      } else if (!isIllustratedQianHui && (expr === 'happy' || expr === 'excited' || expr === 'eating' || state === 'eating' || state === 'playing')) {
-        spriteKey = 'hero-happy'
-      }
-
-      const img = this.scene.add.image(0, sitting ? 2 : -2, spriteKey)
-      if (isIllustratedQianHui) {
-        img.setDisplaySize(124, 186)
-      } else if (sitting) {
-        img.setDisplaySize(126, 187)
-      } else if (spriteKey === 'hero-happy') {
-        img.setDisplaySize(136, 186)
-      } else {
-        img.setDisplaySize(120, 190)
-      }
-      root.add(img)
-
-      // Dynamic Dress Overlay for Boutique Outfits (keeps storybook anime face/hair)
-      if (outfit.dress && outfit.dress !== 'dress_bunny_pinafore' && outfit.dress !== 'dress_blue_daisy') {
-        const dressDef = ClothingRegistry.get(outfit.dress)
-        if (dressDef) {
-          const dressG = this.scene.add.graphics()
-          const dressColor = dressDef.color
-          const dressAccent = dressDef.accent ?? 0xffffff
-
-          // Pinafore Bib & Apron matching character torso
-          dressG.fillStyle(dressColor, 0.96)
-          dressG.fillRoundedRect(-18, sitting ? 12 : 10, 36, sitting ? 38 : 42, 8)
-          dressG.lineStyle(1.8, OUTLINE, 0.85)
-          dressG.strokeRoundedRect(-18, sitting ? 12 : 10, 36, sitting ? 38 : 42, 8)
-
-          // Shoulder Straps
-          dressG.fillStyle(dressColor, 0.96)
-          dressG.fillRoundedRect(-17, sitting ? 2 : 0, 7, 14, 3)
-          dressG.fillRoundedRect(10, sitting ? 2 : 0, 7, 14, 3)
-          dressG.lineStyle(1.6, OUTLINE, 0.75)
-          dressG.strokeRoundedRect(-17, sitting ? 2 : 0, 7, 14, 3)
-          dressG.strokeRoundedRect(10, sitting ? 2 : 0, 7, 14, 3)
-
-          // Golden Buttons
-          dressG.fillStyle(0xffd700).fillCircle(-13.5, sitting ? 11 : 9, 2.2)
-          dressG.fillStyle(0xffd700).fillCircle(13.5, sitting ? 11 : 9, 2.2)
-
-          // Custom front feature per boutique dress
-          if (dressDef.id === 'dress_pink_gingham') {
-            dressG.fillStyle(0xffffff, 0.95).fillRoundedRect(-12, sitting ? 22 : 20, 24, 18, 5)
-            dressG.lineStyle(1.2, OUTLINE, 0.6).strokeRoundedRect(-12, sitting ? 22 : 20, 24, 18, 5)
-            dressG.fillStyle(0xff6ea7)
-            dressG.fillTriangle(-6, sitting ? 30 : 28, 0, sitting ? 33 : 31, -6, sitting ? 36 : 34)
-            dressG.fillTriangle(6, sitting ? 30 : 28, 0, sitting ? 33 : 31, 6, sitting ? 36 : 34)
-            dressG.fillStyle(0xffd700).fillCircle(0, sitting ? 33 : 31, 2)
-          } else if (dressDef.id === 'dress_yellow_sunshine') {
-            dressG.lineStyle(1.8, 0xffffff, 0.95)
-            dressG.beginPath().arc(0, sitting ? 26 : 24, 11, 0.2, 2.94).strokePath()
-            dressG.beginPath().arc(0, sitting ? 37 : 35, 14, 0.2, 2.94).strokePath()
-            dressG.fillStyle(0xffffff).fillCircle(0, sitting ? 19 : 17, 3.2)
-            dressG.fillStyle(0xffd700).fillCircle(0, sitting ? 19 : 17, 1.8)
-          } else if (dressDef.id === 'dress_mint_floral') {
-            dressG.fillStyle(0xffffff, 0.95).fillRoundedRect(-11, sitting ? 23 : 21, 22, 17, 5)
-            dressG.lineStyle(1.2, OUTLINE, 0.6).strokeRoundedRect(-11, sitting ? 23 : 21, 22, 17, 5)
-            dressG.fillStyle(0x78c99b).fillCircle(0, sitting ? 31 : 29, 3)
-            dressG.fillStyle(0xffffff).fillCircle(0, sitting ? 31 : 29, 1.5)
-          } else if (dressDef.id === 'dress_lavender_ruffle') {
-            dressG.fillStyle(0xffffff, 0.9)
-            for (let rx = -14; rx <= 14; rx += 7) {
-              dressG.fillCircle(rx, sitting ? 47 : 49, 3.2)
-            }
-            dressG.fillStyle(0xb59fe8).fillCircle(0, sitting ? 23 : 21, 3)
-          } else {
-            dressG.fillStyle(dressAccent, 0.9).fillRoundedRect(-11, sitting ? 23 : 21, 22, 17, 5)
-            dressG.lineStyle(1.2, OUTLINE, 0.6).strokeRoundedRect(-11, sitting ? 23 : 21, 22, 17, 5)
-          }
-          root.add(dressG)
-        }
-      }
-
-      // Hat accessories on hero sprite
-      if (outfit.hat && outfit.hat !== 'hat_flower_pearl') {
-        const hatDef = ClothingRegistry.get(outfit.hat)
-        if (hatDef) {
-          const hatG = this.scene.add.graphics()
-          const hatY = sitting ? -68 : -72
-          if (hatDef.id === 'hat_cat') {
-            hatG.fillStyle(hatDef.color).fillTriangle(-24, hatY - 8, -12, hatY + 4, -28, hatY + 6)
-            hatG.fillStyle(hatDef.color).fillTriangle(24, hatY - 8, 12, hatY + 4, 28, hatY + 6)
-            hatG.fillStyle(0xffa8d3).fillTriangle(-23, hatY - 6, -14, hatY + 2, -26, hatY + 4)
-            hatG.fillStyle(0xffa8d3).fillTriangle(23, hatY - 6, 14, hatY + 2, 26, hatY + 4)
-            hatG.lineStyle(1.8, OUTLINE).strokeTriangle(-24, hatY - 8, -12, hatY + 4, -28, hatY + 6)
-            hatG.strokeTriangle(24, hatY - 8, 12, hatY + 4, 28, hatY + 6)
-          } else if (hatDef.id === 'hat_beret') {
-            hatG.fillStyle(hatDef.color).fillEllipse(-4, hatY - 4, 38, 18).strokeEllipse(-4, hatY - 4, 38, 18)
-            hatG.fillStyle(hatDef.accent ?? 0xffffff).fillCircle(12, hatY - 8, 4)
-          }
-          root.add(hatG)
-        }
-      }
-
-      // Held Item in Hands (if any)
-      if (heldItemId && !sleeping) {
-        const heldDef = ITEM_DEFINITIONS.find((it) => it.id === heldItemId)
-        if (heldDef) {
-          const itemX = 14
-          const itemY = sitting ? 32 : 36
-          PropRenderer.drawProp(g, heldDef.id, itemX, itemY, 0.72)
-        }
-      }
-
-      if (sleeping) root.setAngle(isIllustratedQianHui ? -14 : -90).setPosition(0, isIllustratedQianHui ? 14 : 4)
-      return root
-    }
-
     // Contact Ground Shadow
     g.fillStyle(OUTLINE_LIGHT, 0.18).fillEllipse(0, sitting ? 66 : 82, sitting ? 90 : 75, 16)
 
@@ -230,8 +103,10 @@ export class AvatarRenderer {
       g.fillStyle(hairColor).fillCircle(0, -50, 48).strokeCircle(0, -50, 48)
     }
 
+    const seatedOrSleeping = sitting || sleeping
+
     // 2. LEGS & FEET
-    if (!sitting) {
+    if (!seatedOrSleeping) {
       // Left leg
       g.fillStyle(skinColor).fillRoundedRect(-28, 48, 20, 36, 9).strokeRoundedRect(-28, 48, 20, 36, 9)
       // Right leg
@@ -240,7 +115,7 @@ export class AvatarRenderer {
 
     // 3. SHOES & SOCKS
     const shoeColor = shoes?.color ?? 0xffa8d3
-    if (sitting) {
+    if (seatedOrSleeping) {
       // White frill socks
       g.fillStyle(0xffffff).fillRoundedRect(-42, 60, 38, 12, 5).strokeRoundedRect(-42, 60, 38, 12, 5)
       g.fillStyle(0xffffff).fillRoundedRect(4, 60, 38, 12, 5).strokeRoundedRect(4, 60, 38, 12, 5)
@@ -272,7 +147,7 @@ export class AvatarRenderer {
     // 5. BOTTOMS (if separates)
     if (!dress) {
       const bottomColor = bottom?.color ?? 0x89cde3
-      if (sitting) {
+      if (seatedOrSleeping) {
         g.fillStyle(bottomColor).fillRoundedRect(-34, 48, 32, 22, 10).strokeRoundedRect(-34, 48, 32, 22, 10)
         g.fillStyle(bottomColor).fillRoundedRect(2, 48, 32, 22, 10).strokeRoundedRect(2, 48, 32, 22, 10)
       } else {
@@ -284,7 +159,7 @@ export class AvatarRenderer {
     // 6. TOP / DRESS MAIN LAYER
     const bodyColor = dress?.color ?? top?.color ?? 0xbee8f5
     if (dress) {
-      const skirtBottomY = sitting ? 64 : 70
+      const skirtBottomY = seatedOrSleeping ? 64 : 70
       g.fillStyle(bodyColor)
         .fillRoundedRect(-36, 10, 72, skirtBottomY - 10, { tl: 12, tr: 12, bl: 22, br: 22 })
         .strokeRoundedRect(-36, 10, 72, skirtBottomY - 10, { tl: 12, tr: 12, bl: 22, br: 22 })
@@ -295,25 +170,56 @@ export class AvatarRenderer {
         g.fillCircle(rx, skirtBottomY + 1, 4.5)
       }
 
-      // Signature Pinafore or Detective Details
-      if (dress.id === 'dress_bunny_pinafore') {
+      // Signature Pinafore or Boutique Details
+      if (dress.id === 'dress_bunny_pinafore' || dress.id === 'dress_blue_daisy') {
+        const pinaforeColor = dress.id === 'dress_blue_daisy' ? 0x7eb2df : 0x89cde3
         // Bib
-        g.fillStyle(0x89cde3).fillRoundedRect(-22, 12, 44, 38, 9).strokeRoundedRect(-22, 12, 44, 38, 9)
+        g.fillStyle(pinaforeColor).fillRoundedRect(-22, 12, 44, 38, 9).strokeRoundedRect(-22, 12, 44, 38, 9)
         // Straps
-        g.fillStyle(0x89cde3).fillRoundedRect(-26, 4, 9, 22, 4).strokeRoundedRect(-26, 4, 9, 22, 4)
-        g.fillStyle(0x89cde3).fillRoundedRect(17, 4, 9, 22, 4).strokeRoundedRect(17, 4, 9, 22, 4)
+        g.fillStyle(pinaforeColor).fillRoundedRect(-26, 4, 9, 22, 4).strokeRoundedRect(-26, 4, 9, 22, 4)
+        g.fillStyle(pinaforeColor).fillRoundedRect(17, 4, 9, 22, 4).strokeRoundedRect(17, 4, 9, 22, 4)
         // Golden buttons
         g.fillStyle(0xffd700).fillCircle(-21, 20, 2.5).fillCircle(21, 20, 2.5)
 
-        // Cute Bunny Pocket on Bib
-        g.fillStyle(0xffffff).fillRoundedRect(-15, 26, 30, 22, 8).strokeRoundedRect(-15, 26, 30, 22, 8)
-        // Bunny ears
-        g.fillStyle(0xffffff).fillEllipse(-7, 21, 3.5, 7).strokeEllipse(-7, 21, 3.5, 7)
-        g.fillStyle(0xffffff).fillEllipse(7, 21, 3.5, 7).strokeEllipse(7, 21, 3.5, 7)
-        g.fillStyle(0xffa8d3).fillEllipse(-7, 22, 2, 4.5).fillEllipse(7, 22, 2, 4.5)
-        // Bunny face
-        g.fillStyle(OUTLINE).fillCircle(-4, 35, 1.2).fillCircle(4, 35, 1.2)
-        g.fillStyle(0xff7ab8).fillEllipse(0, 38, 1.8, 1.2)
+        if (dress.id === 'dress_bunny_pinafore') {
+          // Cute Bunny Pocket on Bib
+          g.fillStyle(0xffffff).fillRoundedRect(-15, 26, 30, 22, 8).strokeRoundedRect(-15, 26, 30, 22, 8)
+          // Bunny ears
+          g.fillStyle(0xffffff).fillEllipse(-7, 21, 3.5, 7).strokeEllipse(-7, 21, 3.5, 7)
+          g.fillStyle(0xffffff).fillEllipse(7, 21, 3.5, 7).strokeEllipse(7, 21, 3.5, 7)
+          g.fillStyle(0xffa8d3).fillEllipse(-7, 22, 2, 4.5).fillEllipse(7, 22, 2, 4.5)
+          // Bunny face
+          g.fillStyle(OUTLINE).fillCircle(-4, 35, 1.2).fillCircle(4, 35, 1.2)
+          g.fillStyle(0xff7ab8).fillEllipse(0, 38, 1.8, 1.2)
+        } else {
+          // Sweet Daisy Emblem
+          g.fillStyle(0xffffff).fillCircle(0, 30, 5).fillCircle(-4, 27, 4).fillCircle(4, 27, 4).fillCircle(-4, 33, 4).fillCircle(4, 33, 4)
+          g.fillStyle(0xffd700).fillCircle(0, 30, 3)
+        }
+      } else if (dress.id === 'dress_pink_gingham') {
+        g.fillStyle(0xffffff, 0.95).fillRoundedRect(-12, seatedOrSleeping ? 22 : 20, 24, 18, 5)
+        g.lineStyle(1.2, OUTLINE, 0.6).strokeRoundedRect(-12, seatedOrSleeping ? 22 : 20, 24, 18, 5)
+        g.fillStyle(0xff6ea7)
+        g.fillTriangle(-6, seatedOrSleeping ? 30 : 28, 0, seatedOrSleeping ? 33 : 31, -6, seatedOrSleeping ? 36 : 34)
+        g.fillTriangle(6, seatedOrSleeping ? 30 : 28, 0, seatedOrSleeping ? 33 : 31, 6, seatedOrSleeping ? 36 : 34)
+        g.fillStyle(0xffd700).fillCircle(0, seatedOrSleeping ? 33 : 31, 2)
+      } else if (dress.id === 'dress_yellow_sunshine') {
+        g.lineStyle(1.8, 0xffffff, 0.95)
+        g.beginPath().arc(0, seatedOrSleeping ? 26 : 24, 11, 0.2, 2.94).strokePath()
+        g.beginPath().arc(0, seatedOrSleeping ? 37 : 35, 14, 0.2, 2.94).strokePath()
+        g.fillStyle(0xffffff).fillCircle(0, seatedOrSleeping ? 19 : 17, 3.2)
+        g.fillStyle(0xffd700).fillCircle(0, seatedOrSleeping ? 19 : 17, 1.8)
+      } else if (dress.id === 'dress_mint_floral') {
+        g.fillStyle(0xffffff, 0.95).fillRoundedRect(-11, seatedOrSleeping ? 23 : 21, 22, 17, 5)
+        g.lineStyle(1.2, OUTLINE, 0.6).strokeRoundedRect(-11, seatedOrSleeping ? 23 : 21, 22, 17, 5)
+        g.fillStyle(0x78c99b).fillCircle(0, seatedOrSleeping ? 31 : 29, 3)
+        g.fillStyle(0xffffff).fillCircle(0, seatedOrSleeping ? 31 : 29, 1.5)
+      } else if (dress.id === 'dress_lavender_ruffle') {
+        g.fillStyle(0xffffff, 0.9)
+        for (let rx = -14; rx <= 14; rx += 7) {
+          g.fillCircle(rx, seatedOrSleeping ? 47 : 49, 3.2)
+        }
+        g.fillStyle(0xb59fe8).fillCircle(0, seatedOrSleeping ? 23 : 21, 3)
       } else if (dress.id === 'dress_detective_cape') {
         // Detective Capelet & Double-breasted Coat
         g.fillStyle(0x996d47).fillRoundedRect(-41, 8, 82, 36, 12).strokeRoundedRect(-41, 8, 82, 36, 12)
@@ -325,6 +231,22 @@ export class AvatarRenderer {
       } else {
         g.fillStyle(0xff7ab8).fillCircle(0, 28, 5).fillCircle(-8, 28, 4).fillCircle(8, 28, 4)
       }
+
+      // Signature Crossbody White Kitten Bag (if no conflicting accessory)
+      if (!accessory || accessory.id === 'accessory_star_pin') {
+        g.lineStyle(2, 0xffffff, 0.95).lineBetween(-18, 8, 18, 42)
+        g.lineStyle(1.4, OUTLINE, 0.6).lineBetween(-18, 8, 18, 42)
+        // Kitten bag body
+        g.fillStyle(0xffffff).fillRoundedRect(12, seatedOrSleeping ? 34 : 38, 20, 16, 6).lineStyle(OUTLINE_W, OUTLINE).strokeRoundedRect(12, seatedOrSleeping ? 34 : 38, 20, 16, 6)
+        // Kitten ears
+        g.fillStyle(0xffffff).fillTriangle(13, seatedOrSleeping ? 34 : 38, 16, seatedOrSleeping ? 28 : 32, 19, seatedOrSleeping ? 34 : 38).strokeTriangle(13, seatedOrSleeping ? 34 : 38, 16, seatedOrSleeping ? 28 : 32, 19, seatedOrSleeping ? 34 : 38)
+        g.fillStyle(0xffffff).fillTriangle(23, seatedOrSleeping ? 34 : 38, 26, seatedOrSleeping ? 28 : 32, 29, seatedOrSleeping ? 34 : 38).strokeTriangle(23, seatedOrSleeping ? 34 : 38, 26, seatedOrSleeping ? 28 : 32, 29, seatedOrSleeping ? 34 : 38)
+        g.fillStyle(0xffa8d3).fillTriangle(14, seatedOrSleeping ? 34 : 38, 16, seatedOrSleeping ? 30 : 34, 18, seatedOrSleeping ? 34 : 38)
+        g.fillStyle(0xffa8d3).fillTriangle(24, seatedOrSleeping ? 34 : 38, 26, seatedOrSleeping ? 30 : 34, 28, seatedOrSleeping ? 34 : 38)
+        // Kitten face
+        g.fillStyle(OUTLINE).fillCircle(17, seatedOrSleeping ? 41 : 45, 1).fillCircle(25, seatedOrSleeping ? 41 : 45, 1)
+        g.fillStyle(0xff7ab8).fillCircle(21, seatedOrSleeping ? 43 : 47, 0.8)
+      }
     } else {
       g.fillStyle(bodyColor).fillRoundedRect(-30, 8, 60, 40, 12).strokeRoundedRect(-30, 8, 60, 40, 12)
       g.fillStyle(top?.accent ?? 0xffffff).fillCircle(0, 25, 6)
@@ -335,11 +257,31 @@ export class AvatarRenderer {
     g.fillStyle(0xffffff).fillEllipse(12, 4, 14, 7).strokeEllipse(12, 4, 14, 7)
     g.fillStyle(0xffd700).fillCircle(0, 6, 2.5) // Collar gold brooch
 
-    // 7. ARMS & HANDS
-    g.fillStyle(skinColor).fillRoundedRect(-48, 10, 16, 48, 8).strokeRoundedRect(-48, 10, 16, 48, 8)
-    g.fillStyle(skinColor).fillRoundedRect(32, 10, 16, 48, 8).strokeRoundedRect(32, 10, 16, 48, 8)
-    g.fillStyle(skinColor).fillCircle(-40, 56, 8).strokeCircle(-40, 56, 8)
-    g.fillStyle(skinColor).fillCircle(40, 56, 8).strokeCircle(40, 56, 8)
+    // 7. ARMS & HANDS (Pose-Aware)
+    if (expr === 'happy' || expr === 'excited' || state === 'playing') {
+      // Cheerful raised fists / celebration hands near cheeks (storybook chibi signature)
+      g.fillStyle(skinColor).fillRoundedRect(-46, 8, 16, 32, 7).strokeRoundedRect(-46, 8, 16, 32, 7)
+      g.fillStyle(skinColor).fillRoundedRect(30, 8, 16, 32, 7).strokeRoundedRect(30, 8, 16, 32, 7)
+      g.fillStyle(skinColor).fillCircle(-38, 10, 8).strokeCircle(-38, 10, 8)
+      g.fillStyle(skinColor).fillCircle(38, 10, 8).strokeCircle(38, 10, 8)
+    } else if (sitting) {
+      // Gentle seated hands resting on lap
+      g.fillStyle(skinColor).fillRoundedRect(-38, 12, 16, 36, 7).strokeRoundedRect(-38, 12, 16, 36, 7)
+      g.fillStyle(skinColor).fillRoundedRect(22, 12, 16, 36, 7).strokeRoundedRect(22, 12, 16, 36, 7)
+      g.fillStyle(skinColor).fillCircle(-20, 46, 7.5).strokeCircle(-20, 46, 7.5)
+      g.fillStyle(skinColor).fillCircle(20, 46, 7.5).strokeCircle(20, 46, 7.5)
+    } else if (sleeping) {
+      // Relaxed sleeping arms folded comfortably over chest
+      g.fillStyle(skinColor).fillRoundedRect(-34, 12, 16, 28, 7).strokeRoundedRect(-34, 12, 16, 28, 7)
+      g.fillStyle(skinColor).fillRoundedRect(18, 12, 16, 28, 7).strokeRoundedRect(18, 12, 16, 28, 7)
+      g.fillStyle(skinColor).fillCircle(-12, 34, 6.5).strokeCircle(-12, 34, 6.5)
+      g.fillStyle(skinColor).fillCircle(12, 34, 6.5).strokeCircle(12, 34, 6.5)
+    } else {
+      g.fillStyle(skinColor).fillRoundedRect(-48, 10, 16, 48, 8).strokeRoundedRect(-48, 10, 16, 48, 8)
+      g.fillStyle(skinColor).fillRoundedRect(32, 10, 16, 48, 8).strokeRoundedRect(32, 10, 16, 48, 8)
+      g.fillStyle(skinColor).fillCircle(-40, 56, 8).strokeCircle(-40, 56, 8)
+      g.fillStyle(skinColor).fillCircle(40, 56, 8).strokeCircle(40, 56, 8)
+    }
 
     // 8. BACK HEAD SCALP
     g.fillStyle(hairColor).fillCircle(0, -48, 48).strokeCircle(0, -48, 48)

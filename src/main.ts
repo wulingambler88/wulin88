@@ -11,8 +11,9 @@ import { CharacterCreatorModal } from './ui/CharacterCreatorModal'
 import { BrainHubModal, type BrainHubTab } from './ui/BrainHubModal'
 import { TreasureJournalModal, type TreasureTab } from './ui/TreasureJournalModal'
 import { showToast } from './ui/UIManager'
-import { Icons } from './theme/Icons'
+import { Icons, createAvatarPortraitSVG } from './theme/Icons'
 import { Character } from './characters/Character'
+import type { AvatarCustomization } from './save/SaveSchema'
 import { registerSW } from 'virtual:pwa-register'
 
 function colorHex(color: number): string { return `#${color.toString(16).padStart(6, '0')}` }
@@ -212,13 +213,24 @@ document.querySelector<HTMLButtonElement>('#sound-button')!.addEventListener('cl
   game.events.emit('ui:mute', game.sound.mute)
 })
 
+function updateProfilePortrait(custom?: AvatarCustomization): void {
+  const portrait = document.querySelector<HTMLElement>('.profile-portrait')
+  if (portrait) {
+    portrait.innerHTML = createAvatarPortraitSVG(custom ?? playerState.data.character.customization)
+  }
+}
+
 const creatorModal = new CharacterCreatorModal((custom) => {
   game.scene.getScenes(true).forEach((scene) => {
     scene.children.list.forEach((child) => {
       if (child instanceof Character) child.setCustomization(custom)
     })
   })
+  updateProfilePortrait(custom)
   game.events.emit('character:customized', custom)
+})
+game.events.on('character:customized', (custom: AvatarCustomization) => {
+  updateProfilePortrait(custom)
 })
 const brainHub = new BrainHubModal()
 document.querySelector<HTMLButtonElement>('#brain-button')?.addEventListener('click', () => brainHub.open())
@@ -403,6 +415,7 @@ if (typeof ResizeObserver !== 'undefined') {
   observeTownCanvas()
 }
 installWorldHUD(game)
+updateProfilePortrait()
 
 if (debugMarkup) {
   const debugPanel = document.querySelector<HTMLElement>('#debug-panel')!
