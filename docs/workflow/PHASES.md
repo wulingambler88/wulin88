@@ -1,6 +1,6 @@
 # 施工階段與狀態
 
-目前 P00：PASS（審查候選 SHA：f128a137fb24d973be8ed98235276ea07134c338）。P01：IN_PROGRESS（已獲授權開工）。P02–P05：NOT_STARTED。
+目前 P00：PASS（候選 SHA：f128a137fb24d973be8ed98235276ea07134c338）。P01：PASS（候選 SHA：9c91519a067966c253981939f5ff65a8c1495da6）。P02：IN_PROGRESS（已獲授權開工）。P03–P05：NOT_STARTED。
 任何歷史完成報告都不會自動改變此表。
 
 | 階段 | 工作及可修改範圍                                                                                                                                           | 必交證據                                                  | 通過條件                                                              |
