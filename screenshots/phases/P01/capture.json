@@ -1,0 +1,113 @@
+{
+  "phase": "P01",
+  "candidate_code_sha": "9c91519a067966c253981939f5ff65a8c1495da6",
+  "created_at": "2026-09-10T14:10:32.349Z",
+  "captures": [
+    {
+      "name": "Town Scene (1280x720)",
+      "file": "01_town_1280x720.png",
+      "scene": "TownScene",
+      "viewport": {
+        "name": "1280x720",
+        "width": 1280,
+        "height": 720
+      },
+      "candidate_sha": "9c91519a067966c253981939f5ff65a8c1495da6",
+      "timestamp": "2026-09-10T14:10:12.113Z",
+      "errors": []
+    },
+    {
+      "name": "Town Scene (1536x990)",
+      "file": "01_town_1536x990.png",
+      "scene": "TownScene",
+      "viewport": {
+        "name": "1536x990",
+        "width": 1536,
+        "height": 990
+      },
+      "candidate_sha": "9c91519a067966c253981939f5ff65a8c1495da6",
+      "timestamp": "2026-09-10T14:10:14.479Z",
+      "errors": []
+    },
+    {
+      "name": "Town Scene (1920x1080)",
+      "file": "01_town_1920x1080.png",
+      "scene": "TownScene",
+      "viewport": {
+        "name": "1920x1080",
+        "width": 1920,
+        "height": 1080
+      },
+      "candidate_sha": "9c91519a067966c253981939f5ff65a8c1495da6",
+      "timestamp": "2026-09-10T14:10:17.034Z",
+      "errors": []
+    },
+    {
+      "name": "Character Creator Studio Modal",
+      "file": "02_character_creator_modal.png",
+      "scene": "TownScene",
+      "panel": "#creator-button",
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "candidate_sha": "9c91519a067966c253981939f5ff65a8c1495da6",
+      "timestamp": "2026-09-10T14:10:19.714Z",
+      "errors": []
+    },
+    {
+      "name": "Town Scene with Preserved Purple Hair & Synced Portrait",
+      "file": "03_town_purple_hair_saved.png",
+      "scene": "TownScene",
+      "customization": {
+        "hairColor": 12099560,
+        "hairStyle": "long_waves"
+      },
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "candidate_sha": "9c91519a067966c253981939f5ff65a8c1495da6",
+      "timestamp": "2026-09-10T14:10:22.183Z",
+      "errors": []
+    },
+    {
+      "name": "Home Bedroom - Sleeping Pose in Bed",
+      "file": "04_home_bedroom_sleeping_pose.png",
+      "scene": "HomeScene",
+      "state": "sleeping",
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "candidate_sha": "9c91519a067966c253981939f5ff65a8c1495da6",
+      "timestamp": "2026-09-10T14:10:26.051Z",
+      "errors": []
+    },
+    {
+      "name": "Home Living Room - Sitting Pose on Sofa",
+      "file": "05_home_living_room_sitting_pose.png",
+      "scene": "HomeScene",
+      "state": "sitting",
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "candidate_sha": "9c91519a067966c253981939f5ff65a8c1495da6",
+      "timestamp": "2026-09-10T14:10:29.956Z",
+      "errors": []
+    },
+    {
+      "name": "Clothing Boutique Scene",
+      "file": "06_boutique_scene.png",
+      "scene": "ClothingShopScene",
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "candidate_sha": "9c91519a067966c253981939f5ff65a8c1495da6",
+      "timestamp": "2026-09-10T14:10:32.328Z",
+      "errors": []
+    }
+  ]
+}
