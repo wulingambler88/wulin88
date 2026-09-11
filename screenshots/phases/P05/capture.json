@@ -1,0 +1,135 @@
+{
+  "phase": "P05",
+  "captureCount": 18,
+  "pageErrors": [],
+  "asset404s": [],
+  "captures": [
+    {
+      "filename": "p05-town-1280x720.png",
+      "viewport": "1280x720",
+      "scene": "TownScene",
+      "description": "Town scene daytime with all 9 location buildings and HUD",
+      "timestamp": "2026-09-10T15:01:46.295Z"
+    },
+    {
+      "filename": "p05-character-creator-1280x720.png",
+      "viewport": "1280x720",
+      "scene": "TownScene + Creator",
+      "description": "Character creator modal with live preview, cancel, and save buttons",
+      "timestamp": "2026-09-10T15:01:47.166Z"
+    },
+    {
+      "filename": "p05-town-sunset-1536x990.png",
+      "viewport": "1536x990",
+      "scene": "TownScene",
+      "description": "Town scene sunset golden hour palette across wide viewport",
+      "timestamp": "2026-09-10T15:01:49.600Z"
+    },
+    {
+      "filename": "p05-wardrobe-drawer-1536x990.png",
+      "viewport": "1536x990",
+      "scene": "TownScene + Wardrobe",
+      "description": "Wardrobe drawer opened showing categories and equipped outfit",
+      "timestamp": "2026-09-10T15:01:50.539Z"
+    },
+    {
+      "filename": "p05-town-night-1920x1080.png",
+      "viewport": "1920x1080",
+      "scene": "TownScene",
+      "description": "Town scene nighttime atmospheric lighting at full 1080p",
+      "timestamp": "2026-09-10T15:01:53.183Z"
+    },
+    {
+      "filename": "p05-home-bedroom-1280x720.png",
+      "viewport": "1280x720",
+      "scene": "HomeScene:Bedroom",
+      "description": "Home bedroom with double bed, sleeping animation, rug, mirror",
+      "timestamp": "2026-09-10T15:01:56.207Z"
+    },
+    {
+      "filename": "p05-home-living-1536x990.png",
+      "viewport": "1536x990",
+      "scene": "HomeScene:LivingRoom",
+      "description": "Home living room with sofa, retro TV, bookshelf, standing mirror",
+      "timestamp": "2026-09-10T15:01:59.761Z"
+    },
+    {
+      "filename": "p05-home-kitchen-1920x1080.png",
+      "viewport": "1920x1080",
+      "scene": "HomeScene:Kitchen",
+      "description": "Home kitchen with double-door mint fridge, dining table, stove",
+      "timestamp": "2026-09-10T15:02:03.322Z"
+    },
+    {
+      "filename": "p05-boutique-1280x720.png",
+      "viewport": "1280x720",
+      "scene": "ClothingShopScene",
+      "description": "Cloudberry Boutique with grounded plant, racks, mirror, and armchair",
+      "timestamp": "2026-09-10T15:02:06.247Z"
+    },
+    {
+      "filename": "p05-supermarket-1536x990.png",
+      "viewport": "1536x990",
+      "scene": "SupermarketScene",
+      "description": "Oliver Supermarket with grocery shelves, produce stands, cash register",
+      "timestamp": "2026-09-10T15:02:09.066Z"
+    },
+    {
+      "filename": "p05-supermarket-cart-1536x990.png",
+      "viewport": "1536x990",
+      "scene": "SupermarketScene + Cart",
+      "description": "Supermarket shopping panel with products list and basket drawer",
+      "timestamp": "2026-09-10T15:02:09.799Z"
+    },
+    {
+      "filename": "p05-petshop-1920x1080.png",
+      "viewport": "1920x1080",
+      "scene": "PetShopScene",
+      "description": "Daisy Pet Paradise with interactive pets, sleep cushions, grooming area",
+      "timestamp": "2026-09-10T15:02:12.848Z"
+    },
+    {
+      "filename": "p05-school-1280x720.png",
+      "viewport": "1280x720",
+      "scene": "SchoolScene",
+      "description": "Sunny Valley Academy classroom with interactive math quiz blackboard",
+      "timestamp": "2026-09-10T15:02:15.880Z"
+    },
+    {
+      "filename": "p05-park-1536x990.png",
+      "viewport": "1536x990",
+      "scene": "ParkScene",
+      "description": "Blossom Park with playground swing, duck pond ripples, sandcastle",
+      "timestamp": "2026-09-10T15:02:19.033Z"
+    },
+    {
+      "filename": "p05-cafe-1920x1080.png",
+      "viewport": "1920x1080",
+      "scene": "CafeScene",
+      "description": "Cherry Blossom Café with espresso machine steam and pastry displays",
+      "timestamp": "2026-09-10T15:02:22.111Z"
+    },
+    {
+      "filename": "p05-salon-1280x720.png",
+      "viewport": "1280x720",
+      "scene": "SalonScene",
+      "description": "Glow & Glam Salon with vanity mirrors, shampoo basin, stylist station",
+      "timestamp": "2026-09-10T15:02:24.995Z"
+    },
+    {
+      "filename": "p05-toyshop-1536x990.png",
+      "viewport": "1536x990",
+      "scene": "ToyShopScene",
+      "description": "Wonderland Toys with puzzle mats, toy display shelves, robot sounds",
+      "timestamp": "2026-09-10T15:02:28.033Z"
+    },
+    {
+      "filename": "p05-legacy-save-avatar-1280x720.png",
+      "viewport": "1280x720",
+      "scene": "TownScene:LegacySave",
+      "description": "Town scene rendering legacy save with purple twin buns avatar intact",
+      "timestamp": "2026-09-10T15:02:31.526Z"
+    }
+  ],
+  "generatedAt": "2026-09-10T15:02:31.560Z"
+}

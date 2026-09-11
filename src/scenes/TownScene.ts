@@ -71,20 +71,23 @@ export class TownScene extends Phaser.Scene {
     const size = location.id === 'home' ? 168 : location.y < 200 ? 148 : 158
     const art = this.add.image(0, -9, 'world-buildings', FRAMES[location.id] ?? 4).setDisplaySize(size, size)
 
-    const BADGE_ICONS: Partial<Record<LocationId, string>> = {
-      pet_shop: '🐾',
-      school: '🔔',
-      park: '🎠',
-      clothing_boutique: '👗',
-      home: '💖',
-      supermarket: '🛒',
-      toy_shop: '🧸',
-      cafe: '☕',
-      salon: '✂️'
+    const BADGE_CONFIG: Partial<Record<LocationId, { y: number; w: number; icon: string }>> = {
+      home: { y: -18, w: 112, icon: '💖' },
+      clothing_boutique: { y: -16, w: 124, icon: '👗' },
+      supermarket: { y: -16, w: 112, icon: '🛒' },
+      pet_shop: { y: 60, w: 114, icon: '🐾' },
+      school: { y: 60, w: 112, icon: '🔔' },
+      park: { y: 60, w: 112, icon: '🎠' },
+      cafe: { y: 60, w: 112, icon: '☕' },
+      toy_shop: { y: 60, w: 114, icon: '🧸' },
+      salon: { y: 60, w: 112, icon: '✂️' },
     }
 
-    const badgeY = location.id === 'home' ? -18 : 60
-    const badgeW = location.id === 'clothing_boutique' ? 124 : 112
+    const cfg = BADGE_CONFIG[location.id] ?? { y: 60, w: 112, icon: '★' }
+    const badgeY = cfg.y
+    const badgeW = cfg.w
+    const icon = cfg.icon
+
     const label = this.add.graphics()
     // Soft shadow
     label.fillStyle(0x78504b, 0.2).fillRoundedRect(-badgeW / 2, badgeY + 2, badgeW, 26, 13)
@@ -92,7 +95,6 @@ export class TownScene extends Phaser.Scene {
     label.fillStyle(0xfffdf7).fillRoundedRect(-badgeW / 2, badgeY, badgeW, 26, 13)
       .lineStyle(2, 0xf2c4ce).strokeRoundedRect(-badgeW / 2, badgeY, badgeW, 26, 13)
 
-    const icon = BADGE_ICONS[location.id] ?? '★'
     const text = this.add.text(0, badgeY + 13, `${icon} ${location.shortName}`, {
       fontFamily: 'Nunito, Trebuchet MS, sans-serif',
       fontSize: '13px',
@@ -100,7 +102,7 @@ export class TownScene extends Phaser.Scene {
       fontStyle: 'bold'
     }).setOrigin(0.5)
 
-    const hit = this.add.rectangle(0, 0, 114, 108, 0xffffff, 0).setInteractive({ useHandCursor: true })
+    const hit = this.add.rectangle(0, 0, Math.max(124, badgeW + 8), 136, 0xffffff, 0).setInteractive({ useHandCursor: true })
     hit.on('pointerdown', () => this.visitLocation(location))
     building.add([art, label, text, hit]); this.buildings.set(location.id, building)
   }

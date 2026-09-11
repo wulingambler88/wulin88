@@ -1,0 +1,124 @@
+{
+  "phase": "P04",
+  "title": "Wardrobe & Store Shopping UI Acceptance Evidence",
+  "timestamp": "2026-09-10T14:55:24.067Z",
+  "url": "http://127.0.0.1:5186/",
+  "viewports": [
+    "1280x720",
+    "1536x990",
+    "1920x1080"
+  ],
+  "totalCaptures": 22,
+  "captures": [
+    {
+      "file": "p04-creator-modal-open-1280x720.png",
+      "viewport": "1280x720",
+      "description": "Character creator modal open with all style options and actions"
+    },
+    {
+      "file": "p04-creator-live-preview-1280x720.png",
+      "viewport": "1280x720",
+      "description": "Live preview of modified hairstyle and hair dye on Qian Hui"
+    },
+    {
+      "file": "p04-creator-cancel-restore-1280x720.png",
+      "viewport": "1280x720",
+      "description": "Cancel restores original look without corrupting saved customization"
+    },
+    {
+      "file": "p04-creator-saved-1536x990.png",
+      "viewport": "1536x990",
+      "description": "Character creator successfully saved new look to player state"
+    },
+    {
+      "file": "p04-wardrobe-all-1280x720.png",
+      "viewport": "1280x720",
+      "description": "Wardrobe panel with All category tab active showing owned outfits"
+    },
+    {
+      "file": "p04-wardrobe-dress-1280x720.png",
+      "viewport": "1280x720",
+      "description": "Wardrobe panel filtered by Dresses"
+    },
+    {
+      "file": "p04-wardrobe-top-1280x720.png",
+      "viewport": "1280x720",
+      "description": "Wardrobe panel filtered by Tops"
+    },
+    {
+      "file": "p04-wardrobe-bottom-1280x720.png",
+      "viewport": "1280x720",
+      "description": "Wardrobe panel filtered by Bottoms"
+    },
+    {
+      "file": "p04-wardrobe-shoes-1280x720.png",
+      "viewport": "1280x720",
+      "description": "Wardrobe panel filtered by Shoes"
+    },
+    {
+      "file": "p04-wardrobe-hat-1280x720.png",
+      "viewport": "1280x720",
+      "description": "Wardrobe panel filtered by Hats"
+    },
+    {
+      "file": "p04-wardrobe-empty-accessory-1280x720.png",
+      "viewport": "1280x720",
+      "description": "Wardrobe empty category state displaying helpful notice"
+    },
+    {
+      "file": "p04-wardrobe-surprise-1536x990.png",
+      "viewport": "1536x990",
+      "description": "Wardrobe surprise randomizer styled a coordinated outfit"
+    },
+    {
+      "file": "p04-boutique-shop-top-row-1280x720.png",
+      "viewport": "1280x720",
+      "description": "Boutique catalogue first row with prices and items"
+    },
+    {
+      "file": "p04-boutique-shop-scrolled-bottom-1280x720.png",
+      "viewport": "1280x720",
+      "description": "Boutique catalogue scrolled to bottom with last items reachable"
+    },
+    {
+      "file": "p04-boutique-preview-actions-1280x720.png",
+      "viewport": "1280x720",
+      "description": "Previewing outfit with live character dressing and Buy/Cancel actions"
+    },
+    {
+      "file": "p04-market-empty-basket-1280x720.png",
+      "viewport": "1280x720",
+      "description": "Market catalogue with empty basket state and instructions"
+    },
+    {
+      "file": "p04-market-products-top-row-1280x720.png",
+      "viewport": "1280x720",
+      "description": "Market product grid first row with prices and icons"
+    },
+    {
+      "file": "p04-market-products-scrolled-bottom-1280x720.png",
+      "viewport": "1280x720",
+      "description": "Market product grid scrolled to bottom with last items"
+    },
+    {
+      "file": "p04-market-basket-items-1280x720.png",
+      "viewport": "1280x720",
+      "description": "Market basket filled with items, quantities, total, and checkout"
+    },
+    {
+      "file": "p04-market-basket-cleared-1280x720.png",
+      "viewport": "1280x720",
+      "description": "Market basket cleared back to empty state without deducting coins"
+    },
+    {
+      "file": "p04-market-checkout-success-1536x990.png",
+      "viewport": "1536x990",
+      "description": "Successful supermarket checkout, coins updated, character celebration"
+    },
+    {
+      "file": "p04-full-desktop-1920x1080.png",
+      "viewport": "1920x1080",
+      "description": "Full desktop 1920x1080 resolution showing crisp wardrobe panel"
+    }
+  ]
+}

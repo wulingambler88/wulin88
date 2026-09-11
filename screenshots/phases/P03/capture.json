@@ -1,0 +1,236 @@
+﻿{
+    "phase":  "P03",
+    "title":  "Interior Scene Proportions, Grounding \u0026 Interactions",
+    "timestamp":  "2026-09-10T14:37:26.230Z",
+    "tested_features":  [
+                            "3 Home rooms: Bedroom, Living Room, Kitchen with grounded furniture",
+                            "8 venue interiors: Boutique, Supermarket, Pet Shop, School, Park, CafÃ©, Salon, Toy Shop",
+                            "At least one real interactive feature per room / venue",
+                            "Zero outdoor building facades in interiors",
+                            "Correct 2.5D depth sorting and grounded potted plants / furniture",
+                            "Player character visible, well-proportioned and interactive throughout"
+                        ],
+    "captures":  [
+                     {
+                         "name":  "Home Room 0: Bedroom",
+                         "file":  "01_home_bedroom.png",
+                         "scene":  "HomeScene",
+                         "room":  "Bedroom",
+                         "errors":  [
+
+                                    ],
+                         "candidate_sha":  "37cb2cac61666fc8438c13c4d37d9a076d84cee6"
+                     },
+                     {
+                         "name":  "Home Bedroom Interaction: Sleeping Pose",
+                         "file":  "02_home_bedroom_sleeping.png",
+                         "scene":  "HomeScene",
+                         "interaction":  "bed-sleep",
+                         "errors":  [
+
+                                    ],
+                         "candidate_sha":  "37cb2cac61666fc8438c13c4d37d9a076d84cee6"
+                     },
+                     {
+                         "name":  "Home Room 1: Living Room",
+                         "file":  "03_home_living_room.png",
+                         "scene":  "HomeScene",
+                         "room":  "Living Room",
+                         "errors":  [
+
+                                    ],
+                         "candidate_sha":  "37cb2cac61666fc8438c13c4d37d9a076d84cee6"
+                     },
+                     {
+                         "name":  "Home Living Room Interaction: Sitting Pose",
+                         "file":  "04_home_living_room_sitting.png",
+                         "scene":  "HomeScene",
+                         "interaction":  "sofa-sit",
+                         "errors":  [
+
+                                    ],
+                         "candidate_sha":  "37cb2cac61666fc8438c13c4d37d9a076d84cee6"
+                     },
+                     {
+                         "name":  "Home Room 2: Kitchen",
+                         "file":  "05_home_kitchen.png",
+                         "scene":  "HomeScene",
+                         "room":  "Kitchen",
+                         "errors":  [
+
+                                    ],
+                         "candidate_sha":  "37cb2cac61666fc8438c13c4d37d9a076d84cee6"
+                     },
+                     {
+                         "name":  "Home Kitchen Interaction: Interactive Fridge",
+                         "file":  "06_home_kitchen_fridge.png",
+                         "scene":  "HomeScene",
+                         "interaction":  "fridge-retrieve",
+                         "errors":  [
+
+                                    ],
+                         "candidate_sha":  "37cb2cac61666fc8438c13c4d37d9a076d84cee6"
+                     },
+                     {
+                         "name":  "Boutique Interior",
+                         "file":  "07_boutique_grounded.png",
+                         "scene":  "ClothingShopScene",
+                         "locationId":  "clothing_boutique",
+                         "errors":  [
+
+                                    ],
+                         "candidate_sha":  "37cb2cac61666fc8438c13c4d37d9a076d84cee6"
+                     },
+                     {
+                         "name":  "Boutique Interaction: Mirror Try-on \u0026 Reaction",
+                         "file":  "08_boutique_interaction.png",
+                         "scene":  "ClothingShopScene",
+                         "interaction":  "Mirror Try-on \u0026 Reaction",
+                         "errors":  [
+
+                                    ],
+                         "candidate_sha":  "37cb2cac61666fc8438c13c4d37d9a076d84cee6"
+                     },
+                     {
+                         "name":  "Supermarket Interior",
+                         "file":  "09_supermarket_interior.png",
+                         "scene":  "SupermarketScene",
+                         "locationId":  "supermarket",
+                         "errors":  [
+
+                                    ],
+                         "candidate_sha":  "37cb2cac61666fc8438c13c4d37d9a076d84cee6"
+                     },
+                     {
+                         "name":  "Supermarket Interaction: Product Added to Basket",
+                         "file":  "10_supermarket_interaction.png",
+                         "scene":  "SupermarketScene",
+                         "interaction":  "Product Added to Basket",
+                         "errors":  [
+
+                                    ],
+                         "candidate_sha":  "37cb2cac61666fc8438c13c4d37d9a076d84cee6"
+                     },
+                     {
+                         "name":  "Pet Shop Interior",
+                         "file":  "11_pet_shop_interior.png",
+                         "scene":  "PetShopScene",
+                         "locationId":  "pet_shop",
+                         "errors":  [
+
+                                    ],
+                         "candidate_sha":  "37cb2cac61666fc8438c13c4d37d9a076d84cee6"
+                     },
+                     {
+                         "name":  "Pet Shop Interaction: Pet Bed Petting Interaction",
+                         "file":  "12_pet_shop_interaction.png",
+                         "scene":  "PetShopScene",
+                         "interaction":  "Pet Bed Petting Interaction",
+                         "errors":  [
+
+                                    ],
+                         "candidate_sha":  "37cb2cac61666fc8438c13c4d37d9a076d84cee6"
+                     },
+                     {
+                         "name":  "School Interior",
+                         "file":  "13_school_interior.png",
+                         "scene":  "SchoolScene",
+                         "locationId":  "school",
+                         "errors":  [
+
+                                    ],
+                         "candidate_sha":  "37cb2cac61666fc8438c13c4d37d9a076d84cee6"
+                     },
+                     {
+                         "name":  "School Interaction: Chalkboard Quiz Trigger",
+                         "file":  "14_school_interaction.png",
+                         "scene":  "SchoolScene",
+                         "interaction":  "Chalkboard Quiz Trigger",
+                         "errors":  [
+
+                                    ],
+                         "candidate_sha":  "37cb2cac61666fc8438c13c4d37d9a076d84cee6"
+                     },
+                     {
+                         "name":  "Park Interior",
+                         "file":  "15_park_interior.png",
+                         "scene":  "ParkScene",
+                         "locationId":  "park",
+                         "errors":  [
+
+                                    ],
+                         "candidate_sha":  "37cb2cac61666fc8438c13c4d37d9a076d84cee6"
+                     },
+                     {
+                         "name":  "Park Interaction: Duck Pond Splash",
+                         "file":  "16_park_interaction.png",
+                         "scene":  "ParkScene",
+                         "interaction":  "Duck Pond Splash",
+                         "errors":  [
+
+                                    ],
+                         "candidate_sha":  "37cb2cac61666fc8438c13c4d37d9a076d84cee6"
+                     },
+                     {
+                         "name":  "CafÃ© Interior",
+                         "file":  "17_cafe_interior.png",
+                         "scene":  "CafeScene",
+                         "locationId":  "cafe",
+                         "errors":  [
+
+                                    ],
+                         "candidate_sha":  "37cb2cac61666fc8438c13c4d37d9a076d84cee6"
+                     },
+                     {
+                         "name":  "CafÃ© Interaction: Espresso Machine Brewing",
+                         "file":  "18_cafe_interaction.png",
+                         "scene":  "CafeScene",
+                         "interaction":  "Espresso Machine Brewing",
+                         "errors":  [
+
+                                    ],
+                         "candidate_sha":  "37cb2cac61666fc8438c13c4d37d9a076d84cee6"
+                     },
+                     {
+                         "name":  "Salon Interior",
+                         "file":  "19_salon_interior.png",
+                         "scene":  "SalonScene",
+                         "locationId":  "salon",
+                         "errors":  [
+
+                                    ],
+                         "candidate_sha":  "37cb2cac61666fc8438c13c4d37d9a076d84cee6"
+                     },
+                     {
+                         "name":  "Salon Interaction: Hair Dye Cycle",
+                         "file":  "20_salon_interaction.png",
+                         "scene":  "SalonScene",
+                         "interaction":  "Hair Dye Cycle",
+                         "errors":  [
+
+                                    ],
+                         "candidate_sha":  "37cb2cac61666fc8438c13c4d37d9a076d84cee6"
+                     },
+                     {
+                         "name":  "Toy Shop Interior",
+                         "file":  "21_toy_shop_interior.png",
+                         "scene":  "ToyShopScene",
+                         "locationId":  "toy_shop",
+                         "errors":  [
+
+                                    ],
+                         "candidate_sha":  "37cb2cac61666fc8438c13c4d37d9a076d84cee6"
+                     },
+                     {
+                         "name":  "Toy Shop Interaction: Toy Robot Sound \u0026 Animation",
+                         "file":  "22_toy_shop_interaction.png",
+                         "scene":  "ToyShopScene",
+                         "interaction":  "Toy Robot Sound \u0026 Animation",
+                         "errors":  [
+
+                                    ],
+                         "candidate_sha":  "37cb2cac61666fc8438c13c4d37d9a076d84cee6"
+                     }
+                 ],
+    "candidate_sha":  "37cb2cac61666fc8438c13c4d37d9a076d84cee6"
+}

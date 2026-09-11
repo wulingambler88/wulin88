@@ -201,5 +201,50 @@ export const Icons = {
   giftBox: `<img src="art/ui/icon-daily-reward.webp" alt="Daily Gift" style="width:100%;height:100%;object-fit:contain;" />`,
 
   // Master Portrait: the same protagonist identity used in the world.
-  qianHuiPortrait: `<img src="art/characters/hero-qianhui-v2.webp" alt="Qian Hui" style="width:100%;height:100%;object-fit:cover;object-position:50% 16%;transform:scale(2.1);transform-origin:50% 18%;border-radius:50%;display:block;" />`,
+  qianHuiPortrait: `<svg viewBox="0 0 80 80" width="100%" height="100%" fill="none" xmlns="http://www.w3.org/2000/svg"><defs><clipPath id="avatar-portrait-clip"><circle cx="40" cy="40" r="38"/></clipPath></defs><circle cx="40" cy="40" r="39" fill="#FFF0F5" stroke="#663D63" stroke-width="2"/><g clip-path="url(#avatar-portrait-clip)"><circle cx="15" cy="18" r="14" fill="#996340" stroke="#663D63" stroke-width="2"/><circle cx="65" cy="18" r="14" fill="#996340" stroke="#663D63" stroke-width="2"/><circle cx="18" cy="28" r="5" fill="#FF8FC4" stroke="#663D63" stroke-width="1.2"/><circle cx="62" cy="28" r="5" fill="#FF8FC4" stroke="#663D63" stroke-width="1.2"/><circle cx="40" cy="38" r="27" fill="#996340" stroke="#663D63" stroke-width="2"/><ellipse cx="40" cy="42" rx="22" ry="20" fill="#FFD7C6" stroke="#663D63" stroke-width="2"/><circle cx="17" cy="42" r="5" fill="#FFD7C6" stroke="#663D63" stroke-width="1.8"/><circle cx="63" cy="42" r="5" fill="#FFD7C6" stroke="#663D63" stroke-width="1.8"/><circle cx="17" cy="42" r="2.5" fill="#FFCCD8"/><circle cx="63" cy="42" r="2.5" fill="#FFCCD8"/><ellipse cx="30" cy="42" rx="5.5" ry="6.5" fill="#FFFFFF"/><ellipse cx="50" cy="42" rx="5.5" ry="6.5" fill="#FFFFFF"/><path d="M24 38 Q30 35 36 38" stroke="#663D63" stroke-width="2.2" stroke-linecap="round"/><path d="M44 38 Q50 35 56 38" stroke="#663D63" stroke-width="2.2" stroke-linecap="round"/><circle cx="30" cy="42" r="4" fill="#6C3F68"/><circle cx="50" cy="42" r="4" fill="#6C3F68"/><circle cx="28.5" cy="40" r="1.6" fill="#FFFFFF"/><circle cx="48.5" cy="40" r="1.6" fill="#FFFFFF"/><circle cx="31.5" cy="43.5" r="0.8" fill="#FFFFFF"/><circle cx="51.5" cy="43.5" r="0.8" fill="#FFFFFF"/><ellipse cx="25" cy="48" rx="4.5" ry="2.5" fill="#FF7E9F" fill-opacity="0.6"/><ellipse cx="55" cy="48" rx="4.5" ry="2.5" fill="#FF7E9F" fill-opacity="0.6"/><path d="M37 51 Q40 54 43 51" stroke="#B3496C" stroke-width="1.8" stroke-linecap="round"/><circle cx="28" cy="27" r="10" fill="#996340" stroke="#663D63" stroke-width="1.8"/><circle cx="40" cy="25" r="11" fill="#996340" stroke="#663D63" stroke-width="1.8"/><circle cx="52" cy="27" r="10" fill="#996340" stroke="#663D63" stroke-width="1.8"/><rect x="26" y="22" width="28" height="4" rx="2" fill="#FFFFFF" fill-opacity="0.5"/><ellipse cx="40" cy="18" rx="7" ry="5.5" fill="#FFFFFF" stroke="#663D63" stroke-width="1.5"/><polygon points="36,15 37.5,10 40,15" fill="#FFFFFF" stroke="#663D63" stroke-width="1.2"/><polygon points="40,15 42.5,10 44,15" fill="#FFFFFF" stroke="#663D63" stroke-width="1.2"/><circle cx="38" cy="18" r="0.8" fill="#663D63"/><circle cx="42" cy="18" r="0.8" fill="#663D63"/></g></svg>`,
 } as const
+
+export function createAvatarPortraitSVG(custom?: {
+  hairStyle?: string
+  hairColor?: number
+  skinColor?: number
+  eyeColor?: number
+  blushColor?: number
+}): string {
+  const hairStyle = custom?.hairStyle ?? 'twin_buns'
+  const hairColorHex = custom?.hairColor ? '#' + custom.hairColor.toString(16).padStart(6, '0') : '#996340'
+  const skinColorHex = custom?.skinColor ? '#' + custom.skinColor.toString(16).padStart(6, '0') : '#ffd7c6'
+  const eyeColorHex = custom?.eyeColor ? '#' + custom.eyeColor.toString(16).padStart(6, '0') : '#6c3f68'
+  const blushColorHex = custom?.blushColor ? '#' + custom.blushColor.toString(16).padStart(6, '0') : '#ff7e9f'
+
+  let backHairSVG = ''
+  if (hairStyle === 'twin_buns') {
+    backHairSVG = `
+      <circle cx="15" cy="18" r="14" fill="${hairColorHex}" stroke="#663D63" stroke-width="2"/>
+      <circle cx="65" cy="18" r="14" fill="${hairColorHex}" stroke="#663D63" stroke-width="2"/>
+      <circle cx="18" cy="28" r="5" fill="#FF8FC4" stroke="#663D63" stroke-width="1.2"/>
+      <circle cx="62" cy="28" r="5" fill="#FF8FC4" stroke="#663D63" stroke-width="1.2"/>
+    `
+  } else if (hairStyle === 'long_waves') {
+    backHairSVG = `
+      <path d="M14 36 C8 55 10 72 20 78 C28 66 26 50 26 36 Z" fill="${hairColorHex}" stroke="#663D63" stroke-width="2"/>
+      <path d="M66 36 C72 55 70 72 60 78 C52 66 54 50 54 36 Z" fill="${hairColorHex}" stroke="#663D63" stroke-width="2"/>
+    `
+  } else if (hairStyle === 'ponytail') {
+    backHairSVG = `
+      <circle cx="65" cy="18" r="15" fill="${hairColorHex}" stroke="#663D63" stroke-width="2"/>
+      <ellipse cx="69" cy="34" rx="11" ry="20" fill="${hairColorHex}" stroke="#663D63" stroke-width="2"/>
+      <circle cx="58" cy="26" r="5" fill="#FF8FC4" stroke="#663D63" stroke-width="1.2"/>
+    `
+  } else if (hairStyle === 'bob') {
+    backHairSVG = `
+      <rect x="15" y="24" width="50" height="42" rx="14" fill="${hairColorHex}" stroke="#663D63" stroke-width="2"/>
+    `
+  } else if (hairStyle === 'pixie') {
+    backHairSVG = `
+      <circle cx="40" cy="36" r="26" fill="${hairColorHex}" stroke="#663D63" stroke-width="2"/>
+    `
+  }
+
+  return `<svg viewBox="0 0 80 80" width="100%" height="100%" fill="none" xmlns="http://www.w3.org/2000/svg"><defs><clipPath id="avatar-portrait-clip"><circle cx="40" cy="40" r="38"/></clipPath></defs><circle cx="40" cy="40" r="39" fill="#FFF0F5" stroke="#663D63" stroke-width="2"/><g clip-path="url(#avatar-portrait-clip)">${backHairSVG}<!-- Scalp --><circle cx="40" cy="38" r="27" fill="${hairColorHex}" stroke="#663D63" stroke-width="2"/><!-- Face --><ellipse cx="40" cy="42" rx="22" ry="20" fill="${skinColorHex}" stroke="#663D63" stroke-width="2"/><!-- Ears --><circle cx="17" cy="42" r="5" fill="${skinColorHex}" stroke="#663D63" stroke-width="1.8"/><circle cx="63" cy="42" r="5" fill="${skinColorHex}" stroke="#663D63" stroke-width="1.8"/><circle cx="17" cy="42" r="2.5" fill="#FFCCD8"/><circle cx="63" cy="42" r="2.5" fill="#FFCCD8"/><!-- Eyes --><ellipse cx="30" cy="42" rx="5.5" ry="6.5" fill="#FFFFFF"/><ellipse cx="50" cy="42" rx="5.5" ry="6.5" fill="#FFFFFF"/><path d="M24 38 Q30 35 36 38" stroke="#663D63" stroke-width="2.2" stroke-linecap="round"/><path d="M44 38 Q50 35 56 38" stroke="#663D63" stroke-width="2.2" stroke-linecap="round"/><circle cx="30" cy="42" r="4" fill="${eyeColorHex}"/><circle cx="50" cy="42" r="4" fill="${eyeColorHex}"/><circle cx="28.5" cy="40" r="1.6" fill="#FFFFFF"/><circle cx="48.5" cy="40" r="1.6" fill="#FFFFFF"/><circle cx="31.5" cy="43.5" r="0.8" fill="#FFFFFF"/><circle cx="51.5" cy="43.5" r="0.8" fill="#FFFFFF"/><!-- Blush --><ellipse cx="25" cy="48" rx="4.5" ry="2.5" fill="${blushColorHex}" fill-opacity="0.6"/><ellipse cx="55" cy="48" rx="4.5" ry="2.5" fill="${blushColorHex}" fill-opacity="0.6"/><!-- Mouth --><path d="M37 51 Q40 54 43 51" stroke="#B3496C" stroke-width="1.8" stroke-linecap="round"/><!-- Forehead Bangs --><circle cx="28" cy="27" r="10" fill="${hairColorHex}" stroke="#663D63" stroke-width="1.8"/><circle cx="40" cy="25" r="11" fill="${hairColorHex}" stroke="#663D63" stroke-width="1.8"/><circle cx="52" cy="27" r="10" fill="${hairColorHex}" stroke="#663D63" stroke-width="1.8"/><!-- Hair Gloss --><rect x="26" y="22" width="28" height="4" rx="2" fill="#FFFFFF" fill-opacity="0.5"/><!-- Kitten Hair Clip --><ellipse cx="40" cy="18" rx="7" ry="5.5" fill="#FFFFFF" stroke="#663D63" stroke-width="1.5"/><polygon points="36,15 37.5,10 40,15" fill="#FFFFFF" stroke="#663D63" stroke-width="1.2"/><polygon points="40,15 42.5,10 44,15" fill="#FFFFFF" stroke="#663D63" stroke-width="1.2"/><circle cx="38" cy="18" r="0.8" fill="#663D63"/><circle cx="42" cy="18" r="0.8" fill="#663D63"/></g></svg>`
+}
